@@ -29,6 +29,7 @@ const StyledButton = styled.button`
             `
     }
     ${props =>
+        
         props.variant === "outlined"
         ? css`
             background: transparent;
