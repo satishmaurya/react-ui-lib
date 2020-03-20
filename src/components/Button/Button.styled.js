@@ -59,9 +59,9 @@ const StyledButton = styled.button`
     ${props =>
         props.disabled
             ? css`
-                pointer-event:none;
-                cursor: default;
+                cursor: not-allowed;
                 opacity:0.6;
+
             `
             : css`
             cursor: pointer;
