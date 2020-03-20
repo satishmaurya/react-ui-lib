@@ -1,9 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ThemeProvider from './theme';
 
 function App() {
   return (
+    <ThemeProvider>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -20,6 +22,7 @@ function App() {
         </a>
       </header>
     </div>
+    </ThemeProvider>
   );
 }
 

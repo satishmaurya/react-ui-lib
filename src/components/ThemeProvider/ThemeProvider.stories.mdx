@@ -1,0 +1,28 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import ThemeProvider from "./ThemeProvider";
+import ThemeTypes from "./ThemeProvider.types";
+
+<Meta title="Components/ThemeProvider" component="Button" />
+
+<Story name="Import" />
+
+# Theme
+
+## Import
+
+```jsx
+import {ThemeProvider} from "@ui/components";
+```
+## Usage
+
+<Preview withToolbar>
+    <Story name="Usage">
+        <ThemeProvider theme="light"></ThemeProvider>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={ThemeTypes} />
