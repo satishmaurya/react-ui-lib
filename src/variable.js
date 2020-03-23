@@ -30,3 +30,7 @@ export const danger=orange;
 // export const purple=purple;
 export const light= gray100;
 export const dark=gray800;
+// global button radius
+export const btnBorderRadius='2rem';
+export const btnBorderRadiusLg= '2rem';
+export const btnBorderRadiusSm= '2rem';

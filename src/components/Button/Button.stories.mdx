@@ -9,7 +9,7 @@ import ButtonTypes from "./Button.types";
 # Button
 
 ## Import
-x`
+
 ```jsx
 import {Button} from "@ui/components";
 ```
@@ -19,18 +19,26 @@ import {Button} from "@ui/components";
     <Story name="Usage">
         <>
         <span style={{marginRight:20}}>
-        <Button btnVariant="contained">Default</Button>
+        <Button btnType="primary" btnVariant="contained"> Primary </Button>
         </span>
         <span style={{marginRight:20}}>
-        <Button btnType="info" btnVariant="contained"> Primary </Button>
+        <Button btnType="secondary" btnVariant="outlined">Secondary</Button>
+        </span>
+         <span style={{marginRight:20}}>
+        <Button btnType="success" btnVariant="contained"> Success </Button>
+        </span>
+         <span style={{marginRight:20}}>
+        <Button btnType="info" btnVariant="contained"> Info </Button>
+        </span>
+         <span style={{marginRight:20}}>
+        <Button btnType="warning" btnVariant="contained"> Warning </Button>
         </span>
         <span style={{marginRight:20}}>
-        <Button btnType="secondary" btnVariant="contained">Secondary</Button>
+        <Button btnType="success" isDisabled="true" btnVariant="contained"> Disabled </Button>
         </span>
         <span style={{marginRight:20}}>
-        <Button isDisabled="true" btnVariant="contained"> Disabled </Button>
+        <Button rounded="rounded" btnType="primary" btnVariant="contained"> Rounded </Button>
         </span>
-        <Button btnVariant="outlined"> Outlined </Button>
         </>
     </Story>
 </Preview>
