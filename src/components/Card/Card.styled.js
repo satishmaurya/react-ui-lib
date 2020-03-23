@@ -3,7 +3,6 @@ import * as variable from "../../variable";
 
 const StyledCard = Styled.div`
     box-shadow: 0px 0px 2px 1px #ddd;
-    padding: 15px;
     border-radius: 4px;
     display:flex;
     flex-wrap:wrap;
@@ -53,7 +52,32 @@ const StyledCard = Styled.div`
             color: inherit;
         `
     }
-
+    ${props=>
+        props.childImg
+        ? css`
+            img {max-width: 100%;border-radius:4px 4px 0 0};
+        `
+        :css `
+        img {max-width: 100%;border-radius:4px 4px 0 0};
+        `
+    }
+    ${props=>
+        props.imgPos==="bg"
+        ? css`
+            color:${variable.white} !important;
+        `
+        : css`
+            color: inherit;
+        `
+    }
+    h5 {
+        font-size:${variable.h5FontSize};
+        color:${variable.gray800};
+        font-weight:500;
+    }
+    img {
+        max-width:100%;
+    }
 `;
 
 export default StyledCard;
