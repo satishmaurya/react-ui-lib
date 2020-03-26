@@ -3,13 +3,13 @@ import StyledCard from "./Card.styled";
 import Card from 'react-bootstrap/Card';
 
 const StackCard = (props) =>{
-    const{ color, bgColor, children, cardTitle, width, alignText, alignCard, imgUrl, subTitle, imgPos} =props;
+    const{ color, bgColor, children, cardTitle, width, alignText, alignCard, imgUrl, subTitle, imgPos, border} =props;
     if(imgPos==="middle"){
     return(
-        <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} width={width} alignText={alignText} alignCard={alignCard} imgPos={imgPos}>
+        <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} {...props}>
             <Card.Body>
-            <Card.Title>{cardTitle}</Card.Title>
-            <Card.Subtitle>{subTitle}</Card.Subtitle>
+            <Card.Title as="h5">{cardTitle}</Card.Title>
+            <Card.Subtitle as="h6" className="text-muted">{subTitle}</Card.Subtitle>
             </Card.Body>
             <img src={imgUrl} />
             <Card.Body>
@@ -20,11 +20,11 @@ const StackCard = (props) =>{
     }
     else if (imgPos==="top") {
         return(
-            <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} width={width} alignText={alignText} alignCard={alignCard} imgPos={imgPos}>
+            <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} {...props}>
                 <img src={imgUrl} />
                 <Card.Body>
-                <Card.Title>{cardTitle}</Card.Title>
-                <Card.Subtitle>{subTitle}</Card.Subtitle>
+                <Card.Title as="h5">{cardTitle}</Card.Title>
+                <Card.Subtitle as="h6">{subTitle}</Card.Subtitle>
                 <Card.Text>{children}</Card.Text>
                 </Card.Body>
             </StyledCard>
@@ -32,10 +32,10 @@ const StackCard = (props) =>{
     }
     else if (imgPos==="bottom") {
         return(
-            <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} width={width} alignText={alignText} alignCard={alignCard} imgPos={imgPos}>
+            <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} {...props}>
                 <Card.Body>
-                <Card.Title>{cardTitle}</Card.Title>
-                <Card.Subtitle>{subTitle}</Card.Subtitle>
+                <Card.Title as="h5">{cardTitle}</Card.Title>
+                <Card.Subtitle as="h6">{subTitle}</Card.Subtitle>
                 <Card.Text>{children}</Card.Text>
                 </Card.Body>
                 <img src={imgUrl} />
@@ -44,26 +44,29 @@ const StackCard = (props) =>{
     }
         else if (imgPos==="bg") {
         return(
-            <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} width={width} alignText={alignText} alignCard={alignCard} imgPos={imgPos}>
+            <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} {...props}>
             <img src={imgUrl} />
             <Card.ImgOverlay>
-            <Card.Title>{cardTitle}</Card.Title>
-            <Card.Subtitle>{subTitle}</Card.Subtitle>
+            <Card.Title as="h5">{cardTitle}</Card.Title>
+            <Card.Subtitle as="h6">{subTitle}</Card.Subtitle>
             <Card.Text>{children}</Card.Text>
             </Card.ImgOverlay>
         </StyledCard>
         )
     }
     else {
+        console.log(bgColor,'---bg');
           return(
-            <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} width={width} alignText={alignText} alignCard={alignCard} imgPos={imgPos}>
+              <>
+            <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} {...props}>
                 <Card.Body>
-                <Card.Title>{cardTitle}</Card.Title>
-                <Card.Subtitle>{subTitle}</Card.Subtitle>
+                <Card.Title as="h5">{cardTitle}</Card.Title>
+                <Card.Subtitle as="h6">{subTitle}</Card.Subtitle>
                 <Card.Text>{children}</Card.Text>
                 </Card.Body>
                 <img src={imgUrl} />
             </StyledCard>
+            </>
         )
     }
 }
