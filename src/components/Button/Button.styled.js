@@ -132,6 +132,34 @@ const StyledButton = styled.button`
         `
         : css ``
  }
+ ${props =>     
+    props.block === "true"
+    ? css`
+    display:block;
+    width:100%;
+    `
+    : css`
+    `
+}
+${props =>     
+    props.size === "sm"
+    ? css`
+    padding: .28rem .8rem;
+    font-size: .71094rem;
+    line-height: 1.5;
+    border-radius: .15rem;
+    `
+    :
+    props.size === "lg"
+    ? css `
+    padding: .5rem 1rem;
+    font-size: 1.01563rem;
+    line-height: 1.5;
+    border-radius: .15rem;
+    `
+    : css`
+    `
+}
 `
 
 export default StyledButton;

@@ -1,12 +1,10 @@
 import Styled,{css} from "styled-components";
 import * as variable from "../../variable";
+import Card from 'react-bootstrap/Card';
 
-const StyledCard = Styled.div`
-    box-shadow: 0px 0px 2px 1px #ddd;
-    padding: 15px;
-    border-radius: 4px;
-    display:flex;
-    flex-wrap:wrap;
+var a;
+const StyledCard = Styled(Card)`
+    overflow:hidden;
     ${props=>
         props.width
         ? css`
@@ -36,24 +34,64 @@ const StyledCard = Styled.div`
         `
     }
     ${props=>
-        props.bgColor
-        ? css`
-            background-color:${props.bgColor};
-        `
-        : css`
-            background-color: ${variable.ColorWhiteBase};
-        `
-    }
-    ${props=>
         props.color
         ? css`
             color:${props.color};
         `
         : css`
-            color: inherit;
         `
     }
+    ${props=>
+        props.imgPos==="bg"
+        ? css`
+            color:${variable.white} !important;
+        `
+        : css`
+        `
+    }
+    ${props=>
+        props.bgColor==="primary"
+        ? css`
+            background-color:${variable.primary};
+            h5,p {color:${variable.white}}
 
+        `
+        :props.bgColor==="secondary"
+        ? css`
+        background-color:${variable.secondary};
+            h5,p {color:${variable.white}}
+        `
+        :props.bgColor==="success"
+        ? css`
+        background-color:${variable.success};
+        h5,p {color:${variable.white}}
+        `
+        :props.bgColor==="info"
+        ? css`
+        background-color:${variable.info};
+        h5,p {color:${variable.white}}
+        `
+        :props.bgColor==="warning"
+        ? css`
+        background-color:${variable.warning};
+        h5,p {color:${variable.white}}
+        `
+        :props.bgColor==="danger"
+        ? css`
+        background-color:${variable.danger};
+        h5,p {color:${variable.white}}
+        `
+        : css`
+            background-color: ${variable.ColorWhiteBase};
+        `
+    }
+    h5 {
+        font-size:${variable.h5FontSize};
+        font-weight:500;
+    }
+    img {
+        max-width:100%;
+    }
 `;
 
 export default StyledCard;

@@ -1,6 +1,8 @@
 import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
 import Button from "./Button";
 import ButtonTypes from "./Button.types";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 <Meta title="Components/Button" component="Button" />
 
@@ -39,6 +41,35 @@ import {Button} from "@ui/components";
         <span style={{marginRight:20}}>
         <Button rounded="rounded" btnType="primary" btnVariant="contained"> Rounded </Button>
         </span>
+        </>
+    </Story>
+</Preview>
+
+## Block and Icons Button
+
+<Preview withToolbar>
+    <Story name="UsageIcon">
+        <>
+        <Row>
+            <Col xl="6">
+            <Button btnType="primary" btnVariant="contained" block="true"> Block Button </Button>
+            </Col>
+            <Col xl="6">
+           <Button btnType="success" btnVariant="contained" block="true" size="sm"> Block Button </Button>
+           <p></p>
+            <Button btnType="purple" btnVariant="contained" block="true" size="lg"> Block Button </Button>
+            </Col>
+        </Row>
+        <Row>
+            <Col xl="6">
+            <Button btnType="primary" btnVariant="contained" icon="mdi-check-all"> Block Button </Button>
+            </Col>
+            <Col xl="6">
+           <Button btnType="success" btnVariant="contained" block="true" size="sm"> Block Button </Button>
+           <p></p>
+            <Button btnType="purple" btnVariant="contained" block="true" size="lg"> Block Button </Button>
+            </Col>
+        </Row>
         </>
     </Story>
 </Preview>
