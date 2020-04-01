@@ -46,6 +46,7 @@ const StyledButton = styled.button`
         ? css `
          background: ${variable.gray100};
          border: 1px solid ${variable.gray100};
+         color:${variable.gray900};
         `
         : props.color === "dark"
         ? css `
