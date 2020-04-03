@@ -1,8 +1,8 @@
 import React from "react";
-import StyledCard from "./Card.styled";
+import StyledCard from "./Accordian.styled";
 import Card from 'react-bootstrap/Card';
 
-const StackCard = (props) =>{
+const Accordian = (props) =>{
     const{ color, bgColor, children, cardTitle, width, alignText, alignCard, imgUrl, subTitle, imgPos, border} =props;
     if(imgPos==="middle"){
     return(
@@ -26,7 +26,6 @@ const StackCard = (props) =>{
                 <Card.Title as="h5">{cardTitle}</Card.Title>
                 <Card.Subtitle as="h6">{subTitle}</Card.Subtitle>
                 <Card.Text>{children}</Card.Text>
-                
                 </Card.Body>
             </StyledCard>
         )
@@ -72,4 +71,4 @@ const StackCard = (props) =>{
     }
 }
 
-export default StackCard;
+export default Accordian;
