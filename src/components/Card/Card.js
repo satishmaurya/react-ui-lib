@@ -26,6 +26,7 @@ const StackCard = (props) =>{
                 <Card.Title as="h5">{cardTitle}</Card.Title>
                 <Card.Subtitle as="h6">{subTitle}</Card.Subtitle>
                 <Card.Text>{children}</Card.Text>
+                
                 </Card.Body>
             </StyledCard>
         )

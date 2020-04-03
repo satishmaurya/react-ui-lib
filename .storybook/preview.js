@@ -3,6 +3,9 @@ import { configure, addDecorator, addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/index.css';
+import './fontawesome';
+ 
+// fontawesome.library.add(fab,fas)
 
 const theme = create({
     base: 'light',
