@@ -9,7 +9,8 @@ ButtonTypes.propTypes={
     isDisabled: PropTypes.bool,
     rounded:PropTypes.oneOf(['rounded','default']),
     size:PropTypes.oneOf(['sm','md','lg']),
-    block:PropTypes.bool
+    block:PropTypes.bool,
+    ButtonGroup:PropTypes.oneOf(['horizontal','vertical']),
 };
 
 ButtonTypes.defaultProps = {

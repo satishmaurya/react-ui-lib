@@ -1,5 +1,5 @@
 import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
-import Button from "./Button";
+import {Button, ButtonGroups} from "./Button";
 import ButtonTypes from "./Button.types";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -52,12 +52,12 @@ import {Button} from "@ui/components";
         <>
         <Row>
             <Col xl="6">
-            <Button btnType="primary" btnVariant="contained" block="true"> Block Button </Button>
+                <Button btnType="primary" btnVariant="contained" block="true"> Block Button </Button>
             </Col>
             <Col xl="6">
-           <Button btnType="success" btnVariant="contained" block="true" size="sm"> Block Button </Button>
-           <p></p>
-            <Button btnType="purple" btnVariant="contained" block="true" size="lg"> Block Button </Button>
+                <Button btnType="success" btnVariant="contained" block="true" size="sm"> Block Button </Button>
+                <p></p>
+                <Button btnType="purple" btnVariant="contained" block="true" size="lg"> Block Button </Button>
             </Col>
         </Row>
         <Row>
@@ -80,12 +80,20 @@ import {Button} from "@ui/components";
         <>
         <Row>
             <Col xl="6">
-                <Button btnType="light" btnVariant="contained" icon="mdi-check-all"> Left </Button>
-                <Button btnType="light" btnVariant="contained" icon="mdi-check-all"> Block Button </Button>
-                <Button btnType="light" btnVariant="contained" icon="mdi-check-all"> Block Button </Button>
+                <ButtonGroups btnGroup="horizontal">
+                    <Button btnType="primary" btnVariant="contained" icon="mdi-check-all"> Left </Button>
+                    <Button btnType="primary" btnVariant="contained" icon="mdi-check-all"> Middle </Button>
+                    <Button btnType="primary" btnVariant="contained" icon="mdi-check-all"> Right </Button>
+                </ButtonGroups>
             </Col>
             <Col xl="6">
-                <Button btnType="light" btnVariant="contained" icon="mdi-check-all"> Block Button </Button>
+                <ButtonGroups btnGroup="vertical">
+                    <Button btnType="primary" btnVariant="contained" icon="mdi-check-all">Top </Button>
+                    <p></p>
+                    <Button btnType="primary" btnVariant="contained" icon="mdi-check-all">Middle</Button>
+                    <p></p>
+                    <Button btnType="primary" btnVariant="contained" icon="mdi-check-all">Bottom </Button>
+                </ButtonGroups>
             </Col>
         </Row>
         

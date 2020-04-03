@@ -1,13 +1,33 @@
 import React from "react";
-import StyledButton from "./Button.styled";
+import {StyledButton,ButtonGroup} from "./Button.styled";
 
-const Button = (props) =>{
-    const {btnType, isDisabled, btnVariant, rounded, children, size, block, icon} = props;
-    return(
+export const Button = (props) =>{
+    const {btnType, isDisabled, btnVariant, rounded, children, size, block, icon, btnGroup} = props;
+    
+        return(
         <StyledButton rounded={rounded} color={btnType} disabled={isDisabled} variant={btnVariant} size={size} block={block}>
-            {children}
+                {children}
         </StyledButton>
-    );
-}
+        );
+    
+    
+};
 
-export default Button;
+export const ButtonGroups =(props)=>{
+    const {btnType, isDisabled, btnVariant, rounded, children, size, block, icon, btnGroup} = props;
+    if(btnGroup === "horizontal"){
+        return(
+            <ButtonGroup BtnGroup={btnGroup}>
+                {children}
+            </ButtonGroup>
+        );
+        
+    }else if(btnGroup==="vertical"){
+        return(
+            <ButtonGroup BtnGroup={btnGroup}>
+                {children}
+            </ButtonGroup>
+        );
+
+    }
+};

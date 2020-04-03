@@ -1,7 +1,7 @@
 import styled, {css} from "styled-components";
 import * as variable from "../../variable";
 
-const StyledButton = styled.button`
+export const StyledButton = styled.button`
     padding: 6px 16px;
     border-radius: 4px;
     color: ${variable.white};
@@ -162,5 +162,23 @@ ${props =>
     `
 }
 `
+export const ButtonGroup = styled.div`
+    padding: 6px 10px;
+    ${props =>
+        props.BtnGroup === "horizontal"
+        ? css `
+            display: flex;
+            flex-wrap:wrap;
+            
+        `
+        :
+        props.BtnGroup === "vertical"
+         ?css`
+            display:flex;
+            flex-direction:column;
+        `
+        : css`
+        `
+    }
+`
 
-export default StyledButton;
