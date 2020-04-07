@@ -4,21 +4,21 @@ import PropTypes from "prop-types";
 const InputGroupTypes= () => <>InputGroup</>;
 
 InputGroupTypes.propTypes={
-    btnType: PropTypes.oneOf(['primary','secondary','success','info','warning','danger','purple','light','dark']),
-    btnVariant: PropTypes.oneOf(['contained', 'outlined']),
-    isDisabled: PropTypes.bool,
-    rounded:PropTypes.oneOf(['rounded','default']),
-    size:PropTypes.oneOf(['sm','md','lg']),
-    block:PropTypes.bool
+    type: PropTypes.oneOf(['text','number','password','date','email','danger','purple','light','dark']),
+    as: PropTypes.oneOf(['textarea', 'select','multiselect']),
+    disabled: PropTypes.bool,
+    size:PropTypes.oneOf(['sm','lg']),
+    labelText:PropTypes.string,
+    labelInline:PropTypes.bool
 };
 
 InputGroupTypes.defaultProps = {
-    btnType: 'default',
-    btnVariant: 'contained',
-    isDisabled: false,
-    rounded:'default',
-    size:'md',
-    block:false
+    type: 'text',
+    as: '',
+    disabled: false,
+    size:'default',
+    labelText:'',
+    labelInline:false
 };
 
 export default InputGroupTypes;
