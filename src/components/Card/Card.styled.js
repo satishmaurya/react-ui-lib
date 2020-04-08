@@ -2,7 +2,6 @@ import Styled,{css} from "styled-components";
 import * as variable from "../../variable";
 import Card from 'react-bootstrap/Card';
 
-var a;
 const StyledCard = Styled(Card)`
     overflow:hidden;
     ${props=>
