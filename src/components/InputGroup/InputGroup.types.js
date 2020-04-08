@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const InputGroupTypes= () => <>InputGroup</>;
 
 InputGroupTypes.propTypes={
-    type: PropTypes.oneOf(['text','number','password','date','email','danger','purple','light','dark']),
+    type: PropTypes.oneOf(['text','number','password','date','email','range','color']),
     as: PropTypes.oneOf(['textarea', 'select','multiselect']),
     disabled: PropTypes.bool,
     size:PropTypes.oneOf(['sm','lg']),
