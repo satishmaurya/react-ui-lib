@@ -48,7 +48,7 @@ import {ProgressBar} from "@ui/components";
     </Story>
 </Preview>
 
-## Animation and Stacked
+## Animated
 #Add animated prop to animate the stripes right to left. Not available in IE9 and below
 
 <Preview withToolbar>
@@ -60,6 +60,16 @@ import {ProgressBar} from "@ui/components";
          <p> </p>
          <ProgressBar animated striped variant="danger" now={30} />
          <p> </p>
+        </>
+    </Story>
+</Preview>
+
+## Stacked
+#We can represent Progress bar component with combination of different variants which we further called as Nesting of ProgressBar.
+
+<Preview withToolbar>
+    <Story name="Nest">
+        <>
          <ProgressBar>
             <ProgressBar striped variant="success" now={35} key={1} />
             <ProgressBar striped variant="warning" now={20} key={2} />
