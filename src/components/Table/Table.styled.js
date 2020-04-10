@@ -1,13 +1,14 @@
 import styled, {css} from "styled-components";
 import * as variable from "../../variable";
-import ProgressBar from 'react-bootstrap/ProgressBar'
+import Table from 'react-bootstrap/Table'
 
 
-const ProgressStyle = styled(ProgressBar)`
+const StyledTable = styled(Table)`
     ${props=>
         props.size==="xs"
         ? css `
-            height:.15rem;
+            ${'' /* height:.15rem; */}
+            background: red;
         `
         :props.size==="sm"
         ? css `
@@ -15,7 +16,8 @@ const ProgressStyle = styled(ProgressBar)`
         `
         :props.size==="md"
         ? css `
-        height:400px;
+        background: red !important;
+        height:.50rem;
         `
         :props.size==="lg"
         ? css `
@@ -27,4 +29,4 @@ const ProgressStyle = styled(ProgressBar)`
     }
 `
 
-export default ProgressStyle;
+export default StyledTable;
