@@ -25,6 +25,14 @@ const ProgressStyle = styled(ProgressBar)`
         height:1rem;
         `
     }
+    ${props=>
+    (props.size==="xs"| props.size==="sm"| props.size==="md" && props.label)
+    ? css `
+    
+    `
+    : css `
+    `
+    }
 `
 
 export default ProgressStyle;
