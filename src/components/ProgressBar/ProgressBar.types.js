@@ -1,20 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const ButtonTypes= () => <>Button</>;
+const ProgressBarTypes= () => <>ProgressBar</>;
 
-ButtonTypes.propTypes={
-    btnType: PropTypes.oneOf(['primary','secondary','success','info','warning','danger','purple','light','dark']),
-    isDisabled: PropTypes.bool,
-    rounded:PropTypes.oneOf(['rounded','default']),
+ProgressBarTypes.propTypes={
+    now: PropTypes.number,
     size:PropTypes.oneOf(['xs','sm','md','lg']),
+    label:PropTypes.string,
+    variant: PropTypes.oneOf([ 'primary', 'info', 'danger' ]),
+    striped: PropTypes.bool,
+    animated: PropTypes.bool,
 };
 
-ButtonTypes.defaultProps = {
-    btnType: 'default',
-    isDisabled: false,
-    rounded:'default',
-    size:'default',
+ProgressBarTypes.defaultProps = {
+    now: 'default',
+    size: 'md',
+    label: '50%',
+    variant: 'primary',
+    striped: false,
+    animated: false,
 };
 
-export default ButtonTypes;
+export default ProgressBarTypes;
