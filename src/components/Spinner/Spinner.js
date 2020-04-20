@@ -1,5 +1,5 @@
 import React from "react";
-import StyledSpinner from "./Spinner.styled";
+import StyledSpinner from 'react-bootstrap/Spinner'
 
 const Spinner = (props) => {
   const { children, animation, as, size, variant} = props;
