@@ -4,15 +4,21 @@ import { create } from '@storybook/theming';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/index.css';
 import './fontawesome';
+import Container from './container';
  
 // fontawesome.library.add(fab,fas)
+import { withA11y } from '@storybook/addon-a11y';
+addDecorator(withA11y);
+
+addDecorator(story => <Container story={story} />);
 
 const theme = create({
     base: 'light',
     brandTitle: 'Stack UI',
-    brandUrl: 'https://github.com/bbc/psammead',
-    brandImage:
-      'logoShap.png',
+    brandUrl: 'https://successive.tech',
+    brandTitle: `<b style="color:#3c4edd"><i style="font-size:30px;">S</i>tack UI</b><br /><small><span style="font-weight: 300">Component Library from</span> Successive Tech</small><br /><small>v.0.1.0</small>`,
+    // brandImage:
+    //   'logoShap.png',
   });
 
   addParameters({
@@ -22,12 +28,18 @@ const theme = create({
       theme,
     },
     a11y: {
+      config: {},
       options: {
-        runOnly: {
-          type: 'tag',
-          values: ['wcag2a', 'wcag2aa', 'wcag21aa'],
-        },
-        iframes: true,
+        checks: { 'color-contrast': { options: { noScroll: true } } },
+        restoreScroll: true,
       },
-    },
+    }
   });
+
+  configure(
+    [
+      require.context('../docs/get-started', true, /\.stories\.mdx$/),
+      require.context('../src/components', true, /\.stories\.mdx$/),
+    ],
+    module,
+  );
