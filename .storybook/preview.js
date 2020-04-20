@@ -16,8 +16,9 @@ const theme = create({
     base: 'light',
     brandTitle: 'Stack UI',
     brandUrl: 'https://successive.tech',
-    brandImage:
-      'logoShap.png',
+    brandTitle: `<b style="color:#3c4edd"><i style="font-size:30px;">S</i>tack UI</b><br /><small><span style="font-weight: 300">Component Library from</span> Successive Tech</small><br /><small>v.0.1.0</small>`,
+    // brandImage:
+    //   'logoShap.png',
   });
 
   addParameters({
