@@ -4,13 +4,18 @@ import { create } from '@storybook/theming';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/index.css';
 import './fontawesome';
+import Container from './container';
  
 // fontawesome.library.add(fab,fas)
+import { withA11y } from '@storybook/addon-a11y';
+addDecorator(withA11y);
+
+addDecorator(story => <Container story={story} />);
 
 const theme = create({
     base: 'light',
     brandTitle: 'Stack UI',
-    brandUrl: 'https://github.com/bbc/psammead',
+    brandUrl: 'https://successive.tech',
     brandImage:
       'logoShap.png',
   });
@@ -22,12 +27,18 @@ const theme = create({
       theme,
     },
     a11y: {
+      config: {},
       options: {
-        runOnly: {
-          type: 'tag',
-          values: ['wcag2a', 'wcag2aa', 'wcag21aa'],
-        },
-        iframes: true,
+        checks: { 'color-contrast': { options: { noScroll: true } } },
+        restoreScroll: true,
       },
-    },
+    }
   });
+
+  configure(
+    [
+      require.context('../docs/get-started', true, /\.stories\.mdx$/),
+      require.context('../src/components', true, /\.stories\.mdx$/),
+    ],
+    module,
+  );
