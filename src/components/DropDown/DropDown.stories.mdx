@@ -3,7 +3,6 @@ import DropDown from "./DropDown";
 import DropDownTypes from "./DropDown.types";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Dropdown from 'react-bootstrap/Dropdown';
 
 
 <Meta title="Components/DropDown" component="DropDown" />
@@ -17,15 +16,132 @@ import Dropdown from 'react-bootstrap/Dropdown';
 ```jsx
 import {DropDown} from "@ui/components";
 ```
-## Usage
+## Variant
+
+The best part is you can do this with any button variant, too:
 
 <Preview withToolbar>
     <Story name="Usage">
-        <>
-        <DropDown>
-          
-        </DropDown>
-      
+         <>
+          <span style={{marginRight:20, display: 'inline-block' }} >
+        <DropDown btnType="primary" icon="angle-down" Iconsize="sm" iconVariant="solid" options={[{
+          item:'HTML',
+           link :'/about',
+        },
+        {
+          item:'CSS',
+           link :'/about',
+        },
+        {
+          item:'Javascript',
+           link :'/about',
+        }]} />
+        </span>
+         <span style={{marginRight:20, display: 'inline-block'}}>
+        <DropDown btnType="secondary" icon="angle-up" Iconsize="sm" iconVariant="solid" style={{display: 'inline-block'}} options={[{
+          item:'HTML',
+          link :'/about',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+           link :'/home',
+        }]} />
+        </span>
+        <span style={{marginRight:20, display: 'inline-block' }} >
+        <DropDown  btnType="success"  Iconsize="sm"  icon="angle-down" iconVariant="solid" btnVariant="contained" options={[{
+          item:'HTML',
+           link :'/about',
+        },
+        {
+          item:'CSS',
+           link :'/about',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+            <span style={{marginRight:20, display: 'inline-block' }} >
+        <DropDown btnType="info" icon="angle-down" Iconsize="sm" iconVariant="solid" btnVariant="contained" options={[{
+          item:'HTML',
+           link :'/about',
+        },
+        {
+          item:'CSS',
+           link :'/about',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+         <span style={{marginRight:20, display: 'inline-block' }}>
+        <DropDown btnType="warning" icon="angle-down" Iconsize="sm" iconVariant="solid" isDisabled="true" btnVariant="contained" options={[{
+          item:'HTML',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+           <span style={{marginRight:20, display: 'inline-block' }}>
+        <DropDown btnType="danger" icon="angle-down" Iconsize="sm" iconVariant="solid" isDisabled="true" btnVariant="contained" options={[{
+          item:'HTML',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+        </>
+    </Story>
+</Preview>
+
+Sizing
+
+Button dropdowns work with buttons of all sizes, including default and split dropdown buttons.
+
+<Preview withToolbar>
+    <Story name="UsageIcon">
+         <>
+          <span style={{marginRight:20, display: 'inline-block' }} >
+        <DropDown btnType="primary" icon="angle-down"  iconVariant="solid"  size="sm" options={[{
+          item:'HTML',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+         <span style={{marginRight:20, display: 'inline-block'}}>
+        <DropDown btnType="info" icon="angle-down" iconVariant="solid" style={{display: 'inline-block'}} options={[{
+          item:'HTML',
+        },
+        {
+          item:'React',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+        <span style={{marginRight:20, display: 'inline-block' }} >
+        <DropDown  btnType="success" icon="angle-down" iconVariant="solid"  size="lg" btnVariant="contained" options={[{
+          item:'HTML',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
         </>
     </Story>
 </Preview>
