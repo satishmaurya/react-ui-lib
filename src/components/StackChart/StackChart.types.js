@@ -4,21 +4,20 @@ import PropTypes from "prop-types";
 const ButtonTypes= () => <>Button</>;
 
 ButtonTypes.propTypes={
-    btnType: PropTypes.oneOf(['primary','secondary','success','info','warning','danger','purple','light','dark']),
-    btnVariant: PropTypes.oneOf(['contained', 'outlined']),
-    isDisabled: PropTypes.bool,
-    rounded:PropTypes.oneOf(['rounded','default']),
-    size:PropTypes.oneOf(['sm','md','lg']),
-    block:PropTypes.bool
+    type: PropTypes.oneOf(['bar','line','area','donut','radial','radialBar','purple','light','dark']),
+    series: PropTypes.array,
+    width: PropTypes.string,
+    height:PropTypes.string,
+    options:PropTypes.object
 };
 
 ButtonTypes.defaultProps = {
-    btnType: 'default',
-    btnVariant: 'contained',
-    isDisabled: false,
+    type: 'line',
+    series: 'undefined',
+    width: '100%',
     rounded:'default',
-    size:'md',
-    block:false
+    height:'auto',
+    options:{}
 };
 
 export default ButtonTypes;
