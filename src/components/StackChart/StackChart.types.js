@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const ButtonTypes= () => <>Button</>;
 
 ButtonTypes.propTypes={
-    type: PropTypes.oneOf(['bar','line','area','donut','radial','radialBar','purple','light','dark']),
+    type: PropTypes.oneOf(['bar','line','area','donut','radial','radialBar']),
     series: PropTypes.array,
     width: PropTypes.string,
     height:PropTypes.string,
