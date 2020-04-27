@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import '../src/index.css';
+import '../src/assets/style.css';
 
 function Container(props) {
   return <>{props.story()}</>;

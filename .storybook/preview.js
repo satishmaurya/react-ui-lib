@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../src/index.css';
+// import '../src/index.css';
 import './fontawesome';
 import Container from './container';
  
