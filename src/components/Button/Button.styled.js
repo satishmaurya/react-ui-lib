@@ -52,6 +52,11 @@ const StyledButton = styled.button`
          background: ${variable.gray800};
          border: 1px solid ${variable.gray800};
         `
+        : props.color.includes("#")
+        ? css `
+         background: ${props.color};
+         border: 0;
+        `
            : css`
                 background: ${variable.gray800}
            `
@@ -65,6 +70,15 @@ const StyledButton = styled.button`
             `
             : css`
             cursor: pointer;
+            `
+    }
+    ${props =>
+        props.borderRadius
+            ? css`
+                border-radius: ${props.borderRadius};
+            `
+            : css`
+            border-radius: 0;
             `
     }
     ${props =>

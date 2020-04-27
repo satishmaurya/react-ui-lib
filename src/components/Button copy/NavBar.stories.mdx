@@ -1,0 +1,55 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import { NavBar, NavBarChild} from "./NavBar";
+import NavBarTypes from "./NavBar.types";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
+<Meta title="Components/NavBar" component="NavBar" />
+
+<Story name="Import" />
+
+# NavBar
+
+## Import
+
+```jsx
+import {NavBar} from "@stack-ui/components";
+```
+## Usage
+
+<Preview withToolbar>
+    <Story name="Usage">
+        <>
+        <NavBar bg="dark">
+          <a href="#">
+            <img
+                src="../../logoShap.png"
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+                alt="React Bootstrap logo"
+            />
+    </a> 
+        </NavBar>
+        <p> </p>
+              <NavBar bg="light">
+          <a href="#">
+            <img
+                src="../../logoShap.png"
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+                alt="React Bootstrap logo"
+            />
+    </a> 
+        </NavBar>
+        </>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={NavBarTypes} />

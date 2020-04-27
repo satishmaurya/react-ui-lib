@@ -1,5 +1,4 @@
 import styled, {css} from "styled-components";
-import * as variable from "../../variable";
 import ProgressBar from 'react-bootstrap/ProgressBar'
 
 
@@ -15,7 +14,7 @@ const ProgressStyle = styled(ProgressBar)`
         `
         :props.size==="md"
         ? css `
-        height:400px;
+        height:2rem;
         `
         :props.size==="lg"
         ? css `

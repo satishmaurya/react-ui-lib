@@ -1,6 +1,8 @@
 module.exports = {
   stories: [
     '../src/components/**/*.stories.mdx',
+    '../docs/get-started/*.stories.mdx',
+
 
 ],
   addons: [
@@ -8,5 +10,7 @@ module.exports = {
     '@storybook/addon-actions',
     '@storybook/addon-links',
     '@storybook/addon-docs',
+    '@storybook/addon-knobs',
+    '@storybook/addon-a11y',
   ],
 };

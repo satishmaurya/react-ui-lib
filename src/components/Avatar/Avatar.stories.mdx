@@ -1,0 +1,38 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import Avatar from "./Avatar";
+import AvatarTypes from "./Avatar.types";
+
+<Meta title="Components/Avatar" component="Avatar" />
+
+<Story name="Import" />
+
+# Avatar
+
+## Import
+
+```jsx
+import {Avatar} from "@stack-ui/components";
+```
+## Large Avatar
+
+<Preview withToolbar>
+    <Story name="Large Avatar">
+        <Avatar size="lg" src="https://coderthemes.com/upvex/layouts/light/assets/images/users/user-1.jpg" alt="largeAvatar"/>
+    </Story>
+</Preview>
+
+## Small Avatar
+
+<Preview withToolbar>
+    <Story name="Small Avatar">
+        <Avatar size="sm" src="https://coderthemes.com/upvex/layouts/light/assets/images/users/user-1.jpg" alt="smallAvatar" />
+        <p></p>
+        <Avatar size="md" src="https://coderthemes.com/upvex/layouts/light/assets/images/users/user-1.jpg" alt="mediumAvatar" />
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={AvatarTypes} />

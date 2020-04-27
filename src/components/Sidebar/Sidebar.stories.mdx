@@ -1,0 +1,50 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import Sidebar from "./Sidebar";
+import SidebarTypes from "./Sidebar.types";
+
+<Meta title="Components/Sidebar" component="Sidebar" />
+
+<Story name="Import" />
+
+# Sidebar
+
+## Import
+
+```jsx
+import {Sidebar} from "@ui/components";
+```
+## Sidebar with Drawer
+
+<Preview withToolbar>
+    <Story name="With Drawer">
+        <>
+        <Sidebar id="Sidebar" isDrawer>
+        <ul>
+        <li>hello</li>
+        <li>hello</li><li>hello</li><li>hello</li>
+        </ul>
+        </Sidebar>
+        </>
+    </Story>
+</Preview>
+
+## Simple Sidebar
+
+<Preview withToolbar>
+    <Story name="Simple">
+        <>
+        <Sidebar>
+        <ul>
+        <li>hello</li>
+        <li>hello</li><li>hello</li><li>hello</li>
+        </ul>
+        </Sidebar>
+        </>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={SidebarTypes} />
