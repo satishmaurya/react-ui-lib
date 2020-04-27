@@ -1,0 +1,39 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import SearchBox from "./SearchBox";
+import SearchBoxTypes from "./SearchBox.types";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from '../Button/Button';
+
+<Meta title="Components/SearchBox" component="SearchBox" />
+
+<Story name="Import" />
+
+# Button
+
+## Import
+
+```jsx
+import {SearchBox} from "@stack-ui/components";
+```
+## Usage
+
+<Preview withToolbar>
+    <Story name="Usage">
+        <>
+       <SearchBox size="sm" placeholder="Search">
+        <Button size="sm" btnType="success" btnVariant="contained" className="ml-sm-2">Search</Button>
+       </SearchBox>
+       <p> </p>
+        <SearchBox bg="#f1f5f7" borderRadius="30px 0 0 30px" size="sm" placeholder="Search">
+        <Button borderRadius="0 30px 30px 0" size="md" btnType="#f1f5f7" btnVariant="contained" icon="search"> </Button>
+        </SearchBox>
+        </>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={SearchBoxTypes} />
