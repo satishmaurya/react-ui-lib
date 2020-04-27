@@ -6,55 +6,55 @@ const StyledButton = styled.button`
     border-radius: 4px;
     color: ${variable.white};
     ${props =>
-        props.color === "primary"
+        props.btnType === "primary"
         ? css `
             background: ${variable.blue};
             border: 1px solid ${variable.blue};
         `
-        : props.color === "secondary"
+        : props.btnType === "secondary"
            ? css `
             background: ${variable.gray600};
             border: 1px solid ${variable.gray600};
 
         `
-        : props.color === "success"
+        : props.btnType === "success"
         ? css `
          background: ${variable.green};
          border: 1px solid ${variable.green};
         `
-        : props.color === "info"
+        : props.btnType === "info"
         ? css `
          background: ${variable.cyan};
          border: 1px solid ${variable.cyan};
         `
-        : props.color === "warning"
+        : props.btnType === "warning"
         ? css `
          background: ${variable.yellow};
          border: 1px solid ${variable.yellow};
         `
-        : props.color === "danger"
+        : props.btnType === "danger"
         ? css `
          background: ${variable.orange};
          border: 1px solid ${variable.orange};
         `
-        : props.color === "purple"
+        : props.btnType === "purple"
         ? css `
          background: ${variable.purple};
          border: 1px solid ${variable.purple};
         `
-        : props.color === "light"
+        : props.btnType === "light"
         ? css `
          background: ${variable.gray100};
          border: 1px solid ${variable.gray100};
         `
-        : props.color === "dark"
+        : props.btnType === "dark"
         ? css `
          background: ${variable.gray800};
          border: 1px solid ${variable.gray800};
         `
-        : props.color.includes("#")
+        : props.btnType.includes("#")
         ? css `
-         background: ${props.color};
+         background: ${props.btnType};
          border: 0;
         `
            : css`
@@ -92,47 +92,47 @@ const StyledButton = styled.button`
     }
     ${props =>
         
-        props.variant === "outlined" && props.color === "primary"
+        props.variant === "outlined" && props.btnType === "primary"
         ? css`
             color: ${variable.blue};
         `
         :
-        props.variant === "outlined" && props.color === "secondary"
+        props.variant === "outlined" && props.btnType === "secondary"
         ? css`
             color: ${variable.gray600};
         `
         :
-        props.variant === "outlined" && props.color === "success"
+        props.variant === "outlined" && props.btnType === "success"
         ? css`
             color: ${variable.green};
         `
         :
-        props.variant === "outlined" && props.color === "info"
+        props.variant === "outlined" && props.btnType === "info"
         ? css`
             color: ${variable.cyan};
         `
         :
-        props.variant === "outlined" && props.color === "warning"
+        props.variant === "outlined" && props.btnType === "warning"
         ? css`
             color: ${variable.yellow};
         `
         :
-        props.variant === "outlined" && props.color === "danger"
+        props.variant === "outlined" && props.btnType === "danger"
         ? css`
             color: ${variable.orange};
         `
         :
-        props.variant === "outlined" && props.color === "purple"
+        props.variant === "outlined" && props.btnType === "purple"
         ? css`
             color: ${variable.purple};
         `
         :   
-        props.variant === "outlined" && props.color === "light"
+        props.variant === "outlined" && props.btnType === "light"
         ? css`
             color: ${variable.gray100};
         `
         :
-        props.variant === "outlined" && props.color === "dark"
+        props.variant === "outlined" && props.btnType === "dark"
         ? css`
             color: ${variable.gray800};
         `
@@ -146,6 +146,13 @@ const StyledButton = styled.button`
         `
         : css ``
  }
+ ${props =>
+    props.color
+    ? css `
+    color: ${props.color};
+    `
+    : css ``
+}
  ${props =>     
     props.block === "true"
     ? css`
