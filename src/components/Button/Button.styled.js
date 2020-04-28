@@ -78,7 +78,7 @@ const StyledButton = styled.button`
                 border-radius: ${props.borderRadius};
             `
             : css`
-            border-radius: 0;
+            border-radius: 4px;
             `
     }
     ${props =>

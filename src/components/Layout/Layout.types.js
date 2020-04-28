@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const ButtonTypes= () => <>Button</>;
+const LayoutTypes= () => <>Layout</>;
 
-ButtonTypes.propTypes={
+LayoutTypes.propTypes={
     btnType: PropTypes.oneOf(['primary','secondary','success','info','warning','danger','purple','light','dark']),
     btnVariant: PropTypes.oneOf(['contained', 'outlined']),
     isDisabled: PropTypes.bool,
@@ -12,7 +12,7 @@ ButtonTypes.propTypes={
     block:PropTypes.bool
 };
 
-ButtonTypes.defaultProps = {
+LayoutTypes.defaultProps = {
     btnType: 'default',
     btnVariant: 'contained',
     isDisabled: false,
@@ -21,4 +21,4 @@ ButtonTypes.defaultProps = {
     block:false
 };
 
-export default ButtonTypes;
+export default LayoutTypes;

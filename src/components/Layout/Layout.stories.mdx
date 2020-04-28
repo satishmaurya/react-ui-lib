@@ -1,0 +1,47 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import { Container, Row, Col} from "./Layout";
+import LayoutTypes from "./Layout.types";
+
+
+<Meta title="Components/Layout" component="Layout" />
+
+<Story name="Import" />
+
+# Layout (Container, Row, Col)
+
+## Import
+
+```jsx
+import {Layout} from "@stack-ui/components";
+```
+## Usage
+
+<Preview withToolbar>
+    <Story name="Usage">
+        <>
+        <Container fluid>
+        <Row>
+            <Col>1 of 1</Col>
+        </Row>
+        </Container>
+        <p> </p>
+        <Container>
+  <Row>
+    <Col>1 of 2</Col>
+    <Col>2 of 2</Col>
+  </Row>
+  <Row>
+    <Col>1 of 3</Col>
+    <Col>2 of 3</Col>
+    <Col>3 of 3</Col>
+  </Row>
+</Container>
+        </>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={LayoutTypes} />
