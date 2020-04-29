@@ -8,6 +8,10 @@ const StyledRow = styled(Row)`
     
 `
 const StyledCol = styled(Col)`
+&.temp {padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: #bbeffd;
+    border: 1px solid #61dafb;}
     
 `
 const StyledContainer = styled(Container)`

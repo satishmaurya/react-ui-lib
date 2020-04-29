@@ -1,24 +1,70 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const LayoutTypes= () => <>Layout</>;
+const RowTypes= () => <>Row</>;
+const ColTypes= () => <>Col</>;
+const ContainerTypes= () => <>Container</>;
 
-LayoutTypes.propTypes={
-    btnType: PropTypes.oneOf(['primary','secondary','success','info','warning','danger','purple','light','dark']),
-    btnVariant: PropTypes.oneOf(['contained', 'outlined']),
-    isDisabled: PropTypes.bool,
-    rounded:PropTypes.oneOf(['rounded','default']),
-    size:PropTypes.oneOf(['sm','md','lg']),
-    block:PropTypes.bool
+
+RowTypes.propTypes={
+    as: PropTypes.string,
+    cardTitle: PropTypes.string,
+    lg: PropTypes.number,
+    md: PropTypes.number,
+    sm: PropTypes.number,
+    xl: PropTypes.number,
+    noGutters: PropTypes.bool,
+    bsPrefix: PropTypes.oneOf(['Row'])
 };
 
-LayoutTypes.defaultProps = {
-    btnType: 'default',
-    btnVariant: 'contained',
-    isDisabled: false,
-    rounded:'default',
-    size:'md',
-    block:false
+RowTypes.defaultProps = {
+    btnType: '<div>',
+    lg: '',
+    md: '',
+    sm: '',
+    xl: '',
+    noGutters: false,
+    bsPrefix: 'Row'
 };
 
-export default LayoutTypes;
+ColTypes.propTypes={
+    as: PropTypes.elementType,
+    lg: PropTypes.number,
+    md: PropTypes.number,
+    sm: PropTypes.number,
+    xl: PropTypes.number,
+    noGutters: PropTypes.bool,
+    bsPrefix: PropTypes.oneOf(['Row'])
+};
+
+ColTypes.defaultProps = {
+    btnType: '<div>',
+    lg: '',
+    md: '',
+    sm: '',
+    xl: '',
+    noGutters: false,
+    bsPrefix: 'Row'
+};
+
+ContainerTypes.propTypes={
+    as: PropTypes.elementType,
+    lg: PropTypes.number,
+    md: PropTypes.number,
+    sm: PropTypes.number,
+    xl: PropTypes.number,
+    noGutters: PropTypes.bool,
+    bsPrefix: PropTypes.oneOf(['Row'])
+};
+
+ContainerTypes.defaultProps = {
+    btnType: '<div>',
+    lg: '',
+    md: '',
+    sm: '',
+    xl: '',
+    noGutters: false,
+    bsPrefix: 'Row'
+};
+
+export { RowTypes, ColTypes, ContainerTypes};
