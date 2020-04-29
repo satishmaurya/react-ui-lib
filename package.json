@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Stack UI Kit, Component Library by Successive Tech",
   "sideEffects": false,
-  "author": "Dentsu Aegis Network (https://successive.tech)",
+  "author": "Successive Tech (https://successive.tech)",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
