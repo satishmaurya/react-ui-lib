@@ -4,21 +4,17 @@ import PropTypes from "prop-types";
 const SearchBoxTypes= () => <>SearchBox</>;
 
 SearchBoxTypes.propTypes={
-    btnType: PropTypes.oneOf(['primary','secondary','success','info','warning','danger','purple','light','dark']),
-    btnVariant: PropTypes.oneOf(['contained', 'outlined']),
-    isDisabled: PropTypes.bool,
-    rounded:PropTypes.oneOf(['rounded','default']),
-    size:PropTypes.oneOf(['sm','md','lg']),
-    block:PropTypes.bool
+    size: PropTypes.oneOf(['sm','md','lg']),
+    placeholder: PropTypes.string,
+    bg: PropTypes.string,
+    borderRadius: PropTypes.string,
 };
 
 SearchBoxTypes.defaultProps = {
-    btnType: 'default',
-    btnVariant: 'contained',
-    isDisabled: false,
-    rounded:'default',
-    size:'md',
-    block:false
+    size: 'md',
+    placeholder: 'Search',
+    bg: '',
+    borderRadius:'',
 };
 
 export default SearchBoxTypes;

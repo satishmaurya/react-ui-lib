@@ -1,20 +1,19 @@
 import React from "react";
 import StyledCard from "./Card.styled";
-import Card from 'react-bootstrap/Card';
 
-const StackCard = (props) =>{
+const Card = (props) => {
     const{ color, bgColor, children, cardTitle, width, alignText, alignCard, imgUrl, subTitle, imgPos, border} =props;
     if(imgPos==="middle"){
     return(
         <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} {...props}>
-            <Card.Body>
-            <Card.Title as="h5">{cardTitle}</Card.Title>
-            <Card.Subtitle as="h6" className="text-muted">{subTitle}</Card.Subtitle>
-            </Card.Body>
+            <StyledCard.Body>
+            <StyledCard.Title as="h5">{cardTitle}</StyledCard.Title>
+            <StyledCard.Subtitle as="h6" className="text-muted">{subTitle}</StyledCard.Subtitle>
+            </StyledCard.Body>
             <img src={imgUrl} />
-            <Card.Body>
-            <Card.Text>{children}</Card.Text>
-            </Card.Body>
+            <StyledCard.Body>
+            <StyledCard.Text>{children}</StyledCard.Text>
+            </StyledCard.Body>
         </StyledCard>
     )
     }
@@ -22,23 +21,23 @@ const StackCard = (props) =>{
         return(
             <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} {...props}>
                 <img src={imgUrl} />
-                <Card.Body>
-                <Card.Title as="h5">{cardTitle}</Card.Title>
-                <Card.Subtitle as="h6">{subTitle}</Card.Subtitle>
-                <Card.Text>{children}</Card.Text>
+                <StyledCard.Body>
+                <StyledCard.Title as="h5">{cardTitle}</StyledCard.Title>
+                <StyledCard.Subtitle as="h6">{subTitle}</StyledCard.Subtitle>
+                <StyledCard.Text>{children}</StyledCard.Text>
                 
-                </Card.Body>
+                </StyledCard.Body>
             </StyledCard>
         )
     }
     else if (imgPos==="bottom") {
         return(
             <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} {...props}>
-                <Card.Body>
-                <Card.Title as="h5">{cardTitle}</Card.Title>
-                <Card.Subtitle as="h6">{subTitle}</Card.Subtitle>
-                <Card.Text>{children}</Card.Text>
-                </Card.Body>
+                <StyledCard.Body>
+                <StyledCard.Title as="h5">{cardTitle}</StyledCard.Title>
+                <StyledCard.Subtitle as="h6">{subTitle}</StyledCard.Subtitle>
+                <StyledCard.Text>{children}</StyledCard.Text>
+                </StyledCard.Body>
                 <img src={imgUrl} />
             </StyledCard>
         )
@@ -47,11 +46,11 @@ const StackCard = (props) =>{
         return(
             <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} {...props}>
             <img src={imgUrl} />
-            <Card.ImgOverlay>
-            <Card.Title as="h5">{cardTitle}</Card.Title>
-            <Card.Subtitle as="h6">{subTitle}</Card.Subtitle>
-            <Card.Text>{children}</Card.Text>
-            </Card.ImgOverlay>
+            <StyledCard.ImgOverlay>
+            <StyledCard.Title as="h5">{cardTitle}</StyledCard.Title>
+            <StyledCard.Subtitle as="h6">{subTitle}</StyledCard.Subtitle>
+            <StyledCard.Text>{children}</StyledCard.Text>
+            </StyledCard.ImgOverlay>
         </StyledCard>
         )
     }
@@ -60,11 +59,11 @@ const StackCard = (props) =>{
           return(
               <>
             <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} {...props}>
-                <Card.Body>
-                <Card.Title as="h5">{cardTitle}</Card.Title>
-                <Card.Subtitle as="h6">{subTitle}</Card.Subtitle>
-                <Card.Text>{children}</Card.Text>
-                </Card.Body>
+                <StyledCard.Body>
+                <StyledCard.Title as="h5">{cardTitle}</StyledCard.Title>
+                <StyledCard.Subtitle as="h6">{subTitle}</StyledCard.Subtitle>
+                <StyledCard.Text>{children}</StyledCard.Text>
+                </StyledCard.Body>
                 <img src={imgUrl} />
             </StyledCard>
             </>
@@ -72,4 +71,4 @@ const StackCard = (props) =>{
     }
 }
 
-export default StackCard;
+export default Card;

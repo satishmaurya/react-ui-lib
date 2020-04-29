@@ -1,10 +1,9 @@
 import { Meta, Story, Preview, Props} from "@storybook/addon-docs/blocks";
-import StackCard from "./Card";
+import Card from "./Card";
 import CardTypes from "./Card.types";
 import Button from "../Button/Button";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck'
 
 
@@ -28,11 +27,11 @@ import CardDeck from 'react-bootstrap/CardDeck'
 <Preview withToolbar>
 <Story name="-Default">
     <>
-    <StackCard cardTitle="Heading of card">
-        <Card.Text>
+    <Card cardTitle="Heading of card">
+        <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        </Card.Text>
-    </StackCard>
+        </p>
+    </Card>
     </>
 </Story>
 </Preview>
@@ -43,37 +42,37 @@ import CardDeck from 'react-bootstrap/CardDeck'
 <>
     <Row>
     <Col xl="4">
-    <StackCard cardTitle="Heading of card" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-1.jpg" imgPos="top">
-        <Card.Text>
+    <Card cardTitle="Heading of card" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-1.jpg" imgPos="top">
+        <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        </Card.Text>
+        </p>
         <Button btnType="primary" btnVariant="contained"> Button </Button>
-    </StackCard>
+    </Card>
     </Col>
      <Col xl="4">
-    <StackCard cardTitle="Heading of card" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-2.jpg" imgPos="bottom">
-        <Card.Text>
+    <Card cardTitle="Heading of card" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-2.jpg" imgPos="bottom">
+        <p>
         Some quick example text to build on the card title.
-        </Card.Text>
+        </p>
         <a href="#">Go to Page</a>
-    </StackCard>
+    </Card>
     </Col>
      <Col xl="4">
-    <StackCard cardTitle="Heading of card" subTitle="Support card subtitle" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-4.jpg" imgPos="middle">
-        <Card.Text>
+    <Card cardTitle="Heading of card" subTitle="Support card subtitle" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-4.jpg" imgPos="middle">
+        <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        </Card.Text>
+        </p>
         <Button btnType="primary" btnVariant="contained"> Button </Button>
-    </StackCard>
+    </Card>
     </Col>
     </Row>
         <Row>
  <Col xl="4">
-    <StackCard cardTitle="Heading of card" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-1.jpg" imgPos="bg">
-        <Card.Text>
+    <Card cardTitle="Heading of card" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-1.jpg" imgPos="bg">
+        <p>
         Some quick example text to build on the card title.
-        </Card.Text>
-    </StackCard>
+        </p>
+    </Card>
     </Col>   
      </Row>
 </>
@@ -86,43 +85,43 @@ import CardDeck from 'react-bootstrap/CardDeck'
 <>
 <Row>
  <Col xl="4">
-    <StackCard cardTitle="Heading of card" bgColor="primary" alignText="left" alignCard="center">
-        <Card.Text>
+    <Card cardTitle="Heading of card" bgColor="primary" alignText="left" alignCard="center">
+        <p>
             Some quick example text to build on the card title.
-        </Card.Text>
-    </StackCard>
+        </p>
+    </Card>
     </Col> 
      <Col xl="4">
-    <StackCard cardTitle="Heading of card" bgColor="danger" alignText="left" alignCard="center">
-        <Card.Text>
+    <Card cardTitle="Heading of card" bgColor="danger" alignText="left" alignCard="center">
+        <p>
             Some quick example text to build on the card title.
-        </Card.Text>
-    </StackCard>
+        </p>
+    </Card>
     </Col> 
      <Col xl="4">
-    <StackCard cardTitle="Heading of card" bgColor="warning" alignText="left" alignCard="center">
-        <Card.Text>
+    <Card cardTitle="Heading of card" bgColor="warning" alignText="left" alignCard="center">
+        <p>
             Some quick example text to build on the card title.
-        </Card.Text>
-    </StackCard>
+        </p>
+    </Card>
     </Col>   
     </Row>
     <CardDeck>
-    <StackCard border="light" cardTitle="Card title" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-1.jpg" imgPos="top">
-   <Card.Text>
+    <Card border="light" cardTitle="Card title" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-1.jpg" imgPos="top">
+   <p>
             Some quick example text to build on the card title.
-        </Card.Text>
-    </StackCard>
-      <StackCard border="light" cardTitle="Card title" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-1.jpg" imgPos="top">
-   <Card.Text>
+        </p>
+    </Card>
+      <Card border="light" cardTitle="Card title" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-1.jpg" imgPos="top">
+   <p>
             Some quick example text to build on the card title.
-        </Card.Text>
-    </StackCard>
-      <StackCard border="light" cardTitle="Card title" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-1.jpg" imgPos="top">
-   <Card.Text>
+        </p>
+    </Card>
+      <Card border="light" cardTitle="Card title" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-1.jpg" imgPos="top">
+   <p>
             Some quick example text to build on the card title.
-        </Card.Text>
-    </StackCard>
+        </p>
+    </Card>
     </CardDeck>
 </>
 </Story>

@@ -14,4 +14,5 @@ export * from './StackChart';
 export * from './Table';
 export * from './Tabs';
 export * from './ThemeProvider';
+export * from './Layout';
 
