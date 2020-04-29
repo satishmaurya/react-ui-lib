@@ -1,60 +1,39 @@
-import Styled, { css } from "styled-components";
-import * as variable from "../../variable";
-import Card from 'react-bootstrap/Card';
-const StyledCard = Styled(Card)`
-    overflow:hidden;
-    ${props => props.width ? css`
-            width: ${props.width};
-        ` : css`
-            width: 100%;
-        `}
-    ${props => props.alignText ? css`
-         text-align:${props.alignText};
-         justify-content:${props.alignText};
-        ` : css`
-            text-align: inherit;
-        `}
-    ${props => props.alignContent ? css`
-            margin: 0 auto;
-        ` : css`
-            margin: auto;
-        `}
-    ${props => props.color ? css`
-            color:${props.color};
-        ` : css`
-        `}
-    ${props => props.imgPos === "bg" ? css`
-            color:${variable.white} !important;
-        ` : css`
-        `}
-    ${props => props.bgColor === "primary" ? css`
-            background-color:${variable.primary};
-            h5,p {color:${variable.white}}
+"use strict";
 
-        ` : props.bgColor === "secondary" ? css`
-        background-color:${variable.secondary};
-            h5,p {color:${variable.white}}
-        ` : props.bgColor === "success" ? css`
-        background-color:${variable.success};
-        h5,p {color:${variable.white}}
-        ` : props.bgColor === "info" ? css`
-        background-color:${variable.info};
-        h5,p {color:${variable.white}}
-        ` : props.bgColor === "warning" ? css`
-        background-color:${variable.warning};
-        h5,p {color:${variable.white}}
-        ` : props.bgColor === "danger" ? css`
-        background-color:${variable.danger};
-        h5,p {color:${variable.white}}
-        ` : css`
-            background-color: ${variable.ColorWhiteBase};
-        `}
-    h5 {
-        font-size:${variable.h5FontSize};
-        font-weight:500;
-    }
-    img {
-        max-width:100%;
-    }
-`;
-export default StyledCard;
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _styledComponents = _interopRequireWildcard(require("styled-components"));
+
+var variable = _interopRequireWildcard(require("../../variable"));
+
+var _Card = _interopRequireDefault(require("react-bootstrap/Card"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+var StyledCard = (0, _styledComponents.default)(_Card.default).withConfig({
+  displayName: "Cardstyled__StyledCard",
+  componentId: "sc-1b95mne-0"
+})(["overflow:hidden;", " ", " ", " ", " ", " ", " h5{font-size:", ";font-weight:500;}img{max-width:100%;}"], function (props) {
+  return props.width ? (0, _styledComponents.css)(["width:", ";"], props.width) : (0, _styledComponents.css)(["width:100%;"]);
+}, function (props) {
+  return props.alignText ? (0, _styledComponents.css)(["text-align:", ";justify-content:", ";"], props.alignText, props.alignText) : (0, _styledComponents.css)(["text-align:inherit;"]);
+}, function (props) {
+  return props.alignContent ? (0, _styledComponents.css)(["margin:0 auto;"]) : (0, _styledComponents.css)(["margin:auto;"]);
+}, function (props) {
+  return props.color ? (0, _styledComponents.css)(["color:", ";"], props.color) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.imgPos === "bg" ? (0, _styledComponents.css)(["color:", " !important;"], variable.white) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.bgColor === "primary" ? (0, _styledComponents.css)(["background-color:", ";h5,p{color:", "}"], variable.primary, variable.white) : props.bgColor === "secondary" ? (0, _styledComponents.css)(["background-color:", ";h5,p{color:", "}"], variable.secondary, variable.white) : props.bgColor === "success" ? (0, _styledComponents.css)(["background-color:", ";h5,p{color:", "}"], variable.success, variable.white) : props.bgColor === "info" ? (0, _styledComponents.css)(["background-color:", ";h5,p{color:", "}"], variable.info, variable.white) : props.bgColor === "warning" ? (0, _styledComponents.css)(["background-color:", ";h5,p{color:", "}"], variable.warning, variable.white) : props.bgColor === "danger" ? (0, _styledComponents.css)(["background-color:", ";h5,p{color:", "}"], variable.danger, variable.white) : (0, _styledComponents.css)(["background-color:", ";"], variable.ColorWhiteBase);
+}, variable.h5FontSize);
+var _default = StyledCard;
+exports.default = _default;

@@ -1,24 +1,34 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _NavBar = _interopRequireDefault(require("./NavBar.styled"));
+
+var _reactFontawesome = require("@fortawesome/react-fontawesome");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
-import React from "react";
-import StyledNav from "./NavBar.styled";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-const NavBar = props => {
-  const {
-    fixed,
-    isDisabled,
-    btnVariant,
-    rounded,
-    children,
-    size,
-    block,
-    icon,
-    iconVariant
-  } = props;
-  return React.createElement(StyledNav, _extends({
+var NavBar = function NavBar(props) {
+  var fixed = props.fixed,
+      isDisabled = props.isDisabled,
+      btnVariant = props.btnVariant,
+      rounded = props.rounded,
+      children = props.children,
+      size = props.size,
+      block = props.block,
+      icon = props.icon,
+      iconVariant = props.iconVariant;
+  return /*#__PURE__*/_react["default"].createElement(_NavBar["default"], _extends({
     fixed: fixed
   }, props), children);
 };
 
-export default NavBar;
+var _default = NavBar;
+exports["default"] = _default;
