@@ -1,1 +1,1 @@
-export { default as InputGroup } from './Layout';
+export { Container, Row, Col } from './Layout';
