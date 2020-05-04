@@ -14,5 +14,7 @@ export { Spinner } from './components/Spinner';
 export { StackChart } from './components/StackChart';
 export { Table } from './components/Table';
 export { Tabs } from './components/Tabs';
+export { Pagination } from './components/Pagination';
+export { Breadcum } from './components/Breadcum';
 export { ThemeProvider } from './components/ThemeProvider';
 export { Container, Row, Col } from './components/Layout';
