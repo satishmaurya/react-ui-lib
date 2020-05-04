@@ -93,6 +93,18 @@ Object.defineProperty(exports, "Tabs", {
     return _Tabs.Tabs;
   }
 });
+Object.defineProperty(exports, "Pagination", {
+  enumerable: true,
+  get: function get() {
+    return _Pagination.Pagination;
+  }
+});
+Object.defineProperty(exports, "Breadcum", {
+  enumerable: true,
+  get: function get() {
+    return _Breadcum.Breadcum;
+  }
+});
 Object.defineProperty(exports, "ThemeProvider", {
   enumerable: true,
   get: function get() {
@@ -147,6 +159,10 @@ var _StackChart = require("./components/StackChart");
 var _Table = require("./components/Table");
 
 var _Tabs = require("./components/Tabs");
+
+var _Pagination = require("./components/Pagination");
+
+var _Breadcum = require("./components/Breadcum");
 
 var _ThemeProvider = require("./components/ThemeProvider");
 
