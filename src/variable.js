@@ -35,6 +35,7 @@ export const dark=gray800;
 export const btnBorderRadius='2rem';
 export const btnBorderRadiusLg= '2rem';
 export const btnBorderRadiusSm= '2rem';
+export const borderRadiusPagination="50%";
 
 // Body
 //
