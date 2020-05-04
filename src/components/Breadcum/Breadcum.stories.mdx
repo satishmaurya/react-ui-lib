@@ -1,0 +1,44 @@
+import { Meta, Story, Preview, Props} from "@storybook/addon-docs/blocks";
+import {Breadcum, StyledBreadcum} from "./Breadcum";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import BreadcumTypes from './Breadcum.types';
+
+
+
+<Meta title="Components/Breadcum" component="Breadcum" />
+
+# Breadcum
+
+<Story name="Import" />
+
+## Import
+
+```jsx
+    import {Breadcum} from "@ui/components";
+```
+
+## Usage
+
+<Story name="Usages"/>
+
+### Default Breadcum
+<Preview withToolbar>
+<Story name="-Default">
+    <>
+   <Breadcum>
+      <StyledBreadcum.Item href="#">Home</StyledBreadcum.Item>
+    <StyledBreadcum.Item href="#">Library</StyledBreadcum.Item>
+    <StyledBreadcum.Item active>Data</StyledBreadcum.Item>
+   </Breadcum>
+</>
+</Story>
+</Preview>
+
+
+
+<Story name="Props" />
+
+## Props
+
+<Props of={BreadcumTypes} />
