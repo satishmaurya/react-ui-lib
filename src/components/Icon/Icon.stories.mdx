@@ -1,0 +1,32 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import Icon from "./Icon";
+import IconTypes from "./Icon.types";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+<Meta title="Components/Icon" component="Icon" />
+
+<Story name="Import" />
+
+# Icon
+
+## Import
+
+```jsx
+import {Icon} from "@stack-ui/components";
+```
+## Usage
+
+<Preview withToolbar>
+    <Story name="Usage">
+        <>
+        <Icon onClick name="cog" iconVariant="solid" size="lg" animation="spin" />
+        </>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={IconTypes} />
