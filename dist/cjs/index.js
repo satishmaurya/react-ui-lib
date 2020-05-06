@@ -99,10 +99,22 @@ Object.defineProperty(exports, "Pagination", {
     return _Pagination.Pagination;
   }
 });
+Object.defineProperty(exports, "Icon", {
+  enumerable: true,
+  get: function get() {
+    return _Icon.Icon;
+  }
+});
 Object.defineProperty(exports, "Breadcum", {
   enumerable: true,
   get: function get() {
     return _Breadcum.Breadcum;
+  }
+});
+Object.defineProperty(exports, "StyledBreadcum", {
+  enumerable: true,
+  get: function get() {
+    return _Breadcum.StyledBreadcum;
   }
 });
 Object.defineProperty(exports, "ThemeProvider", {
@@ -161,6 +173,8 @@ var _Table = require("./components/Table");
 var _Tabs = require("./components/Tabs");
 
 var _Pagination = require("./components/Pagination");
+
+var _Icon = require("./components/Icon");
 
 var _Breadcum = require("./components/Breadcum");
 

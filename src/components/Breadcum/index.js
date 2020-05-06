@@ -1,1 +1,1 @@
-export { default as Breadcum } from './Breadcum';
+export { Breadcum, StyledBreadcum} from './Breadcum';

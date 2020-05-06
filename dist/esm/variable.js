@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.listInlinePadding = exports.hrBorderColor = exports.blockquoteFontSize = exports.textMuted = exports.smallFontSize = exports.leadFontSize = exports.displayLineHeight = exports.h6FontSize = exports.h5FontSize = exports.h4FontSize = exports.h3FontSize = exports.h2FontSize = exports.h1FontSize = exports.headingsLineHeight = exports.headingsFontWeight = exports.headingsMarginBottom = exports.fontWeightBold = exports.fontSizeSm = exports.fontSizeLg = exports.fontSizeBase = exports.fontFamilyBase = exports.fontFamilyMonospace = exports.fontFamilySansSerif = exports.spacer = exports.gridGutterWidth = exports.gridColumns = exports.boxShadowLg = exports.boxShadow = exports.boxShadowSm = exports.caretWidth = exports.componentActiveBg = exports.linkHoverDecoration = exports.linkHoverColor = exports.linkColor = exports.bodyColor = exports.bodyBg = exports.btnBorderRadiusSm = exports.btnBorderRadiusLg = exports.btnBorderRadius = exports.dark = exports.light = exports.danger = exports.warning = exports.info = exports.success = exports.secondary = exports.primary = exports.white = exports.cyan = exports.teal = exports.green = exports.yellow = exports.orange = exports.red = exports.pink = exports.purple = exports.indigo = exports.hoverBlue = exports.blue = exports.gray900 = exports.gray800 = exports.gray700 = exports.gray600 = exports.gray500 = exports.gray400 = exports.gray300 = exports.gray200 = exports.gray100 = void 0;
+exports.listInlinePadding = exports.hrBorderColor = exports.blockquoteFontSize = exports.textMuted = exports.smallFontSize = exports.leadFontSize = exports.displayLineHeight = exports.h6FontSize = exports.h5FontSize = exports.h4FontSize = exports.h3FontSize = exports.h2FontSize = exports.h1FontSize = exports.headingsLineHeight = exports.headingsFontWeight = exports.headingsMarginBottom = exports.fontWeightBold = exports.fontSizeSm = exports.fontSizeLg = exports.fontSizeBase = exports.fontFamilyBase = exports.fontFamilyMonospace = exports.fontFamilySansSerif = exports.spacer = exports.gridGutterWidth = exports.gridColumns = exports.boxShadowLg = exports.boxShadow = exports.boxShadowSm = exports.caretWidth = exports.componentActiveBg = exports.linkHoverDecoration = exports.linkHoverColor = exports.linkColor = exports.bodyColor = exports.bodyBg = exports.borderRadiusPagination = exports.btnBorderRadiusSm = exports.btnBorderRadiusLg = exports.btnBorderRadius = exports.dark = exports.light = exports.danger = exports.warning = exports.info = exports.success = exports.secondary = exports.primary = exports.white = exports.cyan = exports.teal = exports.green = exports.yellow = exports.orange = exports.red = exports.pink = exports.purple = exports.indigo = exports.hoverBlue = exports.blue = exports.gray900 = exports.gray800 = exports.gray700 = exports.gray600 = exports.gray500 = exports.gray400 = exports.gray300 = exports.gray200 = exports.gray100 = void 0;
 // stylelint-disable
 var gray100 = '#f1f5f7';
 exports.gray100 = gray100;
@@ -69,11 +69,13 @@ var btnBorderRadius = '2rem';
 exports.btnBorderRadius = btnBorderRadius;
 var btnBorderRadiusLg = '2rem';
 exports.btnBorderRadiusLg = btnBorderRadiusLg;
-var btnBorderRadiusSm = '2rem'; // Body
+var btnBorderRadiusSm = '2rem';
+exports.btnBorderRadiusSm = btnBorderRadiusSm;
+var borderRadiusPagination = "50%"; // Body
 //
 // Settings for the `<body>` element.
 
-exports.btnBorderRadiusSm = btnBorderRadiusSm;
+exports.borderRadiusPagination = borderRadiusPagination;
 var bodyBg = '#f5f6f8';
 exports.bodyBg = bodyBg;
 var bodyColor = gray700; // Links

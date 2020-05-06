@@ -6,10 +6,14 @@ Object.defineProperty(exports, "__esModule", {
 Object.defineProperty(exports, "Breadcum", {
   enumerable: true,
   get: function get() {
-    return _Breadcum.default;
+    return _Breadcum.Breadcum;
+  }
+});
+Object.defineProperty(exports, "StyledBreadcum", {
+  enumerable: true,
+  get: function get() {
+    return _Breadcum.StyledBreadcum;
   }
 });
 
-var _Breadcum = _interopRequireDefault(require("./Breadcum"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _Breadcum = require("./Breadcum");
