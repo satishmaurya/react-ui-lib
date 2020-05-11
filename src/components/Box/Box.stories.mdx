@@ -1,6 +1,6 @@
 import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
-import Rows from "./Rows";
-import RowsTypes from "./Rows.types";
+import Box from "./Box";
+import BoxTypes from "./Box.types";
 
 <Meta title="Components/Rows" component="Rows" />
 
@@ -15,10 +15,18 @@ import {Rows} from "@stack-ui/components";
 ```
 ## Example with Label
 
+<Preview withToolbar>
+<Story name="-Default">
+    <>
+    <Box p="0" pt="20px">helpful style shorthand. It renders a</Box>
+    </>
+</Story>
+</Preview>
+
 <Story name="Props" />
 
 ## Props
 
-<Props of={RowsTypes} />
+<Props of={BoxTypes} />
 
 

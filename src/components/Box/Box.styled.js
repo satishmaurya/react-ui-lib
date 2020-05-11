@@ -1,9 +1,36 @@
 import styled, {css} from "styled-components";
 import * as variable from "../../variable";
 
-export const StyledRow = styled.div`
-    background: ${variable.blue};
-    display: flex;
+export const StyledBox = styled.div`
+    ${props =>
+    props.display ?
+    css `
+    display: ${props.display};
+    `:
+    css `
+    display:block;
+    `
+    }
+    ${props =>
+        props.p ?
+        css `
+        padding: ${props.p};
+        `:
+        css `
+        padding:10px;
+        `
+        }
+        ${props => props.m ? css ` margin: ${props.m};`: css ` margin:10px; ` } 
+        ${props => props.mt ? css ` margin-top: ${props.mt};`: css `` } 
+        ${props => props.mb ? css ` margin-bottom: ${props.mb};`: css `` } 
+        ${props => props.ml ? css ` margin-left: ${props.ml};`: css `` } 
+        ${props => props.mr ? css ` margin-right: ${props.mr};`: css ` ` } 
+        ${props => props.pt ? css ` padding-top: ${props.pt};`: css ` ` } 
+        ${props => props.pb ? css ` padding-bottom: ${props.pb};`: css ` ` } 
+        ${props => props.pl ? css ` padding-left: ${props.pl};`: css `` } 
+        ${props => props.pr ? css ` padding-right: ${props.pr};`: css `` } 
+
+       
     ${props =>
         props.justifyItems === 'center'
         ? css `
