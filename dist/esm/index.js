@@ -105,6 +105,12 @@ Object.defineProperty(exports, "Icon", {
     return _Icon.Icon;
   }
 });
+Object.defineProperty(exports, "Box", {
+  enumerable: true,
+  get: function get() {
+    return _Box.Box;
+  }
+});
 Object.defineProperty(exports, "Breadcum", {
   enumerable: true,
   get: function get() {
@@ -175,6 +181,8 @@ var _Tabs = require("./components/Tabs");
 var _Pagination = require("./components/Pagination");
 
 var _Icon = require("./components/Icon");
+
+var _Box = require("./components/Box");
 
 var _Breadcum = require("./components/Breadcum");
 
