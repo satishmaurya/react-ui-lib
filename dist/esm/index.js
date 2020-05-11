@@ -57,12 +57,6 @@ Object.defineProperty(exports, "ProgressBar", {
     return _ProgressBar.ProgressBar;
   }
 });
-Object.defineProperty(exports, "Rows", {
-  enumerable: true,
-  get: function get() {
-    return _Rows.Rows;
-  }
-});
 Object.defineProperty(exports, "Sidebar", {
   enumerable: true,
   get: function get() {
@@ -165,8 +159,6 @@ var _InputGroup = require("./components/InputGroup");
 var _NavBar = require("./components/NavBar");
 
 var _ProgressBar = require("./components/ProgressBar");
-
-var _Rows = require("./components/Rows");
 
 var _Sidebar = require("./components/Sidebar");
 

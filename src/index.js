@@ -8,7 +8,6 @@ export { DropDown } from './components/DropDown';
 export { InputGroup} from './components/InputGroup';
 export { NavBar } from './components/NavBar';
 export { ProgressBar } from './components/ProgressBar';
-export { Rows } from './components/Rows';
 export { Sidebar } from './components/Sidebar';
 export { Spinner } from './components/Spinner';
 export { StackChart } from './components/StackChart';
