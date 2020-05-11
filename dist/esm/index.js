@@ -57,12 +57,6 @@ Object.defineProperty(exports, "ProgressBar", {
     return _ProgressBar.ProgressBar;
   }
 });
-Object.defineProperty(exports, "Rows", {
-  enumerable: true,
-  get: function get() {
-    return _Rows.Rows;
-  }
-});
 Object.defineProperty(exports, "Sidebar", {
   enumerable: true,
   get: function get() {
@@ -103,6 +97,12 @@ Object.defineProperty(exports, "Icon", {
   enumerable: true,
   get: function get() {
     return _Icon.Icon;
+  }
+});
+Object.defineProperty(exports, "Box", {
+  enumerable: true,
+  get: function get() {
+    return _Box.Box;
   }
 });
 Object.defineProperty(exports, "Breadcum", {
@@ -160,8 +160,6 @@ var _NavBar = require("./components/NavBar");
 
 var _ProgressBar = require("./components/ProgressBar");
 
-var _Rows = require("./components/Rows");
-
 var _Sidebar = require("./components/Sidebar");
 
 var _Spinner = require("./components/Spinner");
@@ -175,6 +173,8 @@ var _Tabs = require("./components/Tabs");
 var _Pagination = require("./components/Pagination");
 
 var _Icon = require("./components/Icon");
+
+var _Box = require("./components/Box");
 
 var _Breadcum = require("./components/Breadcum");
 
