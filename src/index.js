@@ -16,6 +16,7 @@ export { Table } from './components/Table';
 export { Tabs } from './components/Tabs';
 export { Pagination } from './components/Pagination';
 export { Icon } from './components/Icon';
+export { Box } from './components/Box';
 export { Breadcum, StyledBreadcum } from './components/Breadcum';
 export { ThemeProvider } from './components/ThemeProvider';
 export { Container, Row, Col } from './components/Layout';
