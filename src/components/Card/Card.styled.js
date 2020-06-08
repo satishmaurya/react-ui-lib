@@ -81,7 +81,7 @@ const StyledCard = Styled(Card)`
         h5,p {color:${variable.white}}
         `
         : css`
-            background-color: ${variable.ColorWhiteBase};
+            background-color: ${variable.white};
         `
     }
     h5 {
