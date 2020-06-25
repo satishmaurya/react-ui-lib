@@ -9,14 +9,10 @@ var _react = _interopRequireDefault(require("react"));
 
 var _SearchBox = require("./SearchBox.styled");
 
-var _reactFontawesome = require("@fortawesome/react-fontawesome");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SearchBox = function SearchBox(props) {
-  var btnType = props.btnType,
-      isDisabled = props.isDisabled,
-      placeholder = props.placeholder,
+  var placeholder = props.placeholder,
       children = props.children,
       size = props.size,
       bg = props.bg,
