@@ -141,6 +141,12 @@ Object.defineProperty(exports, "Col", {
     return _Layout.Col;
   }
 });
+Object.defineProperty(exports, "SearchBox", {
+  enumerable: true,
+  get: function get() {
+    return _SearchBox.SearchBox;
+  }
+});
 
 var _Accordian = require("./components/Accordian");
 
@@ -181,3 +187,5 @@ var _Breadcum = require("./components/Breadcum");
 var _ThemeProvider = require("./components/ThemeProvider");
 
 var _Layout = require("./components/Layout");
+
+var _SearchBox = require("./components/SearchBox");
