@@ -1,0 +1,56 @@
+import { useState } from 'react';
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import StackModal from "./Modal";
+import ModalTypes from "./Modal.types";
+import Button from '../Button/Button';
+
+
+<Meta title="Components/StackModal" component="Modal" />
+
+<Story name="Import" />
+
+# Modal
+
+## <p>Add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+
+```jsx
+import {StackModal} from "@stack-ui/components";
+```
+## Example with Label
+
+<Preview withToolbar>
+ <Story name="- Basic">
+    {() => {
+      const [modalOpen, setModalOpen] = useState(false);
+      return (
+        <>
+          <Button onClick={() => setModalOpen(true)}>
+            Open Basic Dialog
+          </Button>
+          <StackModal
+            title="Delete service from application"
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}>
+             
+              <p>Are you sure you want to remove this service from the application?</p>
+             
+             
+              <Button variant="secondary" onClick={() => setModalOpen(false)}>
+                Cancel
+              </Button>
+              <Button onClick={() => setModalOpen(false)}>
+                Delete
+              </Button>
+             
+          </StackModal>
+        </>
+      );
+    }}
+  </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={ModalTypes} />
