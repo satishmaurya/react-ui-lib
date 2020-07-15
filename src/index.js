@@ -1,5 +1,5 @@
 
-export { Accordian } from './components/Accordian';
+// export { Accordian } from './components/Accordian';
 export { Avatar } from './components/Avatar';
 export { Badge } from './components/Badge';
 export { Button } from './components/Button';
