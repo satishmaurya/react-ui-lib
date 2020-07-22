@@ -34,7 +34,8 @@
     "react-dom": "^16.13.0",
     "react-fontawesome": "^1.7.1",
     "react-scripts": "3.4.0",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "jest-sonar-reporter": "^2.0.0"
   },
   "scripts": {
     "start": "start-storybook -p 9009 -s public",
@@ -45,6 +46,8 @@
     "build": "node scripts/build.js",
     "clean": "rm -rf node_modules",
     "test": "react-scripts test",
+    "test:c": "jest --coverage",
+    "test:u": "jest --coverage --updateSnapshot",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
@@ -65,7 +68,14 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/plugin-transform-react-display-name": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/plugin-transform-strict-mode": "7.8.3",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
     "@storybook/addon-actions": "^5.3.14",
     "@storybook/addon-docs": "^5.3.14",
     "@storybook/addon-links": "^5.3.14",
@@ -73,20 +83,16 @@
     "@storybook/preset-create-react-app": "^2.0.0",
     "@storybook/react": "^5.3.14",
     "autoprefixer": "9.7.6",
-    "cssnano": "4.1.10",
-    "postcss-cli": "7.1.0",
-    "@babel/cli": "7.8.4",
-    "@babel/core": "7.9.0",
-    "@babel/plugin-proposal-class-properties": "^7.7.4",
-    "@babel/plugin-transform-runtime": "^7.7.6",
-    "@babel/plugin-transform-strict-mode": "7.8.3",
-    "@babel/preset-env": "^7.7.6",
-    "@babel/preset-react": "^7.7.4",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-macros": "^2.8.0",
     "babel-plugin-styled-components": "^1.10.6",
-    "babel-plugin-transform-class-properties": "^6.24.1"
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "cssnano": "4.1.10",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.5.0",
+    "postcss-cli": "7.1.0"
   }
 }
