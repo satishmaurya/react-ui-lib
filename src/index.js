@@ -1,5 +1,5 @@
 
-export { Accordian } from './components/Accordian';
+// export { Accordian } from './components/Accordian';
 export { Avatar } from './components/Avatar';
 export { Badge } from './components/Badge';
 export { Button } from './components/Button';
@@ -17,6 +17,6 @@ export { Pagination } from './components/Pagination';
 export { Icon } from './components/Icon';
 export { Box } from './components/Box';
 export { Breadcum, StyledBreadcum } from './components/Breadcum';
-export { ThemeProvider } from './components/ThemeProvider';
+// export { ThemeProvider } from './components/ThemeProvider';
 export { Container, Row, Col } from './components/Layout';
 export { SearchBox } from './components/SearchBox';

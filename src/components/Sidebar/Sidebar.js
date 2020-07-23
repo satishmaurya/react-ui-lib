@@ -3,7 +3,7 @@ import {StyledSideBar, MainWrapper} from './Sidebar.styled';
 import Button from '../Button/Button';
 
 const Sidebar = (props) => {
-  const { children, id, isDrawer} = props;
+  const { children, id, isDrawer, position, onClose, isCloseButtonShown} = props;
 
   const handleOpen = () => {
     document.getElementById("Sidebar").style.width = "250px";
@@ -18,7 +18,7 @@ const Sidebar = (props) => {
   if(isDrawer===true){
     return(
         <>
-        <StyledSideBar id={id} isDrawer>
+        <StyledSideBar id={id} isDrawer {...props}>
             <a className="closeIcon" onClick={handleClose}>&times;</a>
             {children}
         </StyledSideBar>
@@ -31,7 +31,7 @@ const Sidebar = (props) => {
     else {
         return(
             <>
-            <StyledSideBar>
+            <StyledSideBar {...props}>
                 {children}
             </StyledSideBar>
         </>

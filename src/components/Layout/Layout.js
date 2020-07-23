@@ -28,6 +28,3 @@ export const Col = (props) =>{
         </StyledCol>
     );
 };
-
-// export const NavBarChild = StyledNavBar;
-// export default Layout;
