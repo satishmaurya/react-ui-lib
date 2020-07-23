@@ -29,6 +29,7 @@ const RadialProgress = (props) => {
             className="circle-progress"
             cx={sqsize / 2}
             cy={sqsize / 2}
+            
             r={radius}
             strokeWidth={`${strokeWidth}px`}
             transform={`rotate(-90 ${sqsize / 2} ${sqsize / 2})`}
