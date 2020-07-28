@@ -11,7 +11,7 @@ const StackInputGroup = (props) =>{
             <StyledInputGroup>
               { labelInline ?  <InputGroup size={size}> 
                  <InputGroup.Prepend>
-    <InputGroup.Text id={id}>{labelText}</InputGroup.Text>
+    <InputGroup.Text id={id} placeholder={placeholder}>{labelText}</InputGroup.Text>
                 </InputGroup.Prepend> 
                 <Form.Control as={as} rows={rows} bsPrefix={bsPrefix} size={size} {...props} />
                 </InputGroup>

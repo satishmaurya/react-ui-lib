@@ -9,16 +9,22 @@ ButtonTypes.propTypes={
     isDisabled: PropTypes.bool,
     rounded:PropTypes.oneOf(['rounded','default']),
     size:PropTypes.oneOf(['sm','md','lg']),
-    block:PropTypes.bool
+    block:PropTypes.bool,
+    children:PropTypes.node,
+    borderRadius:PropTypes.string,
+    color:PropTypes.string,
+    onClick:PropTypes.func,
+    icon: PropTypes.string.isRequired,
+    iconVariant:PropTypes.oneOf(['regular','solid']),
 };
-
 ButtonTypes.defaultProps = {
     btnType: 'default',
     btnVariant: 'contained',
     isDisabled: false,
     rounded:'default',
     size:'md',
-    block:false
+    block:false,
+    color: 'currentColor',
 };
 
 export default ButtonTypes;

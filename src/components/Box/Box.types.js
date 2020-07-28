@@ -17,12 +17,13 @@ BoxTypes.propTypes={
     pb: PropTypes.string,
     pl: PropTypes.string,
     pr: PropTypes.string,
+    pm: PropTypes.string,
     mt: PropTypes.string,
     mb: PropTypes.string,
     ml: PropTypes.string,
     mr: PropTypes.string,
-
-
+    mp: PropTypes.string,
+    children: PropTypes.node,
 
 };
 

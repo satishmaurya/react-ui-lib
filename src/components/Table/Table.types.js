@@ -10,6 +10,8 @@ TableTypes.propTypes={
     striped: PropTypes.bool,
     bordered: PropTypes.bool,
     hover: PropTypes.bool,
+    children:PropTypes.node,
+    bsPrefix:PropTypes.string,
 };
 
 TableTypes.defaultProps = {

@@ -13,6 +13,11 @@ CardTypes.propTypes={
     alignText:PropTypes.oneOf(['left', 'center', 'right']),
     border:PropTypes.oneOf(['light', 'dark']),
     imgUrl:PropTypes.string,
+    color:PropTypes.string,
+    children:PropTypes.node,
+    width:PropTypes.string,
+
+
 };
 
 CardTypes.defaultProps = {

@@ -1,0 +1,102 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import Typography from "./Typography";
+import TypographyTypes from "./Typography.types";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+<Meta title="Components/Typography" component="Typography" />
+
+<Story name="Import" />
+
+# Typography
+
+## Import
+
+```jsx
+import {Typography} from "@stack-ui/components";
+```
+## Example
+
+<Preview withToolbar>
+    <Story name="Heading">
+      <>
+      <Typography type="heading" as="h1">
+        Typography h1
+      </Typography>
+      <Typography type="heading" as="h2">
+        Typography h2 
+      </Typography>
+      <Typography type="heading" as="h3">
+        Typography h3
+      </Typography>
+      <Typography type="heading" as="h4">
+        Typography h4
+      </Typography>
+      <Typography type="heading" as="h5">
+        Typography h5 
+      </Typography>
+      <Typography type="heading" as="h6">
+        Typography h6
+      </Typography>
+      </>
+    </Story>
+</Preview>
+
+## SubHeading Example
+
+<Preview withToolbar>
+<Story name="SubHeading">
+      <>
+      <Typography type="subHeading" as="h1">
+        Typography h1
+      </Typography>
+      <Typography type="subHeading" as="h1" isBold isItalic>
+        Typography h1
+      </Typography>
+      <Typography type="subHeading" as="h2">
+        Typography h2 
+      </Typography>
+      <Typography type="subHeading" as="h3">
+        Typography h3
+      </Typography>
+      <Typography type="subHeading" as="h4">
+        Typography h4
+      </Typography>
+      <Typography type="subHeading" as="h5">
+        Typography h5 
+      </Typography>
+      <Typography type="subHeading" as="h6">
+        Typography h6
+      </Typography>
+      </>
+    </Story>
+</Preview>
+
+## Paragraph Example
+
+<Preview withToolbar>
+<Story name="Paragraph">
+      <>
+      <Typography>
+        This is normal paragrabh text
+      </Typography>
+      <Typography isBold>
+        This is bold paragrabh text
+      </Typography>
+      <Typography isBold isItalic>
+        This is bold with italic paragrabh text
+      </Typography>
+      <Typography isItalic>
+        This is italic paragrabh text
+      </Typography>
+      </>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={TypographyTypes} />
+
+

@@ -19,12 +19,9 @@ var NavBar = function NavBar(props) {
   var fixed = props.fixed,
       isDisabled = props.isDisabled,
       btnVariant = props.btnVariant,
-      rounded = props.rounded,
       children = props.children,
       size = props.size,
-      block = props.block,
-      icon = props.icon,
-      iconVariant = props.iconVariant;
+      block = props.block;
   return /*#__PURE__*/_react["default"].createElement(_NavBar["default"], _extends({
     fixed: fixed
   }, props), children);

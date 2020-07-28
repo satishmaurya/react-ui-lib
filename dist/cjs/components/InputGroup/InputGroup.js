@@ -36,7 +36,8 @@ var StackInputGroup = function StackInputGroup(props) {
   return /*#__PURE__*/_react.default.createElement(_InputGroup.default, null, labelInline ? /*#__PURE__*/_react.default.createElement(_InputGroup2.default, {
     size: size
   }, /*#__PURE__*/_react.default.createElement(_InputGroup2.default.Prepend, null, /*#__PURE__*/_react.default.createElement(_InputGroup2.default.Text, {
-    id: id
+    id: id,
+    placeholder: placeholder
   }, labelText)), /*#__PURE__*/_react.default.createElement(_Form.default.Control, _extends({
     as: as,
     rows: rows,

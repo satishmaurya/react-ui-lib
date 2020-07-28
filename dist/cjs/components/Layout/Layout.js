@@ -57,8 +57,6 @@ var Col = function Col(props) {
   return /*#__PURE__*/_react.default.createElement(_Layout.StyledCol, _extends({
     as: as
   }, props), children);
-}; // export const NavBarChild = StyledNavBar;
-// export default Layout;
-
+};
 
 exports.Col = Col;
