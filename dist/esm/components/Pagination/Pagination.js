@@ -16,11 +16,17 @@ var StackPagination = function StackPagination(props) {
   var children = props.children,
       bgColor = props.bgColor,
       paginationType = props.paginationType,
-      size = props.size;
+      size = props.size,
+      active = props.active,
+      disabled = props.disabled,
+      activeLabel = props.activeLabel;
   return /*#__PURE__*/_react["default"].createElement(_Pagination["default"], {
     bgColor: bgColor,
     size: size,
-    paginationType: paginationType
+    paginationType: paginationType,
+    activeLabel: activeLabel,
+    active: active,
+    disabled: disabled
   }, children);
 };
 

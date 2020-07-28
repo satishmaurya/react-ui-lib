@@ -14,12 +14,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Avatar = function Avatar(props) {
   var size = props.size,
       src = props.src,
-      alt = props.alt;
-  return /*#__PURE__*/_react.default.createElement(_Avatar.StyledAvatar, {
+      alt = props.alt,
+      avatarName = props.avatarName,
+      avatarTitle = props.avatarTitle;
+  return /*#__PURE__*/_react.default.createElement(_Avatar.StyledAvatarText, null, /*#__PURE__*/_react.default.createElement(_Avatar.StyledAvatar, {
     size: size,
     src: src,
     alt: alt
-  });
+  }), /*#__PURE__*/_react.default.createElement("h4", null, avatarTitle, " "), /*#__PURE__*/_react.default.createElement("p", null, avatarName));
 };
 
 var _default = Avatar;
