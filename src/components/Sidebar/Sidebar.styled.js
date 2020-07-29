@@ -1,5 +1,18 @@
 import styled, {css} from "styled-components";
 
+export const StyledSideBarWrap = styled.div`
+padding-top: 15px;
+border: 1px solid red;
+`
+export const StyledSideBarBody = styled.div`
+padding-top: 15px;
+border: 1px solid blue;
+`
+export const StyledSideBarTitle = styled.div`
+padding-top: 15px;
+background: #ffffff;
+border: 1px solid blue;
+`
 export const StyledSideBar = styled.div`
      ${props=>
         props.isDrawer
