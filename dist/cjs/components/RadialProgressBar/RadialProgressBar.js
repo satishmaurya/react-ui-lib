@@ -7,8 +7,6 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
 var _RadialProgressBar = _interopRequireDefault(require("./RadialProgressBar.styled"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -56,11 +54,5 @@ var RadialProgress = function RadialProgress(props) {
   }, "".concat(percentage, "%"))));
 };
 
-RadialProgress.propTypes = {
-  sqsize: _propTypes.default.number.isRequired,
-  strokeWidth: _propTypes.default.number.isRequired,
-  percentage: _propTypes.default.number.isRequired,
-  className: _propTypes.default.string.isRequired
-};
 var _default = RadialProgress;
 exports.default = _default;
