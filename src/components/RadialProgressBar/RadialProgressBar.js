@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import RadialProgressBar from './RadialProgressBar.styled';
 
 const RadialProgress = (props) => {
@@ -51,12 +50,5 @@ const RadialProgress = (props) => {
       </RadialProgressBar>
     );
 }
-
-RadialProgress.propTypes = {
-  sqsize: PropTypes.number.isRequired,
-  strokeWidth: PropTypes.number.isRequired,
-  percentage: PropTypes.number.isRequired,
-  className: PropTypes.string.isRequired,
-};
 
 export default RadialProgress;
