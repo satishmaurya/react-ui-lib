@@ -7,6 +7,7 @@ BreadcumTypes.propTypes={
     bgColor: PropTypes.oneOf(['white', 'primary','secondary','success','info','warning','danger']),
     paginationType:  PropTypes.oneOf(['rounded', 'default']),
     size:PropTypes.oneOf(['lg', 'sm']),
+    children:PropTypes.node,
     
 };
 

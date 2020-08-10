@@ -6,6 +6,7 @@ import Button from '../Button/Button';
 
 const Sidebar = (props) => {
   const { children, id, isDrawer, title,titleBg, position, onClose, isCloseButtonShown} = props;
+console.log('propsss------', titleBg);
 
   const handleOpen = () => {
     document.getElementById("Sidebar").style.width = "250px";
@@ -20,9 +21,9 @@ const Sidebar = (props) => {
   if(isDrawer===true){
     return(
         <>
-        <StyledSideBar id={id} hello={title} isDrawer {...props}>
+        {title ?  <>
+        <StyledSideBar id={id} isDrawer {...props}  titleBg={titleBg}>
             <a className="closeIcon" onClick={handleClose}>&times;</a>
-            {/* {children} */}
             <StyledSideBarTitle>
               {title}
             </StyledSideBarTitle>
@@ -31,15 +32,67 @@ const Sidebar = (props) => {
           </StyledSideBarBody>
         </StyledSideBar>
         <MainWrapper id="main">
-            <h2>SideBar</h2>
+            {/* <h2>SideBar</h2> */}
             <Button onClick={handleOpen} btnType="success">Open</Button>
         </MainWrapper>
+    </> :
+        <>
+           <StyledSideBar id={id} isDrawer>
+            <a className="closeIcon" onClick={handleClose}>&times;</a>
+            {children}
+        </StyledSideBar>
+        <MainWrapper id="main">
+            {/* <h2>SideBar</h2> */}
+            <Button onClick={handleOpen} btnType="success">Open</Button>
+        </MainWrapper>
+        </>
+
+
+        }
+       
     </>
     )}
+  else if(title===true && isDrawer===true){
+      return(
+          <>
+          {title ?  <>
+          <StyledSideBar id={id} isDrawer {...props}  titleBg={titleBg}>
+              <a className="closeIcon" onClick={handleClose}>&times;</a>
+              <StyledSideBarTitle>
+                {title}
+              </StyledSideBarTitle>
+            <StyledSideBarBody>
+            {children}
+            </StyledSideBarBody>
+          </StyledSideBar>
+          <MainWrapper id="main">
+              <h2>SideBar</h2>
+              <Button onClick={handleOpen} btnType="success">Open</Button>
+          </MainWrapper>
+      </> :
+          <>
+             <StyledSideBar id={id} isDrawer>
+              <a className="closeIcon" onClick={handleClose}>&times;</a>
+              {children}
+          </StyledSideBar>
+          <MainWrapper id="main">
+              <h2>SideBar</h2>
+              <Button onClick={handleOpen} btnType="success">Open</Button>
+          </MainWrapper>
+          </>
+  
+  
+          }
+         
+      </>
+      )}
+    // return(
+       
+    // )}
     else {
         return(
             <>
-            <StyledSideBar>
+            <StyledSideBar {...props}>
                 {children}
             </StyledSideBar>
         </>

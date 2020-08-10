@@ -8,9 +8,13 @@ const { btnType, id, isDisabled, className, btnVariant,children, rounded,  size,
 return (
     
         <StyledDropDown>
-            <StyledDropDown.Toggle variant= {btnType} className={className} type={btnVariant} size={size} disabled={isDisabled} rounded={rounded} block={block}  id= {id} {...props}>
+            <StyledDropDown.Toggle variant= {btnType} className={className} 
+            type={btnVariant} size={size} disabled={isDisabled} rounded={rounded} block={block}
+              id= {id} {...props}>
                DropDown
-               {icon && iconVariant==='regular' ? <FontAwesomeIcon icon={['far',icon]} Iconsize={Iconsize}  /> : iconVariant==='solid' ? <FontAwesomeIcon icon={['fas',icon]}  Iconsize={Iconsize} /> : <FontAwesomeIcon icon={['fas',icon]} Iconsize={Iconsize}/> }
+               {icon && iconVariant==='regular' ? <FontAwesomeIcon icon={['far',icon]}
+                Iconsize={Iconsize}  /> : iconVariant==='solid' ? <FontAwesomeIcon icon={['fas',icon]}
+                Iconsize={Iconsize} /> : <FontAwesomeIcon icon={['fas',icon]} Iconsize={Iconsize}/> }
                 {children}
             </StyledDropDown.Toggle>
             <StyledDropDown.Menu>

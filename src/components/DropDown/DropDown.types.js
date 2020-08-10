@@ -15,6 +15,8 @@ DropDownTypes.propTypes={
     size:PropTypes.oneOf(['sm','md','lg']),
     block:PropTypes.bool,
     Iconsize:PropTypes.oneOf(['sm', 'md', 'lg']),
+    children:PropTypes.node,
+    icon: PropTypes.string.isRequired,
 };
 
 DropDownTypes.defaultProps = {

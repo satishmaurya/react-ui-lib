@@ -12,14 +12,14 @@ import SidebarTypes from "./Sidebar.types";
 ## Import
 
 ```jsx
-import {Sidebar} from "@ui/components";
+import {Sidebar} from "@stack-ui/components";
 ```
 ## Sidebar with Drawer
 
 <Preview withToolbar>
     <Story name="With Drawer">
         <>
-        <Sidebar id="Sidebar" isDrawer title="headingg">
+        <Sidebar id="Sidebar" isDrawer title="heading">
         <ul>
         <li>hello</li>
         <li>hello</li><li>hello</li><li>hello</li>
@@ -34,7 +34,7 @@ import {Sidebar} from "@ui/components";
 <Preview withToolbar>
     <Story name="Simple">
         <>
-        <Sidebar>
+        <Sidebar title="new heading">
         <ul>
         <li>hello</li>
         <li>hello</li><li>hello</li><li>hello</li>
@@ -43,6 +43,7 @@ import {Sidebar} from "@ui/components";
         </>
     </Story>
 </Preview>
+
 
 <Story name="Props" />
 

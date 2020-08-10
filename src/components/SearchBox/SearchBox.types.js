@@ -8,6 +8,7 @@ SearchBoxTypes.propTypes={
     placeholder: PropTypes.string,
     bg: PropTypes.string,
     borderRadius: PropTypes.string,
+    children:PropTypes.node,
 };
 
 SearchBoxTypes.defaultProps = {

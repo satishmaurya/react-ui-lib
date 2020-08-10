@@ -9,16 +9,27 @@ InputGroupTypes.propTypes={
     disabled: PropTypes.bool,
     size:PropTypes.oneOf(['sm','lg']),
     labelText:PropTypes.string,
-    labelInline:PropTypes.bool
+    labelInline:PropTypes.bool,
+    value:PropTypes.string,
+    bsPrefix:PropTypes.string,
+    children:PropTypes.node,
+    labelBg:PropTypes.string,
+    rounded:PropTypes.oneOf(['rounded','default']),
+    icon:PropTypes.string,
+    placeholder:PropTypes.string,
+    id:PropTypes.string,
+    rows:PropTypes.string,
 };
 
-InputGroupTypes.defaultProps = {
+
+    InputGroupTypes.defaultProps = {
     type: 'text',
     as: '',
     disabled: false,
     size:'default',
     labelText:'',
-    labelInline:false
+    labelInline:false,
+    rounded: 'default',
 };
 
 export default InputGroupTypes;
