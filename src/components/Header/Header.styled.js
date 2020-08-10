@@ -30,7 +30,8 @@ const StyledHeader = styled.div`
     ${props => 
         props.fixed === true
         ? css `
-        position: fixed
+        position: fixed,
+        top: 0px,
         `
         : css `
         position: relative
