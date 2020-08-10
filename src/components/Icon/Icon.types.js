@@ -1,28 +1,22 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const IconTypes= () => <>IconTypes</>;
+function IconTypes() {
+  return <>Icon</>;
+}
 
-IconTypes.propTypes={
-    isDisabled: PropTypes.bool,
-    rounded:PropTypes.oneOf(['rounded','default']),
-    size:PropTypes.oneOf(['sm','md','lg']),
-    block:PropTypes.bool,
-    children:PropTypes.node,
-    name:PropTypes.string,
-    onClick:PropTypes.func,
-    color: PropTypes.string,
-    bg:PropTypes.string,
-    animation:PropTypes.bool,
-    rotation:PropTypes.bool,
-    iconVariant:PropTypes.oneOf(['regular','solid']),
+IconTypes.propTypes = {
+  /** Name of an icon from Foundations > Iconography, to render. */
+  icon: PropTypes.string.isRequired,
+  /** Size of the icon, in pixels. */
+  size: PropTypes.number,
+  /** Color of icon. */
+  color: PropTypes.string,
 };
 
 IconTypes.defaultProps = {
-    isDisabled: false,
-    rounded:'default',
-    size:'md',
-    block:false
+  size: 16,
+  color: 'currentColor',
 };
 
 export default IconTypes;
