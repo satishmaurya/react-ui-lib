@@ -46,54 +46,20 @@ console.log('propsss------', titleBg);
             <Button onClick={handleOpen} btnType="success">Open</Button>
         </MainWrapper>
         </>
-
-
         }
-       
     </>
     )}
-  else if(title===true && isDrawer===true){
-      return(
-          <>
-          {title ?  <>
-          <StyledSideBar id={id} isDrawer {...props}  titleBg={titleBg}>
-              <a className="closeIcon" onClick={handleClose}>&times;</a>
-              <StyledSideBarTitle>
-                {title}
-              </StyledSideBarTitle>
-            <StyledSideBarBody>
-            {children}
-            </StyledSideBarBody>
-          </StyledSideBar>
-          <MainWrapper id="main">
-              <h2>SideBar</h2>
-              <Button onClick={handleOpen} btnType="success">Open</Button>
-          </MainWrapper>
-      </> :
-          <>
-             <StyledSideBar id={id} isDrawer>
-              <a className="closeIcon" onClick={handleClose}>&times;</a>
-              {children}
-          </StyledSideBar>
-          <MainWrapper id="main">
-              <h2>SideBar</h2>
-              <Button onClick={handleOpen} btnType="success">Open</Button>
-          </MainWrapper>
-          </>
-  
-  
-          }
-         
-      </>
-      )}
-    // return(
-       
-    // )}
     else {
         return(
             <>
-            <StyledSideBar {...props}>
-                {children}
+            <StyledSideBar {...props}  titleBg={titleBg} title>
+            <StyledSideBarTitle>
+              {title}
+            </StyledSideBarTitle>
+          <StyledSideBarBody>
+          {children}
+          </StyledSideBarBody>
+                {/* {children} */}
             </StyledSideBar>
         </>
         )

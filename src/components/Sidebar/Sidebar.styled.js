@@ -10,7 +10,15 @@ margin-top: 40px;
 `
 export const StyledSideBarTitle = styled.div`
 padding-top: 15px;
-
+${props =>
+    props.title
+    ? css `
+    
+    `
+    : css `
+    
+    `
+}
 ${props =>
     props.titleBg
     ? css `
@@ -56,13 +64,15 @@ export const StyledSideBar = styled.div`
         :css `
         width: 250px;
         height: 100%;
-        background: #3d454e;
-        color: #fff;
-        position: fixed;
+        background: #ffffff;
+        color: #191818;
+        position: relative;
         z-index: 1;
         top: 0;
-        left: 0;
-        background-color: #3d454e;
+        border: 1px solid #e9e6e6;
+        right: auto;
+        left: auto;
+        background-color: #ffffff;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -81,7 +91,7 @@ export const StyledSideBar = styled.div`
         width: 0;
         color: #302e2e;
         position: fixed;
-        z-index: 1;
+        z-index: 1;  
         top: 0;
         right: 0;
         background: #ffffff;
