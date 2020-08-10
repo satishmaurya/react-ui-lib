@@ -21,7 +21,7 @@ var StyledHeader = _styledComponents.default.div.withConfig({
 })(["background-color:#fff;padding:0 10px 0 0;left:0;right:0;height:70px;z-index:100;-webkit-box-shadow:0 0 35px 0 rgba(61,69,78,.15);box-shadow:0 0 35px 0 rgba(61,69,78,.15);padding:6px 16px;border-radius:4px;color:", ";", " ", ""], variable.white, function (props) {
   return props.mode === "light" ? (0, _styledComponents.css)(["background:", ";"], variable.white) : props.mode === "dark" ? (0, _styledComponents.css)(["background:", ";"], variable.dark) : (0, _styledComponents.css)(["display:none;"]);
 }, function (props) {
-  return props.fixed === true ? (0, _styledComponents.css)(["position:fixed"]) : (0, _styledComponents.css)(["position:relative"]);
+  return props.fixed === true ? (0, _styledComponents.css)(["position:fixed,top:0px,"]) : (0, _styledComponents.css)(["position:relative"]);
 });
 
 var _default = StyledHeader;
