@@ -7,7 +7,7 @@ const StyledTable = styled(Table)`
     ${props=>
         props.size==="xs"
         ? css `
-            ${'' /* height:.15rem; */}
+            height:.15rem;
             background: red;
         `
         :props.size==="sm"
@@ -16,7 +16,6 @@ const StyledTable = styled(Table)`
         `
         :props.size==="md"
         ? css `
-        background: red !important;
         height:.50rem;
         `
         :props.size==="lg"
