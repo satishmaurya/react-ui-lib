@@ -111,6 +111,12 @@ Object.defineProperty(exports, "Typography", {
     return _Typography.Typography;
   }
 });
+Object.defineProperty(exports, "Image", {
+  enumerable: true,
+  get: function get() {
+    return _Image.Image;
+  }
+});
 Object.defineProperty(exports, "Icon", {
   enumerable: true,
   get: function get() {
@@ -195,6 +201,8 @@ var _Pagination = require("./components/Pagination");
 var _RadialProgressBar = require("./components/RadialProgressBar");
 
 var _Typography = require("./components/Typography");
+
+var _Image = require("./components/Image");
 
 var _Icon = require("./components/Icon");
 

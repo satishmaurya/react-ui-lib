@@ -15,13 +15,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
+// import Typography from '../Typography/Typography';
 var Sidebar = function Sidebar(props) {
   var children = props.children,
       id = props.id,
       isDrawer = props.isDrawer,
+      title = props.title,
+      titleBg = props.titleBg,
       position = props.position,
       onClose = props.onClose,
       isCloseButtonShown = props.isCloseButtonShown;
+  console.log('propsss------', titleBg);
 
   var handleOpen = function handleOpen() {
     document.getElementById("Sidebar").style.width = "250px";
@@ -34,20 +38,36 @@ var Sidebar = function Sidebar(props) {
   };
 
   if (isDrawer === true) {
-    return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_Sidebar.StyledSideBar, _extends({
+    return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, title ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_Sidebar.StyledSideBar, _extends({
       id: id,
       isDrawer: true
-    }, props), /*#__PURE__*/_react["default"].createElement("a", {
+    }, props, {
+      titleBg: titleBg
+    }), /*#__PURE__*/_react["default"].createElement("a", {
+      className: "closeIcon",
+      onClick: handleClose
+    }, "\xD7"), /*#__PURE__*/_react["default"].createElement(_Sidebar.StyledSideBarTitle, null, title), /*#__PURE__*/_react["default"].createElement(_Sidebar.StyledSideBarBody, null, children)), /*#__PURE__*/_react["default"].createElement(_Sidebar.MainWrapper, {
+      id: "main"
+    }, /*#__PURE__*/_react["default"].createElement(_Button["default"], {
+      onClick: handleOpen,
+      btnType: "success"
+    }, "Open"))) : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_Sidebar.StyledSideBar, {
+      id: id,
+      isDrawer: true
+    }, /*#__PURE__*/_react["default"].createElement("a", {
       className: "closeIcon",
       onClick: handleClose
     }, "\xD7"), children), /*#__PURE__*/_react["default"].createElement(_Sidebar.MainWrapper, {
       id: "main"
-    }, /*#__PURE__*/_react["default"].createElement("h2", null, "SideBar"), /*#__PURE__*/_react["default"].createElement(_Button["default"], {
+    }, /*#__PURE__*/_react["default"].createElement(_Button["default"], {
       onClick: handleOpen,
       btnType: "success"
-    }, "Open")));
+    }, "Open"))));
   } else {
-    return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_Sidebar.StyledSideBar, props, children));
+    return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_Sidebar.StyledSideBar, _extends({}, props, {
+      titleBg: titleBg,
+      title: true
+    }), /*#__PURE__*/_react["default"].createElement(_Sidebar.StyledSideBarTitle, null, title), /*#__PURE__*/_react["default"].createElement(_Sidebar.StyledSideBarBody, null, children)));
   }
 };
 

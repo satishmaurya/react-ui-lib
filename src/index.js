@@ -17,6 +17,7 @@ export { Tabs } from './components/Tabs';
 export { Pagination } from './components/Pagination';
 export { RadialProgressBar } from './components/RadialProgressBar';
 export { Typography } from './components/Typography';
+export { Image } from './components/Image';
 export { Icon } from './components/Icon';
 export { Box } from './components/Box';
 export { Breadcum, StyledBreadcum } from './components/Breadcum';

@@ -15,13 +15,13 @@ var Avatar = function Avatar(props) {
   var size = props.size,
       src = props.src,
       alt = props.alt,
-      avatarName = props.avatarName,
-      avatarTitle = props.avatarTitle;
+      title = props.title,
+      subTitle = props.subTitle;
   return /*#__PURE__*/_react.default.createElement(_Avatar.StyledAvatarText, null, /*#__PURE__*/_react.default.createElement(_Avatar.StyledAvatar, {
     size: size,
     src: src,
     alt: alt
-  }), /*#__PURE__*/_react.default.createElement("h4", null, avatarTitle, " "), /*#__PURE__*/_react.default.createElement("p", null, avatarName));
+  }), /*#__PURE__*/_react.default.createElement("h4", null, title, " "), /*#__PURE__*/_react.default.createElement("p", null, subTitle));
 };
 
 var _default = Avatar;

@@ -1,5 +1,41 @@
 import styled, {css} from "styled-components";
 
+export const StyledSideBarWrap = styled.div`
+padding-top: 15px;
+border: 1px solid red;
+`
+export const StyledSideBarBody = styled.div`
+padding-top: 15px;
+margin-top: 40px;
+`
+export const StyledSideBarTitle = styled.div`
+padding-top: 15px;
+${props =>
+    props.title
+    ? css `
+    
+    `
+    : css `
+    
+    `
+}
+${props =>
+    props.titleBg
+    ? css `
+    background: #ccc;
+    `
+    : css `
+    background-color: #5089de;
+    color: #fff;
+    font-weight: 600;
+    padding: 40px 20px 40px;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    `
+}
+`
 export const StyledSideBar = styled.div`
      ${props=>
         props.isDrawer
@@ -22,24 +58,28 @@ export const StyledSideBar = styled.div`
             font-size: 36px;
             margin-left: 50px;
             cursor: pointer;
+            z-index: 9;
         }
         `
         :css `
         width: 250px;
         height: 100%;
-        background: #3d454e;
-        color: #fff;
-        position: fixed;
+        background: #ffffff;
+        color: #191818;
+        position: relative;
         z-index: 1;
         top: 0;
-        left: 0;
-        background-color: #3d454e;
+        border: 1px solid #e9e6e6;
+        right: auto;
+        left: auto;
+        background-color: #ffffff;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
         
         `
      },
+     
      ${props => 
         props.position === 'left'
         ? css `
@@ -49,12 +89,12 @@ export const StyledSideBar = styled.div`
         ? css`
         height: 100%;
         width: 0;
-        color: #fff;
+        color: #302e2e;
         position: fixed;
-        z-index: 1;
+        z-index: 1;  
         top: 0;
-        left: 0;
-        background: #3d454e;
+        right: 0;
+        background: #ffffff;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -82,7 +122,8 @@ export const StyledSideBar = styled.div`
         transition: 0.5s;
         padding-top: 60px;
         `
-    }
+    },
+
 `;
 export const MainWrapper = styled.div`
  transition: margin-left .5s;
