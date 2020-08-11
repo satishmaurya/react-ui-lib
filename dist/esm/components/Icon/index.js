@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "default", {
+Object.defineProperty(exports, "Icon", {
   enumerable: true,
   get: function get() {
     return _Icon["default"];
