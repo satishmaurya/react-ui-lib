@@ -1,5 +1,4 @@
 import styled, {css} from "styled-components";
-import * as variable from "../../variable";
 import Table from 'react-bootstrap/Table'
 
 
@@ -8,7 +7,6 @@ const StyledTable = styled(Table)`
         props.size==="xs"
         ? css `
             height:.15rem;
-            background: red;
         `
         :props.size==="sm"
         ? css `
