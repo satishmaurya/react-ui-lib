@@ -105,6 +105,12 @@ Object.defineProperty(exports, "RadialProgressBar", {
     return _RadialProgressBar.RadialProgressBar;
   }
 });
+Object.defineProperty(exports, "Typography", {
+  enumerable: true,
+  get: function get() {
+    return _Typography.Typography;
+  }
+});
 Object.defineProperty(exports, "Icon", {
   enumerable: true,
   get: function get() {
@@ -187,6 +193,8 @@ var _Tabs = require("./components/Tabs");
 var _Pagination = require("./components/Pagination");
 
 var _RadialProgressBar = require("./components/RadialProgressBar");
+
+var _Typography = require("./components/Typography");
 
 var _Icon = require("./components/Icon");
 
