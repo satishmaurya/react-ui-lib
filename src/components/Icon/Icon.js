@@ -1,17 +1,39 @@
-import React from "react";
-import StyledIcon from "./Icon.styled";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// @flow
+import React from 'react';
 
-const Icon = (props) =>{
-    const { isDisabled, iconVariant, rounded, children, name, size, onClick, borderRadius, color, bg, animation, rotation} = props;
-    return(
-        <StyledIcon rounded={rounded} disabled={isDisabled} variant={iconVariant} {...props}>
-            {iconVariant==='regular' ? <FontAwesomeIcon icon={['far',name]} size={size} rotation={rotation} color={color} animation /> 
-            : iconVariant==='solid' ? <FontAwesomeIcon icon={['fas',name]} size={size} rotation={rotation} color={color} animation /> 
-            : <FontAwesomeIcon icon={['fas',name]} size={size} rotation={rotation} color={color} animation /> }
-            {children}
-        </StyledIcon>
+import { StyledIcon } from './Icon.styles';
+// import cx from 'classnames';
+// import { prefix } from '../../tools/settings';
+
+const Icon = React.forwardRef(
+  (
+    {
+      className: customClassName,
+      icon,
+      size = 16,
+      color = 'currentColor',
+      onClick,
+      ...rest
+    },
+    ref,
+  ) => {
+    const className = ({
+      [`stack-icon`]: true,
+      [customClassName]: !!customClassName,
+    });
+
+    return (
+      <StyledIcon
+        ref={ref}
+        className={className}
+        icon={icon}
+        color={color}
+        iconSize={size}
+        onClick={onClick}
+        {...rest}
+      />
     );
-}
+  },
+);
 
 export default Icon;

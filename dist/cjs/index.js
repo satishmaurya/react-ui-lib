@@ -3,12 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "Accordian", {
-  enumerable: true,
-  get: function get() {
-    return _Accordian.Accordian;
-  }
-});
 Object.defineProperty(exports, "Avatar", {
   enumerable: true,
   get: function get() {
@@ -37,6 +31,18 @@ Object.defineProperty(exports, "DropDown", {
   enumerable: true,
   get: function get() {
     return _DropDown.DropDown;
+  }
+});
+Object.defineProperty(exports, "Header", {
+  enumerable: true,
+  get: function get() {
+    return _Header.Header;
+  }
+});
+Object.defineProperty(exports, "Footer", {
+  enumerable: true,
+  get: function get() {
+    return _Footer.Footer;
   }
 });
 Object.defineProperty(exports, "InputGroup", {
@@ -93,6 +99,18 @@ Object.defineProperty(exports, "Pagination", {
     return _Pagination.Pagination;
   }
 });
+Object.defineProperty(exports, "RadialProgressBar", {
+  enumerable: true,
+  get: function get() {
+    return _RadialProgressBar.RadialProgressBar;
+  }
+});
+Object.defineProperty(exports, "Typography", {
+  enumerable: true,
+  get: function get() {
+    return _Typography.Typography;
+  }
+});
 Object.defineProperty(exports, "Icon", {
   enumerable: true,
   get: function get() {
@@ -115,12 +133,6 @@ Object.defineProperty(exports, "StyledBreadcum", {
   enumerable: true,
   get: function get() {
     return _Breadcum.StyledBreadcum;
-  }
-});
-Object.defineProperty(exports, "ThemeProvider", {
-  enumerable: true,
-  get: function get() {
-    return _ThemeProvider.ThemeProvider;
   }
 });
 Object.defineProperty(exports, "Container", {
@@ -148,8 +160,6 @@ Object.defineProperty(exports, "SearchBox", {
   }
 });
 
-var _Accordian = require("./components/Accordian");
-
 var _Avatar = require("./components/Avatar");
 
 var _Badge = require("./components/Badge");
@@ -159,6 +169,10 @@ var _Button = require("./components/Button");
 var _Card = require("./components/Card");
 
 var _DropDown = require("./components/DropDown");
+
+var _Header = require("./components/Header");
+
+var _Footer = require("./components/Footer");
 
 var _InputGroup = require("./components/InputGroup");
 
@@ -178,13 +192,15 @@ var _Tabs = require("./components/Tabs");
 
 var _Pagination = require("./components/Pagination");
 
+var _RadialProgressBar = require("./components/RadialProgressBar");
+
+var _Typography = require("./components/Typography");
+
 var _Icon = require("./components/Icon");
 
 var _Box = require("./components/Box");
 
 var _Breadcum = require("./components/Breadcum");
-
-var _ThemeProvider = require("./components/ThemeProvider");
 
 var _Layout = require("./components/Layout");
 

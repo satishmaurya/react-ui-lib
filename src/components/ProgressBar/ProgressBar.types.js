@@ -10,6 +10,8 @@ ProgressBarTypes.propTypes={
     variant: PropTypes.oneOf([ 'primary', 'info', 'danger' ]),
     striped: PropTypes.bool,
     animated: PropTypes.bool,
+    children:PropTypes.node,
+    icon:PropTypes.string,
 };
 
 ProgressBarTypes.defaultProps = {

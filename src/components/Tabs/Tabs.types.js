@@ -4,17 +4,23 @@ import PropTypes from "prop-types";
 const CardTypes= () => <>StackCard</>;
 
 CardTypes.propTypes={
-    cardTitle: PropTypes.string,
-    bgColor: PropTypes.oneOf(['white', 'primary','secondary','success','info','warning','danger']),
     isDisabled: PropTypes.bool,
-    rounded:PropTypes.oneOf(['rounded','default'])
+    children:PropTypes.node,
+    width: PropTypes.string,
+    activeKey:PropTypes.any,
+    id:PropTypes.string,
+    defaultActiveKey:PropTypes.any,
+    mountOnEnter:PropTypes.bool,
+    onSelect:PropTypes.func,
+    unmountOnExit:PropTypes.bool,
+    transition:PropTypes.bool,
+    variant:PropTypes.oneOf(['tabs','pills','leftPills']),
+
 };
 
 CardTypes.defaultProps = {
-    cardTitle: ' ',
-    bgColor: 'white',
+    variant: 'tabs',
     isDisabled: false,
-    rounded:'default',
 };
 
 export default CardTypes;

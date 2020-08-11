@@ -34,8 +34,11 @@
     "react-dom": "^16.13.0",
     "react-fontawesome": "^1.7.1",
     "react-scripts": "3.4.0",
+    "react-table": "^7.5.0",
     "styled-components": "^5.0.1",
-    "jest-sonar-reporter": "^2.0.0"
+    "@blueprintjs/core": "3.25.0",
+    "@blueprintjs/datetime": "3.16.0",
+    "@blueprintjs/icons": "3.15.0"
   },
   "scripts": {
     "start": "start-storybook -p 9009 -s public",
@@ -83,6 +86,7 @@
     "@storybook/preset-create-react-app": "^2.0.0",
     "@storybook/react": "^5.3.14",
     "autoprefixer": "9.7.6",
+    "faker": "4.1.0",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
