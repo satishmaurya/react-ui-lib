@@ -7,6 +7,8 @@ AvatarTypes.propTypes={
   src: PropTypes.string.isRequired,
   size: PropTypes.oneOf(['sm','md', 'lg']),
   alt: PropTypes.string,
+  avatarName: PropTypes.string,
+  avatarTitle: PropTypes.string,
 };
 
 AvatarTypes.defaultProps = {};

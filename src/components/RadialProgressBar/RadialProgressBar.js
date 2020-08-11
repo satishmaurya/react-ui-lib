@@ -1,9 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import RadialProgressBar from './RadialProgressBar.styled';
 
 const RadialProgress = (props) => {
-  console.log(props, ">>>>>>>>>>>>>>>>>..");
     const { sqsize, strokeWidth, percentage, className, variant } = props;
     const radius = (sqsize - strokeWidth) / 2;
     const viewBox = `0 0 ${sqsize} ${sqsize}`;
@@ -52,12 +50,5 @@ const RadialProgress = (props) => {
       </RadialProgressBar>
     );
 }
-
-RadialProgress.propTypes = {
-  sqsize: PropTypes.number.isRequired,
-  strokeWidth: PropTypes.number.isRequired,
-  percentage: PropTypes.number.isRequired,
-  className: PropTypes.string.isRequired,
-};
 
 export default RadialProgress;

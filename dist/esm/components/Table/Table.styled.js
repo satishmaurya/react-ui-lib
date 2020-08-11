@@ -9,8 +9,6 @@ exports["default"] = void 0;
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
-var variable = _interopRequireWildcard(require("../../variable"));
-
 var _Table = _interopRequireDefault(require("react-bootstrap/Table"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
@@ -23,9 +21,7 @@ var StyledTable = (0, _styledComponents["default"])(_Table["default"]).withConfi
   displayName: "Tablestyled__StyledTable",
   componentId: "sc-402nwz-0"
 })(["", ""], function (props) {
-  return props.size === "xs" ? (0, _styledComponents.css)(["", " background:red;"], ''
-  /* height:.15rem; */
-  ) : props.size === "sm" ? (0, _styledComponents.css)(["height:.30rem;"]) : props.size === "md" ? (0, _styledComponents.css)(["background:red !important;height:.50rem;"]) : props.size === "lg" ? (0, _styledComponents.css)(["height:2rem;"]) : (0, _styledComponents.css)(["height:1rem;"]);
+  return props.size === "xs" ? (0, _styledComponents.css)(["height:.15rem;"]) : props.size === "sm" ? (0, _styledComponents.css)(["height:.30rem;"]) : props.size === "md" ? (0, _styledComponents.css)(["height:.50rem;"]) : props.size === "lg" ? (0, _styledComponents.css)(["height:2rem;"]) : (0, _styledComponents.css)(["height:1rem;"]);
 });
 var _default = StyledTable;
 exports["default"] = _default;
