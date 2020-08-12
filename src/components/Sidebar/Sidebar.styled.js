@@ -5,11 +5,24 @@ padding-top: 15px;
 border: 1px solid red;
 `
 export const StyledSideBarBody = styled.div`
-padding-top: 15px;
-margin-top: 40px;
+    padding-top: 15px;   
+    width: 250px;
+    margin-top: 40px;
+    color: #1d1d1c;
+    margin-top: 40px;
+    border: 1px solid #e0dede;
 `
 export const StyledSideBarTitle = styled.div`
-padding-top: 15px;
+padding-top: 15px; border: 1px solid yellow;
+    background-color: #fff;
+    color: #322f2f;
+    font-weight: 600;
+    padding: 40px 20px 40px;
+    position: fixed;
+    width: 250px;
+    top: 0px;
+    z-index: 9;
+    height: auto;
 ${props =>
     props.title
     ? css `
@@ -25,18 +38,30 @@ ${props =>
     background: #ccc;
     `
     : css `
+    padding-top: 15px;
+    border: 1px solid yellow;
     background-color: #5089de;
     color: #fff;
     font-weight: 600;
     padding: 40px 20px 40px;
-    position: absolute;
-    width: 100%;
+    position: fixed;
+    width: 250px;
     top: 0px;
-    z-index: 1;
+    z-index: 9
     `
 }
 `
 export const StyledSideBar = styled.div`
+${props =>
+    props.backgroundColor
+    ? css `
+    background:${props.backgroundColor};
+    `
+    :css `
+    background:#3d454e;
+    `
+    },
+
      ${props=>
         props.isDrawer
         ? css`
@@ -47,7 +72,6 @@ export const StyledSideBar = styled.div`
         z-index: 1;
         top: 0;
         left: 0;
-        background: #3d454e;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -58,28 +82,21 @@ export const StyledSideBar = styled.div`
             font-size: 36px;
             margin-left: 50px;
             cursor: pointer;
-            z-index: 9;
         }
         `
         :css `
         width: 250px;
         height: 100%;
-        background: #ffffff;
-        color: #191818;
-        position: relative;
+        color: #fff;
+        position: fixed;
         z-index: 1;
         top: 0;
-        border: 1px solid #e9e6e6;
-        right: auto;
-        left: auto;
-        background-color: #ffffff;
-        overflow-x: hidden;
+        left: 0;
         transition: 0.5s;
         padding-top: 60px;
         
         `
      },
-     
      ${props => 
         props.position === 'left'
         ? css `
@@ -89,12 +106,11 @@ export const StyledSideBar = styled.div`
         ? css`
         height: 100%;
         width: 0;
-        color: #302e2e;
+        color: #fff;
         position: fixed;
-        z-index: 1;  
+        z-index: 1;
         top: 0;
-        right: 0;
-        background: #ffffff;
+        left: 0;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -111,19 +127,16 @@ export const StyledSideBar = styled.div`
         :css `
         width: 250px;
         height: 100%;
-        background: #3d454e;
         color: #fff;
         position: fixed;
         z-index: 1;
         top: 0;
         right: 0;
-        background-color: #3d454e;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
         `
-    },
-
+    }
 `;
 export const MainWrapper = styled.div`
  transition: margin-left .5s;
