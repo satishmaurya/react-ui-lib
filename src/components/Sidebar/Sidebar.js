@@ -1,12 +1,9 @@
 import React from "react";
 import {StyledSideBar, MainWrapper, StyledSideBarBody, StyledSideBarTitle} from './Sidebar.styled';
-// import { Button } from '../index';
 import Button from '../Button/Button';
-// import Typography from '../Typography/Typography';
 
 const Sidebar = (props) => {
-  const { children, id, isDrawer, title,titleBg, position, onClose, isCloseButtonShown} = props;
-console.log('propsss------', titleBg);
+  const { children, id, isDrawer, title,titleBg, backgroundColor, position, onClose, isCloseButtonShown} = props;
 
   const handleOpen = () => {
     document.getElementById("Sidebar").style.width = "250px";
@@ -22,7 +19,8 @@ console.log('propsss------', titleBg);
     return(
         <>
         {title ?  <>
-        <StyledSideBar id={id} isDrawer {...props}  titleBg={titleBg}>
+        <StyledSideBar id={id} backgroundColor={backgroundColor} isDrawer  titleBg={titleBg} position={position}
+          onClose={onClose} isCloseButtonShown={isCloseButtonShown}>
             <a className="closeIcon" onClick={handleClose}>&times;</a>
             <StyledSideBarTitle>
               {title}
@@ -32,7 +30,6 @@ console.log('propsss------', titleBg);
           </StyledSideBarBody>
         </StyledSideBar>
         <MainWrapper id="main">
-            {/* <h2>SideBar</h2> */}
             <Button onClick={handleOpen} btnType="success">Open</Button>
         </MainWrapper>
     </> :
@@ -42,7 +39,6 @@ console.log('propsss------', titleBg);
             {children}
         </StyledSideBar>
         <MainWrapper id="main">
-            {/* <h2>SideBar</h2> */}
             <Button onClick={handleOpen} btnType="success">Open</Button>
         </MainWrapper>
         </>

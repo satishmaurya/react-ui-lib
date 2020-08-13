@@ -10,6 +10,7 @@ SidebarTypes.propTypes={
     children:PropTypes.node,
     id:PropTypes.string,
     isDrawer:PropTypes.bool,
+    backgroundColor:PropTypes.string,
 };
 
 SidebarTypes.defaultProps = {
