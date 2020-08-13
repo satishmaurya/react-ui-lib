@@ -21,9 +21,9 @@ var StyledBox = _styledComponents["default"].div.withConfig({
 })(["", " ", " ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", " ", " ", " ", " ", " ", ""], function (props) {
   return props.display ? (0, _styledComponents.css)(["display:", ";"], props.display) : (0, _styledComponents.css)(["display:block;"]);
 }, function (props) {
-  return props.p ? (0, _styledComponents.css)(["padding:", ";"], props.p) : (0, _styledComponents.css)(["padding:10px;"]);
+  return props.p ? (0, _styledComponents.css)(["padding:", ";"], props.p) : (0, _styledComponents.css)(["padding:0px;"]);
 }, function (props) {
-  return props.m ? (0, _styledComponents.css)([" margin:", ";"], props.m) : (0, _styledComponents.css)([" margin:10px;"]);
+  return props.m ? (0, _styledComponents.css)([" margin:", ";"], props.m) : (0, _styledComponents.css)([" margin:0px;"]);
 }, function (props) {
   return props.mt ? (0, _styledComponents.css)([" margin-top:", ";"], props.mt) : (0, _styledComponents.css)([""]);
 }, function (props) {
