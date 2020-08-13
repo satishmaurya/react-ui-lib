@@ -4,7 +4,6 @@ import Button from '../Button/Button';
 
 const Sidebar = (props) => {
   const { children, id, isDrawer, title,titleBg, backgroundColor, position, onClose, isCloseButtonShown} = props;
-console.log('propsss------', props);
 
   const handleOpen = () => {
     document.getElementById("Sidebar").style.width = "250px";
@@ -31,7 +30,6 @@ console.log('propsss------', props);
           </StyledSideBarBody>
         </StyledSideBar>
         <MainWrapper id="main">
-            {/* <h2>SideBar</h2> */}
             <Button onClick={handleOpen} btnType="success">Open</Button>
         </MainWrapper>
     </> :
@@ -41,7 +39,6 @@ console.log('propsss------', props);
             {children}
         </StyledSideBar>
         <MainWrapper id="main">
-            {/* <h2>SideBar</h2> */}
             <Button onClick={handleOpen} btnType="success">Open</Button>
         </MainWrapper>
         </>

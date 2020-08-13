@@ -2,7 +2,6 @@ import styled, {css} from "styled-components";
 
 export const StyledSideBarWrap = styled.div`
 padding-top: 15px;
-border: 1px solid red;
 `
 export const StyledSideBarBody = styled.div`
     padding-top: 15px;   
@@ -13,7 +12,7 @@ export const StyledSideBarBody = styled.div`
     border: 1px solid #e0dede;
 `
 export const StyledSideBarTitle = styled.div`
-padding-top: 15px; border: 1px solid yellow;
+padding-top: 15px; 
     background-color: #fff;
     color: #322f2f;
     font-weight: 600;
@@ -39,7 +38,6 @@ ${props =>
     `
     : css `
     padding-top: 15px;
-    border: 1px solid yellow;
     background-color: #5089de;
     color: #fff;
     font-weight: 600;
