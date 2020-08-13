@@ -17,10 +17,10 @@ export const StyledBox = styled.div`
         padding: ${props.p};
         `:
         css `
-        padding:10px;
+        padding:0px;
         `
         }
-        ${props => props.m ? css ` margin: ${props.m};`: css ` margin:10px; ` } 
+        ${props => props.m ? css ` margin: ${props.m};`: css ` margin:0px; ` } 
         ${props => props.mt ? css ` margin-top: ${props.mt};`: css `` } 
         ${props => props.mb ? css ` margin-bottom: ${props.mb};`: css `` } 
         ${props => props.ml ? css ` margin-left: ${props.ml};`: css `` } 
