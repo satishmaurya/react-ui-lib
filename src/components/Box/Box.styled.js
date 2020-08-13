@@ -2,6 +2,15 @@ import styled, {css} from "styled-components";
 import * as variable from "../../variable";
 
 export const StyledBox = styled.div`
+${props => props.border ? css ` border: ${props.border};`: css `` }  
+${props => props.borderRight ? css ` border-right: ${props.borderRight};`: css `` }  
+${props => props.borderLeft ? css ` border-left: ${props.borderLeft};`: css `` }  
+${props => props.borderTop ? css ` border-top: ${props.borderTop};`: css `` }  
+${props => props.borderBottom ? css ` border-bottom: ${props.borderBottom};`: css `` }  
+${props => props.borderRadius ? css ` border-radius: ${props.borderRadius};`: css `` }  
+${props => props.bgColor ? css ` background-color: ${props.bgColor};`: css `` } 
+${props => props.opacity ? css ` opacity: ${props.opacity};`: css `` } 
+
     ${props =>
     props.display ?
     css `
@@ -28,7 +37,8 @@ export const StyledBox = styled.div`
         ${props => props.pt ? css ` padding-top: ${props.pt};`: css ` ` } 
         ${props => props.pb ? css ` padding-bottom: ${props.pb};`: css ` ` } 
         ${props => props.pl ? css ` padding-left: ${props.pl};`: css `` } 
-        ${props => props.pr ? css ` padding-right: ${props.pr};`: css `` } 
+        ${props => props.pr ? css ` padding-right: ${props.pr};`: css `` }
+       
 
        
     ${props =>
@@ -262,4 +272,6 @@ export const StyledBox = styled.div`
         flex-direction: auto
         `
     }
+
+   
 `
