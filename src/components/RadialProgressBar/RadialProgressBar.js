@@ -43,7 +43,7 @@ const RadialProgress = (props) => {
                   dy=".3em"
                   textAnchor="middle"
                 >
-                  {`${percentage}%`}
+                  {`${percentage}`}
                 </text>
           
         </svg>

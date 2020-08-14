@@ -8,7 +8,7 @@ RadialProgressBarTypes.propTypes={
     percentage: PropTypes.number,
     sqsize: PropTypes.number,
     strokeWidth: PropTypes.number,
-    strokeColor: prototype.string,
+    strokeColor: PropTypes.string,
 };
 
 RadialProgressBarTypes.defaultProps = {
