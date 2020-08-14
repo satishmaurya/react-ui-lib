@@ -24,6 +24,14 @@ BoxTypes.propTypes={
     mr: PropTypes.string,
     mp: PropTypes.string,
     children: PropTypes.node,
+    border: PropTypes.string,
+    borderRight: PropTypes.string,
+    borderLeft: PropTypes.string,
+    borderTop: PropTypes.string,
+    borderBottom: PropTypes.string,
+    borderRadius: PropTypes.string,
+    bgColor: PropTypes.string,
+    opacity: PropTypes.string,
 
 };
 
