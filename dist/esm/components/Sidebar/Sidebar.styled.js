@@ -42,7 +42,7 @@ var StyledSideBar = _styledComponents["default"].div.withConfig({
   displayName: "Sidebarstyled__StyledSideBar",
   componentId: "sc-3ocxlf-3"
 })(["", ",", ",", ""], function (props) {
-  return props.backgroundColor ? (0, _styledComponents.css)(["background:", ";"], props.backgroundColor) : (0, _styledComponents.css)(["background:#3d454e;"]);
+  return props.backgroundColor ? (0, _styledComponents.css)(["background:", ";"], props.backgroundColor) : (0, _styledComponents.css)(["background:transparent;"]);
 }, function (props) {
   return props.isDrawer ? (0, _styledComponents.css)(["height:100%;width:0;color:#fff;position:fixed;z-index:1;top:0;left:0;overflow-x:hidden;transition:0.5s;padding-top:60px;.closeIcon{position:absolute;top:0;right:25px;font-size:36px;margin-left:50px;cursor:pointer;}"]) : (0, _styledComponents.css)(["width:250px;height:100%;color:#fff;position:fixed;z-index:1;top:0;left:0;transition:0.5s;padding-top:60px;"]);
 }, function (props) {
