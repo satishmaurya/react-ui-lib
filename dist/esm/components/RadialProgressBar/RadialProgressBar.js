@@ -51,7 +51,7 @@ var RadialProgress = function RadialProgress(props) {
     y: "49%",
     dy: ".3em",
     textAnchor: "middle"
-  }, "".concat(percentage, "%"))));
+  }, "".concat(percentage))));
 };
 
 var _default = RadialProgress;

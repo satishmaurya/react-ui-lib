@@ -8,6 +8,9 @@ const RadialProgressBar = styled.div`{
         .circle-background {
             stroke: #ddd;
         }
+        .circle-text {
+          font-weight: bold;
+        }
   ${props =>
     props.strokeColor
       ? css`

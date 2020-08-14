@@ -16,7 +16,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var RadialProgressBar = _styledComponents.default.div.withConfig({
   displayName: "RadialProgressBarstyled__RadialProgressBar",
   componentId: "sc-8mp9aj-0"
-})(["{.circle-background,.circle-progress{fill:none;}.circle-background{stroke:#ddd;}", "}"], function (props) {
+})(["{.circle-background,.circle-progress{fill:none;}.circle-background{stroke:#ddd;}.circle-text{font-weight:bold;}", "}"], function (props) {
   return props.strokeColor ? (0, _styledComponents.css)([".circle-progress{stroke:", ";background-position-x:initial;;stroke-linecap:round;stroke-linejoin:round;}.stackui-radialProgress{border-radius:50%;background:#fff;font-size:18px;font-weight:600;align-items:center;justify-content:center;display:flex;flex-direction:column;}"], props.strokeColor) : (0, _styledComponents.css)([""]);
 });
 
