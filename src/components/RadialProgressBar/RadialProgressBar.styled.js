@@ -9,10 +9,10 @@ const RadialProgressBar = styled.div`{
             stroke: #ddd;
         }
   ${props =>
-    props.variant === "primary"
+    props.strokeColor
       ? css`
         .circle-progress {
-            stroke: #1EA7FD;
+            stroke: ${props.strokeColor};
             background-position-x: initial;;
             stroke-linecap: round;
             stroke-linejoin: round;
@@ -29,30 +29,8 @@ const RadialProgressBar = styled.div`{
           }
         `
         :
-      props.variant === "success"
-       ? css`
-       .circle-progress { 
-         stroke: #3e9d3e;
-       }
-       .stackui-radialProgress{
-              border-radius: 50%;
-              background: #fff;
-              font-size: 18px;
-              font-weight: 600;
-              align-items: center;
-              justify-content: center;
-              display: flex;
-              flex-direction: column;
-          }
+       css`
        `
-      : css`
-      .circle-background,
-        .circle-progress {
-            fill: none; 
-            stroke: #1EA7FD;
-        }
-      
-        `
   }
 
 }`;
