@@ -21,10 +21,10 @@ var Sidebar = function Sidebar(props) {
       isDrawer = props.isDrawer,
       title = props.title,
       titleBg = props.titleBg,
-      backgroundColor = props.backgroundColor,
+      bgColor = props.bgColor,
       position = props.position,
       onClose = props.onClose,
-      isCloseButtonShown = props.isCloseButtonShown;
+      isCloseButtonShown = props.isCloseButtonShown; // {{'backgroundColor': status === 'approved' ? 'blue' : status === 'pending' ? 'black' : 'red'}}
 
   var handleOpen = function handleOpen() {
     document.getElementById("Sidebar").style.width = "250px";
@@ -36,42 +36,47 @@ var Sidebar = function Sidebar(props) {
     document.getElementById("main").style.marginLeft = "0";
   };
 
-  if (isDrawer === true) {
-    return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, title ? /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Sidebar.StyledSideBar, {
-      id: id,
-      backgroundColor: backgroundColor,
-      isDrawer: true,
-      titleBg: titleBg,
-      position: position,
-      onClose: onClose,
-      isCloseButtonShown: isCloseButtonShown
-    }, /*#__PURE__*/_react.default.createElement("a", {
-      className: "closeIcon",
-      onClick: handleClose
-    }, "\xD7"), /*#__PURE__*/_react.default.createElement(_Sidebar.StyledSideBarTitle, null, title), /*#__PURE__*/_react.default.createElement(_Sidebar.StyledSideBarBody, null, children)), /*#__PURE__*/_react.default.createElement(_Sidebar.MainWrapper, {
-      id: "main"
-    }, /*#__PURE__*/_react.default.createElement(_Button.default, {
-      onClick: handleOpen,
-      btnType: "success"
-    }, "Open"))) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Sidebar.StyledSideBar, {
-      id: id,
-      isDrawer: true
-    }, /*#__PURE__*/_react.default.createElement("a", {
-      className: "closeIcon",
-      onClick: handleClose
-    }, "\xD7"), children), /*#__PURE__*/_react.default.createElement(_Sidebar.MainWrapper, {
-      id: "main"
-    }, /*#__PURE__*/_react.default.createElement(_Button.default, {
-      onClick: handleOpen,
-      btnType: "success"
-    }, "Open"))));
-  } else {
-    return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Sidebar.StyledSideBar, _extends({}, props, {
-      titleBg: titleBg,
-      title: true
-    }), /*#__PURE__*/_react.default.createElement(_Sidebar.StyledSideBarTitle, null, title), /*#__PURE__*/_react.default.createElement(_Sidebar.StyledSideBarBody, null, children)));
-  }
+  return /*#__PURE__*/_react.default.createElement(_Sidebar.StyledSideBar, _extends({
+    id: id,
+    title: title,
+    position: position
+  }, props), title ? /*#__PURE__*/_react.default.createElement(_Sidebar.StyledSideBar, null, /*#__PURE__*/_react.default.createElement(_Sidebar.StyledSideBarTitle, null, title), /*#__PURE__*/_react.default.createElement(_Sidebar.StyledSideBarBody, null, children)) : isDrawer === 'true' ? /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Sidebar.StyledSideBar, {
+    id: id,
+    isDrawer: true
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    className: "closeIcon",
+    onClick: handleClose
+  }, "\xD7"), children), /*#__PURE__*/_react.default.createElement(_Sidebar.MainWrapper, {
+    id: "main"
+  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+    onClick: handleOpen,
+    btnType: "success"
+  }, "Open"))) : /*#__PURE__*/_react.default.createElement(_Sidebar.StyledSideBar, props, children));
 };
+/* ============As for now drawer functionality is on hold==============*/
+
+/*const handleOpen = () => {
+  document.getElementById("Sidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+const handleClose = () => {
+  document.getElementById("Sidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+  if(isDrawer===true){
+    return(
+        <>
+           <StyledSideBar id={id} isDrawer>
+            <a className="closeIcon" onClick={handleClose}>&times;</a>
+            {children}
+        </StyledSideBar>
+        <MainWrapper id="main">
+            <Button onClick={handleOpen} btnType="success">Open</Button>
+        </MainWrapper>
+        </>
+    )}   */
+
 
 var _default = Sidebar;
 exports.default = _default;
