@@ -56,7 +56,7 @@ ${props =>
     background:${props.backgroundColor};
     `
     :css `
-    background:#3d454e;
+    background:transparent;
     `
     },
 

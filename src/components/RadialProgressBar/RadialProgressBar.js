@@ -2,14 +2,14 @@ import React from 'react';
 import RadialProgressBar from './RadialProgressBar.styled';
 
 const RadialProgress = (props) => {
-    const { sqsize, strokeWidth, percentage, className, variant } = props;
+    const { sqsize, strokeWidth, percentage, className, strokeColor } = props;
     const radius = (sqsize - strokeWidth) / 2;
     const viewBox = `0 0 ${sqsize} ${sqsize}`;
     const dashArray = radius * Math.PI * 2;
     const dashOffset = dashArray - dashArray * percentage / 100;
 
     return (
-      <RadialProgressBar variant={variant}>
+      <RadialProgressBar strokeColor={strokeColor}>
         <svg
           width={sqsize}
           height={sqsize}
