@@ -28,7 +28,15 @@ var Box = function Box(props) {
       mr = props.mr,
       ml = props.ml,
       mp = props.mp,
-      mb = props.mb;
+      mb = props.mb,
+      border = props.border,
+      borderRight = props.borderRight,
+      borderLeft = props.borderLeft,
+      borderTop = props.borderTop,
+      borderBottom = props.borderBottom,
+      borderRadius = props.borderRadius,
+      bgColor = props.bgColor,
+      opacity = props.opacity;
   return /*#__PURE__*/_react["default"].createElement(_Box.StyledBox, _extends({
     justifyItems: justifyItems,
     justifyContent: justifyContent,

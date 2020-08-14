@@ -18,7 +18,23 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var StyledBox = _styledComponents.default.div.withConfig({
   displayName: "Boxstyled__StyledBox",
   componentId: "sc-171tzrz-0"
-})(["", " ", " ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", " ", " ", " ", " ", " ", ""], function (props) {
+})(["", "   ", "   ", "   ", "   ", "   ", "   ", "  ", "  ", " ", " ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", " ", " ", " ", " ", " ", " ", ""], function (props) {
+  return props.border ? (0, _styledComponents.css)([" border:", ";"], props.border) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.borderRight ? (0, _styledComponents.css)([" border-right:", ";"], props.borderRight) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.borderLeft ? (0, _styledComponents.css)([" border-left:", ";"], props.borderLeft) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.borderTop ? (0, _styledComponents.css)([" border-top:", ";"], props.borderTop) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.borderBottom ? (0, _styledComponents.css)([" border-bottom:", ";"], props.borderBottom) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.borderRadius ? (0, _styledComponents.css)([" border-radius:", ";"], props.borderRadius) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.bgColor ? (0, _styledComponents.css)([" background-color:", ";"], props.bgColor) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.opacity ? (0, _styledComponents.css)([" opacity:", ";"], props.opacity) : (0, _styledComponents.css)([""]);
+}, function (props) {
   return props.display ? (0, _styledComponents.css)(["display:", ";"], props.display) : (0, _styledComponents.css)(["display:block;"]);
 }, function (props) {
   return props.p ? (0, _styledComponents.css)(["padding:", ";"], props.p) : (0, _styledComponents.css)(["padding:0px;"]);
