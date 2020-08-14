@@ -4,6 +4,7 @@ const Typography = styled.div`{
   display: block;
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 0;
   ${props=> props.color ? css ` color: ${props.color};` : css ``}
   ${props=> props.textShadow ? css ` text-shadow: ${props.textShadow};` : css `` }
   ${props=>
