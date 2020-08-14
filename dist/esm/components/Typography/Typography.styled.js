@@ -16,7 +16,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var Typography = _styledComponents["default"].div.withConfig({
   displayName: "Typographystyled__Typography",
   componentId: "sc-1fat070-0"
-})(["{display:block;margin-left:0;margin-right:0;", " ", " ", " ", " ", " ", " ", "}"], function (props) {
+})(["{display:block;margin-left:0;margin-right:0;margin-bottom:0;", " ", " ", " ", " ", " ", " ", "}"], function (props) {
   return props.color ? (0, _styledComponents.css)([" color:", ";"], props.color) : (0, _styledComponents.css)([""]);
 }, function (props) {
   return props.textShadow ? (0, _styledComponents.css)([" text-shadow:", ";"], props.textShadow) : (0, _styledComponents.css)([""]);
