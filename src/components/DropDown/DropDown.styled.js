@@ -22,7 +22,7 @@ ${props =>
     ? css `
      background: ${variable.green};
      border: 1px solid ${variable.green};
-    `
+    ` 
     : props.varient === "info"
     ? css `
      background: ${variable.cyan};
@@ -54,7 +54,8 @@ ${props =>
      border: 1px solid ${variable.gray800};
     `
        : css`
-            background: ${variable.gray800}
+       background: transparent;
+       border: 1px solid transparent;
        `
 }
 ${props =>
@@ -67,6 +68,15 @@ ${props =>
         : css`
         cursor: pointer;
         `
+}
+${props =>
+    
+    props.type === "outlined"
+    ? css`
+        background: ${variable.white};
+    `
+    : css`
+    `
 }
 ${props =>
     
@@ -161,24 +171,24 @@ border-radius: .15rem;
 : css`
 `
 }
-${props =>     
-    props.Iconsize === "sm"
-    ? css`
-    font-size: 12px;
-    `
-    :
-    props.Iconsize === "md"
-    ? css`
-    font-size: 14px;
-    `
-    :
-    props.Iconsize === "lg"
-    ? css `
-    font-size: 16px;
-    `
-    : css`
-    `
-    }
+    ${props =>     
+        props.Iconsize === "sm"
+        ? css`
+        font-size: 12px;
+        `
+        :
+        props.Iconsize === "md"
+        ? css`
+        font-size: 14px;
+        `
+        :
+        props.Iconsize === "lg"
+        ? css `
+        font-size: 16px;
+        `
+        : css`
+        `
+        }
 svg{
      margin:0 10px;
      font-size:12px;
@@ -187,8 +197,31 @@ svg{
     border:none;
     box-shadow: 0 0 35px 0 rgba(154,161,171,0.3);
 }
+.dropdown-item{
+ padding:.45rem 1.2rem;
+ font-weight: 400;
+    color: #6c757d;
+    text-align: inherit;
+    white-space: nowrap;
+    font-size: .8125rem;
+    text-transform: capitalize;
+
+    svg{
+        margin-left:0;
+        width:13px;
+        height:13px;
+        font-weight:300;
+    }
+}
+
 .dropdown-toggle::after{
     display: none;
+  }
+  .btn-default{
+color:#6c757d;
+:focus{
+    box-shadow:none;
+}
   }
 
 

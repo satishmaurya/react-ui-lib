@@ -3,6 +3,7 @@ import DropDown from "./DropDown";
 import DropDownTypes from "./DropDown.types";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Icon } from '../Icon';
 
 
 <Meta title="Components/DropDown" component="DropDown" />
@@ -25,16 +26,19 @@ The best part is you can do this with any button variant, too:
          <>
           <span style={{marginRight:20, display: 'inline-block' }} >
         <DropDown btnType="primary" icon="angle-down" Iconsize="sm" iconVariant="solid" options={[{
-          item:'HTML',
-           link :'/about',
+            item:'Add text',
+            link :'/about',
+            icon: 'add',
         },
         {
-          item:'CSS',
+          item:'Delete text',
            link :'/about',
+           icon: 'delete',
         },
         {
-          item:'Javascript',
+          item:'Remove text',
            link :'/about',
+           icon: 'trash',
         }]} />
         </span>
          <span style={{marginRight:20, display: 'inline-block'}}>
@@ -77,7 +81,7 @@ The best part is you can do this with any button variant, too:
         }]} />
         </span>
          <span style={{marginRight:20, display: 'inline-block' }}>
-        <DropDown btnType="warning" icon="angle-down" Iconsize="sm" iconVariant="solid" isDisabled="true" btnVariant="contained" options={[{
+        <DropDown btnType="default"  icon="angle-down" options={[{
           item:'HTML',
         },
         {
@@ -102,9 +106,53 @@ The best part is you can do this with any button variant, too:
     </Story>
 </Preview>
 
-Sizing
+## Dropdown with Icon
 
 Button dropdowns work with buttons of all sizes, including default and split dropdown buttons.
+
+<Preview withToolbar>
+    <Story name="UsageDropdownIcons">
+         <>
+          <span style={{marginRight:20, display: 'inline-block' }} >
+        <DropDown btnType="primary" icon="angle-down"  iconVariant="solid"  size="sm" options={[{
+            item:'Add text',
+            link :'/about',
+            icon: 'add',
+        },
+        {
+          item:'Delete text',
+           link :'/about',
+           icon: 'delete',
+        },
+        {
+          item:'Remove text',
+           link :'/about',
+           icon: 'trash',
+        }]} />
+        </span>
+       <span style={{marginRight:20, display: 'inline-block' }} >
+        <DropDown  icon="angle-down" options={[{
+            item:'Add text',
+            link :'/about',
+            icon: 'add',
+        },
+        {
+          item:'Delete text',
+           link :'/about',
+           icon: 'delete',
+        },
+        {
+          item:'Remove text',
+           link :'/about',
+           icon: 'trash',
+        }]} />
+        </span>
+        </>
+    </Story>
+</Preview>
+
+
+## Sizing
 
 <Preview withToolbar>
     <Story name="UsageIcon">
