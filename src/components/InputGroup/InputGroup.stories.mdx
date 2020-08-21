@@ -1,5 +1,5 @@
 import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
-import StackInputGroup from "./InputGroup";
+import StackInputGroup from "./StackInputGroup";
 import InputGroupTypes from "./InputGroup.types";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -34,7 +34,7 @@ import {StackInputGroup} from "@stack-ui/components";
             <StackInputGroup size="sm" labelText="Read Only" type="text" value="Read Only" disabled />
             </Col>
              <Col xl="6">
-            <StackInputGroup size="sm" as="select" labelText="Input Select">
+            <StackInputGroup size="sm" as="select" labelText="Input Select" bg>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -56,6 +56,7 @@ import {StackInputGroup} from "@stack-ui/components";
              <p> </p>
             <StackInputGroup labelText="Color" type="color" value="#56c2d6"/> 
             </Col>
+           
         </Row>
     </Story>
 </Preview>

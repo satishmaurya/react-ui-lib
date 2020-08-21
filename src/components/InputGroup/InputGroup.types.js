@@ -19,6 +19,7 @@ InputGroupTypes.propTypes={
     placeholder:PropTypes.string,
     id:PropTypes.string,
     rows:PropTypes.string,
+    inputCheck:PropTypes.string,
 };
 
 
