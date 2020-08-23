@@ -7,6 +7,7 @@ DropDownTypes.propTypes={
     
     id:PropTypes.string,
     className:PropTypes.string,
+    value:PropTypes.string,
     options:PropTypes.arrayOf(PropTypes.shape({ }) ),
     btnType: PropTypes.oneOf(['primary','secondary','success','info','warning','danger','purple','light','dark']),
     btnVariant: PropTypes.oneOf(['contained', 'outlined']),
