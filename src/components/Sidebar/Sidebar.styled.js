@@ -12,11 +12,7 @@ export const StyledSideBar = styled.div`
     ${props => props.background ? css ` background: ${props.background};`: css `` }
     ${props => props.color ? css ` color: ${props.color};`: css `` }
     
-<<<<<<< HEAD
     ${props => props.position ==='right' 
-=======
-    ${props => props.position ==='right'
->>>>>>> f193e5df52527eff11d9c92cc89edc3f384ecb7d
        ? css `
        left: auto;
        right: 0;
