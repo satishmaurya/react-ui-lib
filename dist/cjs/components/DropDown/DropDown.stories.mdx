@@ -1,0 +1,190 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import DropDown from "./DropDown";
+import DropDownTypes from "./DropDown.types";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { Icon } from '../Icon';
+
+
+<Meta title="Components/DropDown" component="DropDown" />
+
+<Story name="Import" />
+
+# NavBar
+
+## Import
+
+```jsx
+import {DropDown} from "@stack-ui/components";
+```
+## Variant
+
+The best part is you can do this with any button variant, too:
+
+<Preview withToolbar>
+    <Story name="Usage">
+         <>
+          <span style={{marginRight:20, display: 'inline-block' }} >
+        <DropDown value= "DropDown" btnType="primary" icon="chevron-down" Iconsize="sm" iconVariant="solid" options={[{
+            item:'Add text',
+            link :'/about',
+            icon: 'add',
+        },
+        {
+          item:'Delete text',
+           link :'/about',
+           icon: 'delete',
+        },
+        {
+          item:'Remove text',
+           link :'/about',
+           icon: 'trash',
+        }]} />
+        </span>
+         <span style={{marginRight:20, display: 'inline-block'}}>
+        <DropDown value="Menu item" btnType="secondary" icon="chevron-up" Iconsize="sm" iconVariant="solid" style={{display: 'inline-block'}} options={[{
+          item:'HTML',
+          link :'/about',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+           link :'/home',
+        }]} />
+        </span>
+        <span style={{marginRight:20, display: 'inline-block' }} >
+        <DropDown value="report" btnType="success"  Iconsize="sm"  icon="chevron-down" iconVariant="solid" btnVariant="contained" options={[{
+          item:'HTML',
+           link :'/about',
+        },
+        {
+          item:'CSS',
+           link :'/about',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+            <span style={{marginRight:20, display: 'inline-block' }} >
+        <DropDown value="dropbox" btnType="purple" icon="chevron-down" Iconsize="sm" iconVariant="solid" btnVariant="contained" options={[{
+          item:'HTML',
+           link :'/about',
+        },
+        {
+          item:'CSS',
+           link :'/about',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+           <span style={{marginRight:20, display: 'inline-block' }}>
+        <DropDown value= "DropDown" btnType="danger" icon="chevron-down" Iconsize="sm" iconVariant="solid" isDisabled="true" btnVariant="contained" options={[{
+          item:'HTML',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+        </>
+    </Story>
+</Preview>
+
+## Dropdown with Icon
+
+Button dropdowns work with buttons of all sizes, including default and split dropdown buttons.
+
+<Preview withToolbar>
+    <Story name="UsageDropdownIcons">
+         <>
+          <span style={{marginRight:20, display: 'inline-block' }} >
+        <DropDown btnType="primary"  value= "DropDown" icon="chevron-down"  iconVariant="solid"  size="sm" options={[{
+            item:'Add text',
+            link :'/about',
+            icon: 'add',
+        },
+        {
+          item:'Delete text',
+           link :'/about',
+           icon: 'delete',
+        },
+        {
+          item:'Remove text',
+           link :'/about',
+           icon: 'trash',
+        }]} />
+        </span>
+       <span style={{marginRight:20, display: 'inline-block' }} >
+        <DropDown btnType="default"  value= "default" icon="chevron-down" options={[{
+            item:'Add text',
+            link :'/about',
+            icon: 'add',
+        },
+        {
+          item:'Delete text',
+           link :'/about',
+           icon: 'delete',
+        },
+        {
+          item:'Remove text',
+           link :'/about',
+           icon: 'trash',
+        }]} />
+        </span>
+        </>
+    </Story>
+</Preview>
+
+
+## Sizing
+
+<Preview withToolbar>
+    <Story name="UsageIcon">
+         <>
+          <span style={{marginRight:20, display: 'inline-block' }} >
+        <DropDown btnType="primary" value= "DropDown" icon="chevron-down"  iconVariant="solid"  size="sm" options={[{
+          item:'HTML',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+         <span style={{marginRight:20, display: 'inline-block'}}>
+        <DropDown btnType="info" value= "DropDown" icon="chevron-down" iconVariant="solid" style={{display: 'inline-block'}} options={[{
+          item:'HTML',
+        },
+        {
+          item:'React',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+        <span style={{marginRight:20, display: 'inline-block' }} >
+        <DropDown  btnType="success" value= "DropDown" icon="chevron-down" iconVariant="solid"  size="lg" btnVariant="contained" options={[{
+          item:'HTML',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+        </>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={DropDownTypes} />
