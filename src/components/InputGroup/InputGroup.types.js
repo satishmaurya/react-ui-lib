@@ -19,7 +19,6 @@ InputGroupTypes.propTypes={
     placeholder:PropTypes.string,
     id:PropTypes.string,
     rows:PropTypes.string,
-    radioBtn:PropTypes.bool,
 };
 
 

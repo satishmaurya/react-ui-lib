@@ -9,7 +9,11 @@ var _react = _interopRequireDefault(require("react"));
 
 var _DropDown = _interopRequireDefault(require("./DropDown.styled"));
 
+var _Box = _interopRequireDefault(require("../Box"));
+
 var _reactFontawesome = require("@fortawesome/react-fontawesome");
+
+var _Icon = require("../Icon");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -18,6 +22,7 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 var DropDown = function DropDown(props) {
   var btnType = props.btnType,
       id = props.id,
+      value = props.value,
       isDisabled = props.isDisabled,
       className = props.className,
       btnVariant = props.btnVariant,
@@ -38,19 +43,14 @@ var DropDown = function DropDown(props) {
     rounded: rounded,
     block: block,
     id: id
-  }, props), "DropDown", icon && iconVariant === 'regular' ? /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
-    icon: ['far', icon],
-    Iconsize: Iconsize
-  }) : iconVariant === 'solid' ? /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
-    icon: ['fas', icon],
-    Iconsize: Iconsize
-  }) : /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
-    icon: ['fas', icon],
-    Iconsize: Iconsize
+  }, props), value, /*#__PURE__*/_react["default"].createElement(_Icon.Icon, {
+    icon: icon
   }), children), /*#__PURE__*/_react["default"].createElement(_DropDown["default"].Menu, null, options.map(function (item, key) {
     return /*#__PURE__*/_react["default"].createElement(_DropDown["default"].Item, {
       href: item.link
-    }, item.item);
+    }, /*#__PURE__*/_react["default"].createElement(_Icon.Icon, {
+      icon: item.icon
+    }), item.item);
   })));
 };
 

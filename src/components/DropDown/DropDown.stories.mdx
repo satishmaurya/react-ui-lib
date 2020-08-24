@@ -3,6 +3,7 @@ import DropDown from "./DropDown";
 import DropDownTypes from "./DropDown.types";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Icon } from '../Icon';
 
 
 <Meta title="Components/DropDown" component="DropDown" />
@@ -24,21 +25,24 @@ The best part is you can do this with any button variant, too:
     <Story name="Usage">
          <>
           <span style={{marginRight:20, display: 'inline-block' }} >
-        <DropDown btnType="primary" icon="angle-down" Iconsize="sm" iconVariant="solid" options={[{
-          item:'HTML',
-           link :'/about',
+        <DropDown value= "DropDown" btnType="primary" icon="chevron-down" Iconsize="sm" iconVariant="solid" options={[{
+            item:'Add text',
+            link :'/about',
+            icon: 'add',
         },
         {
-          item:'CSS',
+          item:'Delete text',
            link :'/about',
+           icon: 'delete',
         },
         {
-          item:'Javascript',
+          item:'Remove text',
            link :'/about',
+           icon: 'trash',
         }]} />
         </span>
          <span style={{marginRight:20, display: 'inline-block'}}>
-        <DropDown btnType="secondary" icon="angle-up" Iconsize="sm" iconVariant="solid" style={{display: 'inline-block'}} options={[{
+        <DropDown value="Menu item" btnType="secondary" icon="chevron-up" Iconsize="sm" iconVariant="solid" style={{display: 'inline-block'}} options={[{
           item:'HTML',
           link :'/about',
         },
@@ -51,7 +55,7 @@ The best part is you can do this with any button variant, too:
         }]} />
         </span>
         <span style={{marginRight:20, display: 'inline-block' }} >
-        <DropDown  btnType="success"  Iconsize="sm"  icon="angle-down" iconVariant="solid" btnVariant="contained" options={[{
+        <DropDown value="report" btnType="success"  Iconsize="sm"  icon="chevron-down" iconVariant="solid" btnVariant="contained" options={[{
           item:'HTML',
            link :'/about',
         },
@@ -64,31 +68,20 @@ The best part is you can do this with any button variant, too:
         }]} />
         </span>
             <span style={{marginRight:20, display: 'inline-block' }} >
-        <DropDown btnType="info" icon="angle-down" Iconsize="sm" iconVariant="solid" btnVariant="contained" options={[{
+        <DropDown value="dropbox" btnType="purple" icon="chevron-down" Iconsize="sm" iconVariant="solid" btnVariant="contained" options={[{
           item:'HTML',
            link :'/about',
         },
         {
           item:'CSS',
            link :'/about',
-        },
-        {
-          item:'Javascript',
-        }]} />
-        </span>
-         <span style={{marginRight:20, display: 'inline-block' }}>
-        <DropDown btnType="warning" icon="angle-down" Iconsize="sm" iconVariant="solid" isDisabled="true" btnVariant="contained" options={[{
-          item:'HTML',
-        },
-        {
-          item:'CSS',
         },
         {
           item:'Javascript',
         }]} />
         </span>
            <span style={{marginRight:20, display: 'inline-block' }}>
-        <DropDown btnType="danger" icon="angle-down" Iconsize="sm" iconVariant="solid" isDisabled="true" btnVariant="contained" options={[{
+        <DropDown value= "DropDown" btnType="danger" icon="chevron-down" Iconsize="sm" iconVariant="solid" isDisabled="true" btnVariant="contained" options={[{
           item:'HTML',
         },
         {
@@ -102,15 +95,59 @@ The best part is you can do this with any button variant, too:
     </Story>
 </Preview>
 
-Sizing
+## Dropdown with Icon
 
 Button dropdowns work with buttons of all sizes, including default and split dropdown buttons.
+
+<Preview withToolbar>
+    <Story name="UsageDropdownIcons">
+         <>
+          <span style={{marginRight:20, display: 'inline-block' }} >
+        <DropDown btnType="primary"  value= "DropDown" icon="chevron-down"  iconVariant="solid"  size="sm" options={[{
+            item:'Add text',
+            link :'/about',
+            icon: 'add',
+        },
+        {
+          item:'Delete text',
+           link :'/about',
+           icon: 'delete',
+        },
+        {
+          item:'Remove text',
+           link :'/about',
+           icon: 'trash',
+        }]} />
+        </span>
+       <span style={{marginRight:20, display: 'inline-block' }} >
+        <DropDown btnType="default"  value= "default" icon="chevron-down" options={[{
+            item:'Add text',
+            link :'/about',
+            icon: 'add',
+        },
+        {
+          item:'Delete text',
+           link :'/about',
+           icon: 'delete',
+        },
+        {
+          item:'Remove text',
+           link :'/about',
+           icon: 'trash',
+        }]} />
+        </span>
+        </>
+    </Story>
+</Preview>
+
+
+## Sizing
 
 <Preview withToolbar>
     <Story name="UsageIcon">
          <>
           <span style={{marginRight:20, display: 'inline-block' }} >
-        <DropDown btnType="primary" icon="angle-down"  iconVariant="solid"  size="sm" options={[{
+        <DropDown btnType="primary" value= "DropDown" icon="chevron-down"  iconVariant="solid"  size="sm" options={[{
           item:'HTML',
         },
         {
@@ -121,7 +158,7 @@ Button dropdowns work with buttons of all sizes, including default and split dro
         }]} />
         </span>
          <span style={{marginRight:20, display: 'inline-block'}}>
-        <DropDown btnType="info" icon="angle-down" iconVariant="solid" style={{display: 'inline-block'}} options={[{
+        <DropDown btnType="info" value= "DropDown" icon="chevron-down" iconVariant="solid" style={{display: 'inline-block'}} options={[{
           item:'HTML',
         },
         {
@@ -132,7 +169,7 @@ Button dropdowns work with buttons of all sizes, including default and split dro
         }]} />
         </span>
         <span style={{marginRight:20, display: 'inline-block' }} >
-        <DropDown  btnType="success" icon="angle-down" iconVariant="solid"  size="lg" btnVariant="contained" options={[{
+        <DropDown  btnType="success" value= "DropDown" icon="chevron-down" iconVariant="solid"  size="lg" btnVariant="contained" options={[{
           item:'HTML',
         },
         {
