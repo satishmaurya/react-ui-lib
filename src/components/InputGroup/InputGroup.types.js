@@ -30,6 +30,7 @@ InputGroupTypes.propTypes={
     labelText:'',
     labelInline:false,
     rounded: 'default',
+    radioBtn: false,
 };
 
 export default InputGroupTypes;

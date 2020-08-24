@@ -11,6 +11,8 @@ SidebarTypes.propTypes={
     id:PropTypes.string,
     isDrawer:PropTypes.bool,
     backgroundColor:PropTypes.string,
+    color: PropTypes.string,
+    onClick: PropTypes.func,
 };
 
 SidebarTypes.defaultProps = {
