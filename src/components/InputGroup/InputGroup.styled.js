@@ -20,6 +20,26 @@ const StyledInputGroup = styled(Form)`
         `
         : props.color === "success"
 }
+${props => props.disabled 
+    ? css ` 
+    cursor: not-allowed;
+     & label {
+      cursor: not-allowed !important;
+      }
+      & input {
+        cursor: not-allowed !important;
+        }
+  `
+  : css `` }
+
+  ${props => props.error 
+    ? css ` 
+     & input {
+        box-shadow: rgb(181, 39, 29) 0px 1px 0px 0px inset;
+        background: rgb(248, 217, 215);
+     }
+  `
+  : css `` }
 `
 
 export default StyledInputGroup;
