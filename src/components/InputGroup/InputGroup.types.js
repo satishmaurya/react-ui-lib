@@ -19,7 +19,7 @@ InputGroupTypes.propTypes={
     placeholder:PropTypes.string,
     id:PropTypes.string,
     rows:PropTypes.string,
-    inputCheck:PropTypes.string,
+    radioBtn:PropTypes.bool,
 };
 
 
@@ -31,6 +31,7 @@ InputGroupTypes.propTypes={
     labelText:'',
     labelInline:false,
     rounded: 'default',
+    radioBtn: false,
 };
 
 export default InputGroupTypes;

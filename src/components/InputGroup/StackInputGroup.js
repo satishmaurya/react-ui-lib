@@ -7,7 +7,7 @@ import Form from 'react-bootstrap/Form';
 const StackInputGroup = (props) =>{
     const {type, as, rows, bsPrefix, disabled, value, rounded, children, size,
         labelBg, icon, placeholder,id, labelText, labelInline,
-        inputCheck, inputRadio } = props;
+        inputCheck, radioBtn } = props;
     return(
  
             <StyledInputGroup>
@@ -18,6 +18,14 @@ const StackInputGroup = (props) =>{
                 </InputGroup.Prepend> 
                     <Form.Control as={as} rows={rows} bsPrefix={bsPrefix} size={size} {...props} />
               </InputGroup>
+              : radioBtn ? <>
+                  {/* <InputGroup> */}
+                    <InputGroup.Append>
+                      <InputGroup.Radio labelText={labelText} />
+                    </InputGroup.Append>
+                      <Form.Control  as={as} rows={rows} bsPrefix={bsPrefix} size={size} {...props} />
+                  {/* </InputGroup> */}
+              </>
                 : <>
                     <Form.Label>{labelText}</Form.Label> 
                       <Form.Control as={as} rows={rows} bsPrefix={bsPrefix} size={size} {...props} /> 
