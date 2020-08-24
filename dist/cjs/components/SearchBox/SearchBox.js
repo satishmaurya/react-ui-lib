@@ -16,7 +16,8 @@ var SearchBox = function SearchBox(props) {
       children = props.children,
       size = props.size,
       bg = props.bg,
-      borderRadius = props.borderRadius;
+      borderRadius = props.borderRadius,
+      onFocus = props.onFocus;
   return /*#__PURE__*/_react.default.createElement(_SearchBox.StyledForm, {
     inline: true
   }, /*#__PURE__*/_react.default.createElement(_SearchBox.StyledSearchBox, {
@@ -24,7 +25,8 @@ var SearchBox = function SearchBox(props) {
     bg: bg,
     size: size,
     type: "text",
-    placeholder: placeholder
+    placeholder: placeholder,
+    onFocus: onFocus
   }), children);
 };
 

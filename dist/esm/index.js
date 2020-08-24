@@ -165,6 +165,12 @@ Object.defineProperty(exports, "SearchBox", {
     return _SearchBox.SearchBox;
   }
 });
+Object.defineProperty(exports, "Radio", {
+  enumerable: true,
+  get: function get() {
+    return _Radio.Radio;
+  }
+});
 
 var _Avatar = require("./components/Avatar");
 
@@ -213,3 +219,5 @@ var _Breadcum = require("./components/Breadcum");
 var _Layout = require("./components/Layout");
 
 var _SearchBox = require("./components/SearchBox");
+
+var _Radio = require("./components/Radio");

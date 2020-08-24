@@ -18,7 +18,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var StyledAvatarText = _styledComponents["default"].div.withConfig({
   displayName: "Avatarstyled__StyledAvatarText",
   componentId: "sc-1bzs7vc-0"
-})(["padding-top:15px;h4{font-size:1.2rem;padding:12px 0px 0;},p{font-size:1rem;}"]);
+})(["h4{font-size:1.2rem;padding:12px 0px 0;},p{font-size:1rem;}"]);
 
 exports.StyledAvatarText = StyledAvatarText;
 
