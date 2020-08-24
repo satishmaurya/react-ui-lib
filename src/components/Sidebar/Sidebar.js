@@ -5,7 +5,7 @@ import { StyledSideBar } from './Sidebar.styled';
 const Sidebar = (props) => {
   const { children, position, color, onClick } = props;
   return (
-    <StyledSideBar {...props}>
+    <StyledSideBar {...props}> 
       {children}
     </StyledSideBar>
   )
