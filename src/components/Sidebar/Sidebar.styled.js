@@ -10,4 +10,13 @@ export const StyledSideBar = styled.div`
     padding: 10px;
     overflow: auto;
     ${props => props.background ? css ` background: ${props.background};`: css `` }
+    ${props => props.color ? css ` color: ${props.color};`: css `` }
+    
+    ${props => props.position ==='right'
+       ? css `
+       left: auto;
+       right: 0;
+        `
+        : css `  ` }
+
 `

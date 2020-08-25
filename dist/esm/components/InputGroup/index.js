@@ -3,13 +3,13 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "InputGroup", {
+Object.defineProperty(exports, "StackInputGroup", {
   enumerable: true,
   get: function get() {
-    return _InputGroup["default"];
+    return _StackInputGroup["default"];
   }
 });
 
-var _InputGroup = _interopRequireDefault(require("./InputGroup"));
+var _StackInputGroup = _interopRequireDefault(require("./StackInputGroup"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }

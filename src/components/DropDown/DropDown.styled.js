@@ -5,56 +5,57 @@ import Dropdown from 'react-bootstrap/Dropdown';
 const StyledDropDown = styled(Dropdown)`
 padding: 6px 16px;
 border-radius: 4px;
-varient: ${variable.white};
+color: ${variable.white};
 ${props =>
-    props.varient === "primary"
+    props.btnType === "primary"
     ? css `
         background: ${variable.blue};
         border: 1px solid ${variable.blue};
     `
-    : props.varient === "secondary"
+    : props.btnType === "secondary"
        ? css `
         background: ${variable.gray600};
         border: 1px solid ${variable.gray600};
 
     `
-    : props.varient === "success"
+    : props.btnType === "success"
     ? css `
      background: ${variable.green};
      border: 1px solid ${variable.green};
     `
-    : props.varient === "info"
+    : props.btnType === "info"
     ? css `
      background: ${variable.cyan};
      border: 1px solid ${variable.cyan};
     `
-    : props.varient === "warning"
+    : props.btnType === "warning"
     ? css `
      background: ${variable.yellow};
      border: 1px solid ${variable.yellow};
     `
-    : props.varient === "danger"
+    : props.btnType === "danger"
     ? css `
      background: ${variable.orange};
      border: 1px solid ${variable.orange};
     `
-    : props.varient === "purple"
+    : props.btnType === "purple"
     ? css `
      background: ${variable.purple};
      border: 1px solid ${variable.purple};
     `
-    : props.varient === "light"
+    : props.btnType === "light"
     ? css `
      background: ${variable.gray100};
      border: 1px solid ${variable.gray100};
     `
-    : props.varient === "dark"
+    : props.btnType === "dark"
     ? css `
      background: ${variable.gray800};
      border: 1px solid ${variable.gray800};
     `
        : css`
-            background: ${variable.gray800}
+            background: transparent;
+            border:1px solid transparent;
        `
 }
 ${props =>
@@ -79,53 +80,14 @@ ${props =>
 }
 ${props =>
     
-    props.type === "outlined" && props.varient === "primary"
+    props.type === "outlined"
     ? css`
-        varient: ${variable.blue};
-    `
-    :
-    props.type === "outlined" && props.varient === "secondary"
-    ? css`
-        varient: ${variable.gray600};
-    `
-    :
-    props.type === "outlined" && props.varient === "success"
-    ? css`
-        varient: ${variable.green};
-    `
-    :
-    props.type === "outlined" && props.varient === "info"
-    ? css`
-        varient: ${variable.cyan};
-    `
-    :
-    props.type === "outlined" && props.varient === "warning"
-    ? css`
-        varient: ${variable.yellow};
-    `
-    :
-    props.type === "outlined" && props.varient === "danger"
-    ? css`
-        varient: ${variable.orange};
-    `
-    :
-    props.type === "outlined" && props.varient === "purple"
-    ? css`
-        varient: ${variable.purple};
-    `
-    :   
-    props.type === "outlined" && props.varient === "light"
-    ? css`
-        varient: ${variable.gray100};
-    `
-    :
-    props.type === "outlined" && props.varient === "dark"
-    ? css`
-        varient: ${variable.gray800};
+        background: ${variable.white};
     `
     : css`
     `
 }
+
 ${props =>
     props.rounded === "rounded"
     ? css `
@@ -161,24 +123,24 @@ border-radius: .15rem;
 : css`
 `
 }
-${props =>     
-    props.Iconsize === "sm"
-    ? css`
-    font-size: 12px;
-    `
-    :
-    props.Iconsize === "md"
-    ? css`
-    font-size: 14px;
-    `
-    :
-    props.Iconsize === "lg"
-    ? css `
-    font-size: 16px;
-    `
-    : css`
-    `
-    }
+    ${props =>     
+        props.Iconsize === "sm"
+        ? css`
+        font-size: 12px;
+        `
+        :
+        props.Iconsize === "md"
+        ? css`
+        font-size: 14px;
+        `
+        :
+        props.Iconsize === "lg"
+        ? css `
+        font-size: 16px;
+        `
+        : css`
+        `
+        }
 svg{
      margin:0 10px;
      font-size:12px;
@@ -187,8 +149,31 @@ svg{
     border:none;
     box-shadow: 0 0 35px 0 rgba(154,161,171,0.3);
 }
+.dropdown-item{
+ padding:.45rem 1.2rem;
+ font-weight: 400;
+    color: #6c757d;
+    text-align: inherit;
+    white-space: nowrap;
+    font-size: .8125rem;
+    text-transform: capitalize;
+
+    svg{
+        margin-left:0;
+        width:13px;
+        height:13px;
+        font-weight:300;
+    }
+}
+
 .dropdown-toggle::after{
     display: none;
+  }
+  .btn-default{
+color:#6c757d;
+:focus{
+    box-shadow:none;
+}
   }
 
 

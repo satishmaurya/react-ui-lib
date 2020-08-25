@@ -16,8 +16,12 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var StyledSideBar = _styledComponents.default.div.withConfig({
   displayName: "Sidebarstyled__StyledSideBar",
   componentId: "sc-3ocxlf-0"
-})(["position:fixed;top:0px;left:0px;z-index:101;height:100vh;width:250px;padding:10px;overflow:auto;", ""], function (props) {
+})(["position:fixed;top:0px;left:0px;z-index:101;height:100vh;width:250px;padding:10px;overflow:auto;", " ", " ", ""], function (props) {
   return props.background ? (0, _styledComponents.css)([" background:", ";"], props.background) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.color ? (0, _styledComponents.css)([" color:", ";"], props.color) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.position === 'right' ? (0, _styledComponents.css)(["left:auto;right:0;"]) : (0, _styledComponents.css)(["  "]);
 });
 
 exports.StyledSideBar = StyledSideBar;

@@ -13,7 +13,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 /* eslint-disable no-unused-expressions */
 var Sidebar = function Sidebar(props) {
-  var children = props.children;
+  var children = props.children,
+      position = props.position,
+      color = props.color,
+      onClick = props.onClick;
   return /*#__PURE__*/_react["default"].createElement(_Sidebar.StyledSideBar, props, children);
 };
 

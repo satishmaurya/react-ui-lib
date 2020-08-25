@@ -2,7 +2,6 @@ import styled, {css} from "styled-components";
 import * as variable from "../../variable";
 
 export const StyledAvatarText = styled.div`
-padding-top: 15px;
     h4 {
       font-size: 1.2rem;
       padding: 12px 0px 0;
