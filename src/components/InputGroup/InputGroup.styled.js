@@ -38,6 +38,10 @@ ${props => props.disabled
         box-shadow: rgb(181, 39, 29) 0px 1px 0px 0px inset;
         background: rgb(248, 217, 215);
      }
+     & .input-group-text {
+        box-shadow: rgb(181,39,29) 0px 1px 0px 0px inset;
+        background: rgb(248,217,215);
+    }
   `
   : css `` }
 `

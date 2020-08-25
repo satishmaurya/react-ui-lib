@@ -6,11 +6,11 @@ import Form from 'react-bootstrap/Form';
 
 const StackInputGroup = (props) =>{
     const {type, as, rows, bsPrefix, disabled, value, rounded, children, size,
-        labelBg, icon, placeholder,id, labelText, labelInline, error
+        labelBg, icon, placeholder,id, labelText, labelInline, error, hint
          } = props;
     return(
  
-            <StyledInputGroup disabled={disabled} error={error}>
+            <StyledInputGroup disabled={disabled} error={error} hint={hint}>
               { labelInline ?
               <InputGroup size={size}> 
                  <InputGroup.Prepend>
