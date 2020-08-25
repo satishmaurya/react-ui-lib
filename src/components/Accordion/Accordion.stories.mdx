@@ -1,0 +1,30 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import Accordion from "./Accordion";
+import AccordionTypes from "./Accordion.types";
+
+<Meta title="Components/Accordion" component="Accordion" />
+
+<Story name="Import" />
+
+# Accordion
+
+## Import
+
+```jsx
+import {Accordion} from "@stack-ui/components";
+```
+## Entire Header Clickable
+
+<Preview withToolbar>
+    <Story name="Accordion">
+         <Accordion />
+    </Story>
+</Preview>
+
+
+
+<Story name="Props" />
+
+## Props
+
+<Props of={AccordionTypes} />
