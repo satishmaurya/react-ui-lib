@@ -1,7 +1,5 @@
 import React from "react";
 import StyledDropDown from "./DropDown.styled";
-import Box from '../Box';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {Icon} from '../Icon';
 
 

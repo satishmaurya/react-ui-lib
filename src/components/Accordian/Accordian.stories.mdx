@@ -1,11 +1,9 @@
 import { Meta, Story, Preview, Props} from "@storybook/addon-docs/blocks";
 import Accordian from "./Accordian";
 import AccordianTypes from "./Accordian.types";
-import Button from "../Button/Button";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import CardDeck from 'react-bootstrap/CardDeck'
+import {Card, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 <Meta title="Components/Accordian" component="Accordian"  />
@@ -24,13 +22,20 @@ import CardDeck from 'react-bootstrap/CardDeck'
 
 <Story name="Usages"/>
 
-### Default card
+### Entire Header Clickable
 <Preview withToolbar>
 <Story name="-Default">
     <>
-    <Accordian>
-       
-    </Accordian>
+    <Accordian  label="Card Title" variant="link" as={Card.Header} content="the body content must goes here...." icon="chevron-down" />
+    </>
+</Story>
+</Preview>
+
+### Collapsed Link only
+<Preview withToolbar>
+<Story name="-LinkAccordion">
+    <>
+    <Accordian label="Button Title" as={Button} width="200px" variant="link" content="the body content must goes here...." icon="chevron-down" />
     </>
 </Story>
 </Preview>
