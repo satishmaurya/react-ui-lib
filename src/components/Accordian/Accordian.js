@@ -11,8 +11,6 @@ const Accordian = (props) =>{
     const{ children, icon, label, content, background, as, width, className, varient, onClick, position } =props;
     return(
         <StyledAccordion>
-            {children}
-            
   <Card>
     <StyledAccordion.Toggle varient={varient} width={width} background={background} {...props} className={`${active ? "active" : ""}`} as={ as} eventKey="0" onClick={()=> setActive(!active)}>
      {label}

@@ -4,7 +4,6 @@ import Accordion from 'react-bootstrap/Accordion'
 
 const StyledAccordion = Styled(Accordion)`
 ${props => props.background ? css ` background-color: ${props.background};`: css `` } 
-${props => props.width ? css ` width: ${props.width};`: css `` }
 
 
 ${props => props.position ==='right' 
@@ -28,6 +27,8 @@ box-shadow:none!important;
     text-align:left;
     width:200px;
  }
+${props => props.width ? css ` width: ${props.width};`: css `background-color:"#000000"` }
+
 `;
 
 export default StyledAccordion;
