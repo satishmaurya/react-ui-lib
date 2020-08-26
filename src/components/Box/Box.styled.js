@@ -12,6 +12,14 @@ ${props => props.bgColor ? css ` background-color: ${props.bgColor};`: css `` }
 ${props => props.opacity ? css ` opacity: ${props.opacity};`: css `` }
 ${props => props.width ? css ` width: ${props.width};`: css `` }
 ${props => props.background ? css ` background: ${props.background};`: css `` }
+${props => props.bgImg ? css ` 
+    background-image: ${props.bgImg};
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+`: css `` }
 
 
     ${props =>
