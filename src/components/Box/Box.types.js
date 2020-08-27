@@ -34,6 +34,7 @@ BoxTypes.propTypes={
     opacity: PropTypes.string,
     width: PropTypes.string,
     textAlign: PropTypes.string,
+    bgImg: PropTypes.string,
 
 };
 
