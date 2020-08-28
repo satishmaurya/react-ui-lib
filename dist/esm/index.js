@@ -171,6 +171,18 @@ Object.defineProperty(exports, "Radio", {
     return _Radio.Radio;
   }
 });
+Object.defineProperty(exports, "Checkbox", {
+  enumerable: true,
+  get: function get() {
+    return _CheckboxGroup.Checkbox;
+  }
+});
+Object.defineProperty(exports, "Accordian", {
+  enumerable: true,
+  get: function get() {
+    return _Accordian.Accordian;
+  }
+});
 
 var _Avatar = require("./components/Avatar");
 
@@ -221,3 +233,7 @@ var _Layout = require("./components/Layout");
 var _SearchBox = require("./components/SearchBox");
 
 var _Radio = require("./components/Radio");
+
+var _CheckboxGroup = require("./components/CheckboxGroup");
+
+var _Accordian = require("./components/Accordian");

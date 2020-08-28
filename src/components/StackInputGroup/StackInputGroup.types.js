@@ -19,6 +19,7 @@ StackInputGroupTypes.propTypes={
     placeholder:PropTypes.string,
     id:PropTypes.string,
     rows:PropTypes.string,
+    error: PropTypes.bool,
 };
 
 
@@ -30,7 +31,6 @@ StackInputGroupTypes.defaultProps = {
     labelText:'',
     labelInline:false,
     rounded: 'default',
-    radioBtn: false,
 };
 
 export default StackInputGroupTypes;

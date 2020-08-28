@@ -81,6 +81,12 @@ display: flex;
   & .radio-btn .radio-check:after {
     background: rgb(181, 39, 29);
 }
+& .radio-check {
+  background-color: #ef5b5b;
+}
+& .radio-btn:hover input ~ .radio-check {
+  background-color: #ef5b5b;
+}
 & label{
   color: #cc2424;
 }

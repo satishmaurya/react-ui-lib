@@ -9,10 +9,6 @@ var _react = _interopRequireDefault(require("react"));
 
 var _DropDown = _interopRequireDefault(require("./DropDown.styled"));
 
-var _Box = _interopRequireDefault(require("../Box"));
-
-var _reactFontawesome = require("@fortawesome/react-fontawesome");
-
 var _Icon = require("../Icon");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

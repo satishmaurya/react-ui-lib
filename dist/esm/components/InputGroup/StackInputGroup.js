@@ -32,8 +32,14 @@ var StackInputGroup = function StackInputGroup(props) {
       placeholder = props.placeholder,
       id = props.id,
       labelText = props.labelText,
-      labelInline = props.labelInline;
-  return /*#__PURE__*/_react["default"].createElement(_InputGroup["default"], null, labelInline ? /*#__PURE__*/_react["default"].createElement(_InputGroup2["default"], {
+      labelInline = props.labelInline,
+      error = props.error,
+      hint = props.hint;
+  return /*#__PURE__*/_react["default"].createElement(_InputGroup["default"], {
+    disabled: disabled,
+    error: error,
+    hint: hint
+  }, labelInline ? /*#__PURE__*/_react["default"].createElement(_InputGroup2["default"], {
     size: size
   }, /*#__PURE__*/_react["default"].createElement(_InputGroup2["default"].Prepend, null, /*#__PURE__*/_react["default"].createElement(_InputGroup2["default"].Text, {
     id: id,
