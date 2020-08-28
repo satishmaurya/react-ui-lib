@@ -45,10 +45,10 @@ Object.defineProperty(exports, "Footer", {
     return _Footer.Footer;
   }
 });
-Object.defineProperty(exports, "InputGroup", {
+Object.defineProperty(exports, "StackInputGroup", {
   enumerable: true,
   get: function get() {
-    return _InputGroup.InputGroup;
+    return _StackInputGroup.StackInputGroup;
   }
 });
 Object.defineProperty(exports, "NavBar", {
@@ -198,7 +198,7 @@ var _Header = require("./components/Header");
 
 var _Footer = require("./components/Footer");
 
-var _InputGroup = require("./components/InputGroup");
+var _StackInputGroup = require("./components/StackInputGroup");
 
 var _NavBar = require("./components/NavBar");
 
