@@ -15,12 +15,14 @@ var Radio = function Radio(props) {
   var label = props.label,
       disabled = props.disabled,
       error = props.error,
-      onClick = props.onClick;
+      onClick = props.onClick,
+      value = props.value,
+      name = props.name;
   return /*#__PURE__*/_react.default.createElement(_Radio.StyledRadio, props, /*#__PURE__*/_react.default.createElement("label", {
     class: "radio-btn"
   }, label, /*#__PURE__*/_react.default.createElement("input", {
     type: "radio",
-    name: "radio",
+    name: name,
     disabled: disabled,
     error: error
   }), /*#__PURE__*/_react.default.createElement("span", {

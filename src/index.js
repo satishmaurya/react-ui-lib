@@ -24,4 +24,6 @@ export { Breadcum, StyledBreadcum } from './components/Breadcum';
 export { Container, Row, Col } from './components/Layout';
 export { SearchBox } from './components/SearchBox';
 export { Radio } from './components/Radio';
+export { Checkbox } from './components/CheckboxGroup';
+export { Accordian } from './components/Accordian';
 

@@ -18,7 +18,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var StyledBox = _styledComponents["default"].div.withConfig({
   displayName: "Boxstyled__StyledBox",
   componentId: "sc-171tzrz-0"
-})(["", "   ", "   ", "   ", "   ", "   ", "   ", "  ", " ", " ", " ", " ", " ", " ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", " ", " ", " ", " ", " ", " ", ""], function (props) {
+})(["", "   ", "   ", "   ", "   ", "   ", "   ", "  ", " ", " ", " ", " ", " ", " ", " ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", " ", " ", " ", " ", " ", " ", ""], function (props) {
   return props.border ? (0, _styledComponents.css)([" border:", ";"], props.border) : (0, _styledComponents.css)([""]);
 }, function (props) {
   return props.borderRight ? (0, _styledComponents.css)([" border-right:", ";"], props.borderRight) : (0, _styledComponents.css)([""]);
@@ -38,6 +38,8 @@ var StyledBox = _styledComponents["default"].div.withConfig({
   return props.width ? (0, _styledComponents.css)([" width:", ";"], props.width) : (0, _styledComponents.css)([""]);
 }, function (props) {
   return props.background ? (0, _styledComponents.css)([" background:", ";"], props.background) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.bgImg ? (0, _styledComponents.css)(["  background-image:", ";height:100vh;background-size:cover;background-repeat:no-repeat;color:white;"], props.bgImg) : (0, _styledComponents.css)([""]);
 }, function (props) {
   return props.display ? (0, _styledComponents.css)(["display:", ";"], props.display) : (0, _styledComponents.css)(["display:block;"]);
 }, function (props) {

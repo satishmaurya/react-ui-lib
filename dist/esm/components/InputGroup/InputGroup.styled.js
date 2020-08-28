@@ -22,8 +22,12 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var StyledInputGroup = (0, _styledComponents["default"])(_Form["default"]).withConfig({
   displayName: "InputGroupstyled__StyledInputGroup",
   componentId: "sc-15pecrt-0"
-})(["", ""], function (props) {
+})(["", " ", " ", ""], function (props) {
   return props.bg ? (0, _styledComponents.css)(["background:", " !important;border:1px solid ", ";"], variable.gray700, props.bg) : props.color === "secondary" ? (0, _styledComponents.css)(["background:", ";border:1px solid ", ";"], variable.gray600, variable.gray600) : props.color === "success";
+}, function (props) {
+  return props.disabled ? (0, _styledComponents.css)(["  cursor:not-allowed;& label{cursor:not-allowed !important;}& input{cursor:not-allowed !important;}"]) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.error ? (0, _styledComponents.css)(["  & input{box-shadow:rgb(181,39,29) 0px 1px 0px 0px inset;background:rgb(248,217,215);}& .input-group-text{box-shadow:rgb(181,39,29) 0px 1px 0px 0px inset;background:rgb(248,217,215);}"]) : (0, _styledComponents.css)([""]);
 });
 var _default = StyledInputGroup;
 exports["default"] = _default;
