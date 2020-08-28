@@ -6,7 +6,7 @@ export { Card } from './components/Card';
 export { DropDown } from './components/DropDown';
 export { Header } from './components/Header';
 export { Footer } from './components/Footer';
-export { InputGroup} from './components/InputGroup';
+export { StackInputGroup } from './components/StackInputGroup';
 export { NavBar } from './components/NavBar';
 export { ProgressBar } from './components/ProgressBar';
 export { Sidebar } from './components/Sidebar';
