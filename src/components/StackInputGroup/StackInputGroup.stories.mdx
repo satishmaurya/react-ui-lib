@@ -13,7 +13,7 @@ import Col from 'react-bootstrap/Col';
 ## Import
 
 ```jsx
-import {StackInputGroup} from "@stack-ui/components";
+import {InputGroup} from "@stack-ui/components";
 ```
 ## Basic Form and Input Field
 
@@ -21,17 +21,17 @@ import {StackInputGroup} from "@stack-ui/components";
     <Story name="Usage">
          <Row>
             <Col xl="6">
-            <StackInputGroup size="sm" labelText="Name" type="text" />
+            <InputGroup size="sm" labelText="Name" type="text" />
             <p> </p>
-            <StackInputGroup size="sm" labelText="Email" type="email" labelInline />
+            <InputGroup size="sm" labelText="Email" type="email" labelInline />
             <p> </p>
-            <StackInputGroup labelText="Password" type="password" value="12345" />
+            <InputGroup labelText="Password" type="password" value="12345" />
             <p> </p>
-             <StackInputGroup labelText="Website" type="webiste" placeholder="eg-www.website.com" />
+             <InputGroup labelText="Website" type="webiste" placeholder="eg-www.website.com" />
             <p> </p>
-             <StackInputGroup as="textarea" labelText="Message" rows="3" />
+             <InputGroup as="textarea" labelText="Message" rows="3" />
              <p> </p>
-            <StackInputGroup size="sm" labelText="Read Only" type="text" value="Read Only" disabled />
+            <InputGroup size="sm" labelText="Read Only" type="text" value="Read Only" disabled />
             </Col>
              <Col xl="6">
             <StackInputGroup size="sm" as="select" labelText="Input Select" bg>
@@ -40,19 +40,19 @@ import {StackInputGroup} from "@stack-ui/components";
                 <option>3</option>
                 <option>4</option>
                 <option>5</option>
-            </StackInputGroup>
+            </InputGroup>
             <p> </p>
-            <StackInputGroup size="sm" as="select" labelText="Multiple Select" multiple>
+            <InputGroup size="sm" as="select" labelText="Multiple Select" multiple>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
                 <option>4</option>
                 <option>5</option>
-            </StackInputGroup>
+            </InputGroup>
             <p> </p>
-             <StackInputGroup labelText="Default File Input" type="file" /> 
+             <InputGroup labelText="Default File Input" type="file" /> 
              <p> </p>
-            <StackInputGroup labelText="Range" type="range" /> 
+            <InputGroup labelText="Range" type="range" /> 
              <p> </p>
             <StackInputGroup labelText="Color" type="color" value="#56c2d6"/> 
              <p> </p>
