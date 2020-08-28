@@ -1,15 +1,21 @@
 import React from "react";
 import { StyledTextInput } from './TextInput.styled';
+
 // import
 
 const TextInput = (props) => {
-  const { label, disabled, error, onClick,  } = props;
+  const { label, disabled, error, onClick, hint, placeholder, value, name  } = props;
   return (
     <StyledTextInput {...props}>
-      {/* <label class="radio-btn">{label}
-  <input type="radio" name="radio" disabled={disabled} error={error} />
-  <span class="radio-check"></span>
-</label> */}
+      <label>{label}
+  <input class="form-control" type="text" name={name} value={value}
+    disabled={disabled} error={error} {...props} />
+  { hint && (
+    <span>{hint} </span>
+  )
+
+  }
+</label>
 </StyledTextInput>
      
   )
