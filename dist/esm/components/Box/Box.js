@@ -30,6 +30,7 @@ var Box = function Box(props) {
       mp = props.mp,
       mb = props.mb,
       border = props.border,
+      bgImg = props.bgImg,
       borderRight = props.borderRight,
       borderLeft = props.borderLeft,
       borderTop = props.borderTop,
