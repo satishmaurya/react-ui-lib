@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const InputGroupTypes= () => <>InputGroup</>;
+const StackInputGroupTypes= () => <>StackInputGroup</>;
 
-InputGroupTypes.propTypes={
+StackInputGroupTypes.propTypes={
     type: PropTypes.oneOf(['text','number','password','date','email','range','color']),
     as: PropTypes.oneOf(['textarea', 'select','multiselect']),
     disabled: PropTypes.bool,
@@ -22,7 +22,7 @@ InputGroupTypes.propTypes={
 };
 
 
-    InputGroupTypes.defaultProps = {
+StackInputGroupTypes.defaultProps = {
     type: 'text',
     as: '',
     disabled: false,
@@ -33,4 +33,4 @@ InputGroupTypes.propTypes={
     radioBtn: false,
 };
 
-export default InputGroupTypes;
+export default StackInputGroupTypes;

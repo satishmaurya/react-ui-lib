@@ -1,5 +1,5 @@
 import React from "react";
-import StyledInputGroup from "./InputGroup.styled";
+import StyledInputGroup from "./StackInputGroup.styled";
 import InputGroup from 'react-bootstrap/InputGroup';
 import Form from 'react-bootstrap/Form';
 
