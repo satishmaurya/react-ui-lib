@@ -9,7 +9,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _Button = _interopRequireDefault(require("./Button.styled"));
 
-var _reactFontawesome = require("@fortawesome/react-fontawesome");
+var _Icon = require("../Icon");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -27,18 +27,17 @@ var Button = function Button(props) {
       iconVariant = props.iconVariant,
       onClick = props.onClick,
       borderRadius = props.borderRadius,
-      color = props.color;
+      color = props.color,
+      iconSize = props.iconSize;
   return /*#__PURE__*/_react["default"].createElement(_Button["default"], _extends({
     rounded: rounded,
     btnType: btnType,
     disabled: isDisabled,
     variant: btnVariant
-  }, props), icon && iconVariant === 'regular' ? /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
-    icon: ['far', icon]
-  }) : iconVariant === 'solid' ? /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
-    icon: ['fas', icon]
-  }) : /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
-    icon: ['fas', icon]
+  }, props), icon && /*#__PURE__*/_react["default"].createElement(_Icon.Icon, {
+    icon: icon,
+    color: iconVariant,
+    iconSize: iconSize
   }), children);
 };
 

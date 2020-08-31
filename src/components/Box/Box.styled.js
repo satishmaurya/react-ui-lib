@@ -9,7 +9,18 @@ ${props => props.borderTop ? css ` border-top: ${props.borderTop};`: css `` }
 ${props => props.borderBottom ? css ` border-bottom: ${props.borderBottom};`: css `` }  
 ${props => props.borderRadius ? css ` border-radius: ${props.borderRadius};`: css `` }  
 ${props => props.bgColor ? css ` background-color: ${props.bgColor};`: css `` } 
-${props => props.opacity ? css ` opacity: ${props.opacity};`: css `` } 
+${props => props.opacity ? css ` opacity: ${props.opacity};`: css `` }
+${props => props.width ? css ` width: ${props.width};`: css `` }
+${props => props.background ? css ` background: ${props.background};`: css `` }
+${props => props.bgImg ? css ` 
+    background-image: ${props.bgImg};
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+`: css `` }
+
 
     ${props =>
     props.display ?
@@ -20,6 +31,20 @@ ${props => props.opacity ? css ` opacity: ${props.opacity};`: css `` }
     display:block;
     `
     }
+    ${props=>
+        props.textAlign === "center"
+        ? css `
+        text-align: center;`
+        :
+        props.textAlign === "left"
+        ? css `
+        text-align: left;`
+        :
+        props.textAlign === "right"
+        ? css `
+        text-align: right;`
+        : css ``
+        }
     ${props =>
         props.p ?
         css `
@@ -103,7 +128,6 @@ ${props => props.opacity ? css ` opacity: ${props.opacity};`: css `` }
         justify-items: last baseline;
         `
         : css`
-        cursor: pointer;
         `
     }
     ${props => 
@@ -148,7 +172,6 @@ ${props => props.opacity ? css ` opacity: ${props.opacity};`: css `` }
         justify-content: space-evenly;
         `
         : css`
-        cursor: pointer;
         `
     }
     ${props => 
@@ -197,7 +220,6 @@ ${props => props.opacity ? css ` opacity: ${props.opacity};`: css `` }
         align-items: self-end;
         `
         : css`
-        cursor: pointer;
         `
     }
     ${props => 
@@ -214,7 +236,6 @@ ${props => props.opacity ? css ` opacity: ${props.opacity};`: css `` }
         flex-wrap: wrap-reverse
         `
         : css`
-        cursor: pointer;
         `
     }
     ${props => 

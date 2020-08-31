@@ -45,10 +45,10 @@ Object.defineProperty(exports, "Footer", {
     return _Footer.Footer;
   }
 });
-Object.defineProperty(exports, "InputGroup", {
+Object.defineProperty(exports, "StackInputGroup", {
   enumerable: true,
   get: function get() {
-    return _InputGroup.InputGroup;
+    return _StackInputGroup.StackInputGroup;
   }
 });
 Object.defineProperty(exports, "NavBar", {
@@ -165,6 +165,24 @@ Object.defineProperty(exports, "SearchBox", {
     return _SearchBox.SearchBox;
   }
 });
+Object.defineProperty(exports, "Radio", {
+  enumerable: true,
+  get: function get() {
+    return _Radio.Radio;
+  }
+});
+Object.defineProperty(exports, "Checkbox", {
+  enumerable: true,
+  get: function get() {
+    return _CheckboxGroup.Checkbox;
+  }
+});
+Object.defineProperty(exports, "Accordian", {
+  enumerable: true,
+  get: function get() {
+    return _Accordian.Accordian;
+  }
+});
 
 var _Avatar = require("./components/Avatar");
 
@@ -180,7 +198,7 @@ var _Header = require("./components/Header");
 
 var _Footer = require("./components/Footer");
 
-var _InputGroup = require("./components/InputGroup");
+var _StackInputGroup = require("./components/StackInputGroup");
 
 var _NavBar = require("./components/NavBar");
 
@@ -213,3 +231,9 @@ var _Breadcum = require("./components/Breadcum");
 var _Layout = require("./components/Layout");
 
 var _SearchBox = require("./components/SearchBox");
+
+var _Radio = require("./components/Radio");
+
+var _CheckboxGroup = require("./components/CheckboxGroup");
+
+var _Accordian = require("./components/Accordian");

@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { prototype } from "apexcharts";
 
 const RadialProgressBarTypes= () => <>ProgressBar</>;
 
@@ -7,12 +8,12 @@ RadialProgressBarTypes.propTypes={
     percentage: PropTypes.number,
     sqsize: PropTypes.number,
     strokeWidth: PropTypes.number,
-    variant: PropTypes.oneOf([ 'primary', 'success', 'danger' ]),
+    strokeColor: PropTypes.string,
 };
 
 RadialProgressBarTypes.defaultProps = {
     percentage: '45%',
-    variant: 'primary',
+    strokeColor: 'string',
     sqsize: 232,
     strokeWidth: 9,
 };

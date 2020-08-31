@@ -1,14 +1,13 @@
 import React from "react";
 import StyledButton from "./Button.styled";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Icon } from '../Icon';
 
 const Button = (props) =>{
-    const {btnType, isDisabled, btnVariant, rounded, children, size, block, icon,iconVariant, onClick, borderRadius, color} = props;
+    const {btnType, isDisabled, btnVariant, rounded, children, size, block, icon, iconVariant, onClick, borderRadius, color, iconSize} = props;
     return(
         <StyledButton rounded={rounded} btnType={btnType} disabled={isDisabled} variant={btnVariant} {...props}>
-            {/* <FontAwesomeIcon icon={['fab', 'apple']} /> */}
-            {/* <FontAwesomeIcon icon={['far', 'heart']} /> */}
-            {icon && iconVariant==='regular' ? <FontAwesomeIcon icon={['far',icon]} /> : iconVariant==='solid' ? <FontAwesomeIcon icon={['fas',icon]} /> : <FontAwesomeIcon icon={['fas',icon]} /> }
+            {/* {icon && iconVariant==='regular' ? <Icon icon={['far',icon]} /> : iconVariant==='solid' ? <FontAwesomeIcon icon={['fas',icon]} /> : <FontAwesomeIcon icon={['fas',icon]} /> } */}
+            {icon && <Icon icon={icon} color={iconVariant} iconSize={iconSize} />}
             {children}
         </StyledButton>
     );

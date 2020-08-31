@@ -12,6 +12,7 @@ IconTypes.propTypes = {
   size: PropTypes.number,
   /** Color of icon. */
   color: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 IconTypes.defaultProps = {

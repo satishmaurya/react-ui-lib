@@ -1,21 +1,25 @@
 import React from "react";
 import StyledDropDown from "./DropDown.styled";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Icon} from '../Icon';
 
 
 const DropDown = (props) => {
-const { btnType, id, isDisabled, className, btnVariant,children, rounded,  size, block, Iconsize, icon, iconVariant, options,  } = props;
+const { btnType, id,  value, isDisabled, className, btnVariant, children, rounded,  size, block, Iconsize, icon,  iconVariant, options,  } = props;
 return (
     
         <StyledDropDown>
-            <StyledDropDown.Toggle variant= {btnType} className={className} type={btnVariant} size={size} disabled={isDisabled} rounded={rounded} block={block}  id= {id} {...props}>
-               DropDown
-               {icon && iconVariant==='regular' ? <FontAwesomeIcon icon={['far',icon]} Iconsize={Iconsize}  /> : iconVariant==='solid' ? <FontAwesomeIcon icon={['fas',icon]}  Iconsize={Iconsize} /> : <FontAwesomeIcon icon={['fas',icon]} Iconsize={Iconsize}/> }
+            <StyledDropDown.Toggle variant= {btnType}  className={className} type={btnVariant}  size={size} disabled={isDisabled} rounded={rounded} block={block}  id= {id} {...props}>
+               {value}
+              <Icon icon={icon}></Icon>
                 {children}
             </StyledDropDown.Toggle>
             <StyledDropDown.Menu>
                 {options.map((item, key) => (
-                    <StyledDropDown.Item  href={item.link}>{item.item}</StyledDropDown.Item>
+                    <StyledDropDown.Item 
+                     href={item.link}>
+                         <Icon icon={item.icon} />
+                         {item.item}
+                         </StyledDropDown.Item>
                 ))}
                 
             </StyledDropDown.Menu>

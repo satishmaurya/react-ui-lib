@@ -16,8 +16,8 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var RadialProgressBar = _styledComponents.default.div.withConfig({
   displayName: "RadialProgressBarstyled__RadialProgressBar",
   componentId: "sc-8mp9aj-0"
-})(["{.circle-background,.circle-progress{fill:none;}.circle-background{stroke:#ddd;}", "}"], function (props) {
-  return props.variant === "primary" ? (0, _styledComponents.css)([".circle-progress{stroke:#1EA7FD;background-position-x:initial;;stroke-linecap:round;stroke-linejoin:round;}.stackui-radialProgress{border-radius:50%;background:#fff;font-size:18px;font-weight:600;align-items:center;justify-content:center;display:flex;flex-direction:column;}"]) : props.variant === "success" ? (0, _styledComponents.css)([".circle-progress{stroke:#3e9d3e;}.stackui-radialProgress{border-radius:50%;background:#fff;font-size:18px;font-weight:600;align-items:center;justify-content:center;display:flex;flex-direction:column;}"]) : (0, _styledComponents.css)([".circle-background,.circle-progress{fill:none;stroke:#1EA7FD;}"]);
+})(["{.circle-background,.circle-progress{fill:none;}.circle-background{stroke:#ddd;}.circle-text{font-weight:bold;}", "}"], function (props) {
+  return props.strokeColor ? (0, _styledComponents.css)([".circle-progress{stroke:", ";background-position-x:initial;;stroke-linecap:round;stroke-linejoin:round;}.stackui-radialProgress{border-radius:50%;background:#fff;font-size:18px;font-weight:600;align-items:center;justify-content:center;display:flex;flex-direction:column;}"], props.strokeColor) : (0, _styledComponents.css)([""]);
 });
 
 var _default = RadialProgressBar;

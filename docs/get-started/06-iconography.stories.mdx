@@ -5,19 +5,21 @@ import styled from 'styled-components';
 import { IconNames } from "@blueprintjs/icons";
 
 import Icon from '../../src/components/Icon/Icon';
+import Button from '../../src/components/Button/Button'
+import SearchBox from '../../src/components/SearchBox/SearchBox';
 
 export const IconGallery = () => {
   const icons = Object.keys(IconNames).map(name => ({ iconName: IconNames[name]}));
   const [searchTerm, setSearchTerm] = React.useState("");
   const [searchResults, setSearchResults] = React.useState([]);
   const handleChange = event => {
-    setSearchTerm(event.target.value);
+    console.log(event.target.value, 'val');
+   setSearchTerm(event.target.value);
   };
    const copyCodeToClipboard = () => {
     const el = this.iconName
     el.select()
     document.execCommand("copy")
-    console.log("hi................", el);
   }
   useEffect(() => {
     const results = icons.filter(icon =>
@@ -27,6 +29,7 @@ export const IconGallery = () => {
   }, [searchTerm]);
   return (
     <>
+       <SearchBox placeholder="Search" value={searchTerm} onChange={handleChange} style={{width:'100%'}} />
       <IconContainer>
          {searchResults.map(item => (
           <IconItem key={item.iconName} data-name={item.iconName}><Icon size={16} icon={item.iconName} onClick={copyCodeToClipboard}/></IconItem>

@@ -32,6 +32,9 @@ BoxTypes.propTypes={
     borderRadius: PropTypes.string,
     bgColor: PropTypes.string,
     opacity: PropTypes.string,
+    width: PropTypes.string,
+    textAlign: PropTypes.string,
+    bgImg: PropTypes.string,
 
 };
 
@@ -42,8 +45,10 @@ BoxTypes.defaultProps = {
     flexWrap:'',
     flexDirection:'',
     display: 'block',
-    p:'10px',
-    m:'10px',
+    p:'0px',
+    m:'0px',
+    width: '100%',
+    textAlign: 'default',
 };
 
 export default BoxTypes;

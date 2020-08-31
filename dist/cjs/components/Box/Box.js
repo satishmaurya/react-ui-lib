@@ -30,13 +30,16 @@ var Box = function Box(props) {
       mp = props.mp,
       mb = props.mb,
       border = props.border,
+      bgImg = props.bgImg,
       borderRight = props.borderRight,
       borderLeft = props.borderLeft,
       borderTop = props.borderTop,
       borderBottom = props.borderBottom,
       borderRadius = props.borderRadius,
       bgColor = props.bgColor,
-      opacity = props.opacity;
+      opacity = props.opacity,
+      width = props.width,
+      textAlign = props.textAlign;
   return /*#__PURE__*/_react.default.createElement(_Box.StyledBox, _extends({
     justifyItems: justifyItems,
     justifyContent: justifyContent,
