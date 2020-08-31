@@ -23,3 +23,4 @@ export { Box } from './components/Box';
 export { Breadcum, StyledBreadcum } from './components/Breadcum';
 export { Container, Row, Col } from './components/Layout';
 export { SearchBox } from './components/SearchBox';
+export { Snackbar } from './components/SnackBar';
