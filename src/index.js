@@ -23,11 +23,7 @@ export { Box } from './components/Box';
 export { Breadcum, StyledBreadcum } from './components/Breadcum';
 export { Container, Row, Col } from './components/Layout';
 export { SearchBox } from './components/SearchBox';
-<<<<<<< HEAD
-export { Snackbar } from './components/SnackBar';
-=======
 export { Radio } from './components/Radio';
 export { Checkbox } from './components/CheckboxGroup';
 export { Accordian } from './components/Accordian';
-
->>>>>>> cce733d67985594c5d5f224e08abc35eec58e3a4
+export { Snackbar } from './components/SnackBar';
