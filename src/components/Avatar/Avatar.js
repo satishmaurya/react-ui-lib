@@ -8,12 +8,12 @@ const Avatar = (props) => {
     <StyledAvatarText {...props}>
       <StyledAvatar size={size} src={src} alt={alt} >
       </StyledAvatar>
-      <AvatarTitle titleFont={titleFont} isBold={isBold} >
+     { title && <AvatarTitle titleFont={titleFont} isBold={isBold} >
         {title}
-       </AvatarTitle>
-       <AvatarSubTitle subTitleFont={subTitleFont}>
+       </AvatarTitle>}
+      { subTitle && <AvatarSubTitle subTitleFont={subTitleFont}>
         {subTitle}
-      </AvatarSubTitle> 
+      </AvatarSubTitle> }
     </StyledAvatarText>
   );
 }
