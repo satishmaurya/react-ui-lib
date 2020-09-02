@@ -2,14 +2,20 @@ import styled, {css} from "styled-components";
 import * as variable from "../../variable";
 
 export const StyledAvatarText = styled.div`
-    h4 {
-      font-size: 1.2rem;
-      padding: 12px 0px 0;
-  },
-  p {
-    font-size: 1rem;
-}
+
+
+${props=> props.color ? css ` color: ${props.color};` : css ``}
 `
+
+export const AvatarTitle = styled.div`
+${props=> props.titleFont ? css ` font-size: ${props.titleFont};` : css ``}
+${props=> props.isBold ? css ` font-weight: ${props.isBold};` : css ``}
+
+`
+export const AvatarSubTitle = styled.div`
+${props=> props.subTitleFont ? css ` font-size: ${props.subTitleFont};` : css ``}
+`
+
 export const StyledAvatar = styled.img`
   vertical-align: middle;
   border-radius: 9999px;

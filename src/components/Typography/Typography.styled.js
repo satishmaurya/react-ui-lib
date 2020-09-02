@@ -91,5 +91,6 @@ const Typography = styled.div`{
   font-size: 1em;
   `
   }
+  ${props=> props.size ? css ` font-size: ${props.size};` : css ``}
 }`;
 export default Typography;

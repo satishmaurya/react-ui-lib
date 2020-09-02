@@ -9,6 +9,9 @@ AvatarTypes.propTypes={
   alt: PropTypes.string,
   title: PropTypes.string,
   subTitle: PropTypes.string,
+  titleFont: PropTypes.string,
+  subTitleFont: PropTypes.string,
+  isBold: PropTypes.string,
 };
 
 AvatarTypes.defaultProps = {};
