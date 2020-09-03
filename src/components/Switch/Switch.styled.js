@@ -1,12 +1,12 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
-export const StyledSwitch = styled.div`
-border: 1px solid red;
+ const StyledSwitch = styled.div`
+
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 37px;
+    height: 20px;
   }
   
   .switch input { 
@@ -30,30 +30,29 @@ border: 1px solid red;
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 15px;
+    width: 15px;
+    left: 2px;
+    bottom: 3px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #5089de;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #5089de;
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
   }
   
-  /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
   }
@@ -62,4 +61,19 @@ border: 1px solid red;
     border-radius: 50%;
   }
 
+  ${props =>     
+    props.size === "sm"
+    ? css`
+    `
+    :
+    props.size === "lg"
+    ? css `
+     
+    `
+    : css`
+    `
+}
+
   `
+
+  export default StyledSwitch;
