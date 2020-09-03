@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import StyledSwitch from './Switch.styled';
 
 class Switch extends Component {
     render() {
         return (
-            <div>
-                helloo switch com
-            </div>
+            <StyledSwitch>
+               <label class="switch">
+  <input type="checkbox" />
+  <span class="slider round"></span>
+</label>
+            </StyledSwitch>
         );
     }
 }
