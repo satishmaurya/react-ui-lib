@@ -2,7 +2,7 @@ import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
 import Button from "../Button/Button";
 import AdvanceTable from "./AdvanceTable";
 import AdvanceTableTypes from "./AdvanceTable.types";
-import faker from 'faker';
+import { data, columns, TransColumns, TransData } from "./constant";
 
 <Meta title="Components/AdvanceTable" component="AdvanceTable" />
 
@@ -18,97 +18,15 @@ import {AdvanceTable} from "@stack-ui/components";
 ## Example with Label
 
 <Preview withToolbar>
-    <Story name="- Default" height="900px">
-    {() => {
-      const createMockRowData = () => ({
-        firstName: faker.name.firstName(),
-        lastName: faker.name.lastName(),
-        department: faker.commerce.department(),
-        number: faker.random.number()
-      });
-      const mockData = React.useMemo(() => Array.from({ length: 30 }, createMockRowData), []);
-      const mockColumns = React.useMemo(
-        () => [
-        {
-          Header: 'Client name',
-          id:'client-name',
-          accessor: 'department',
-        },
-        {
-          Header: 'Client details approved by',
-          columns: [
-            {
-              Header: 'Finance',
-              id: 'client-finance',
-              accessor: 'firstName',
-              type: 'text',
-            },
-            {
-              Header: 'Legal',
-              id: 'client-legal',
-              accessor: 'lastName',
-              type: 'text',
-            },
-          ],
-        },
-        {
-          Header: 'Data governance approved by',
-          columns: [
-            {
-              Header: 'Finance',
-              id: 'data-finance',
-              accessor: 'firstName',
-              disableSortBy: true,
-              type: 'text',
-            },
-            {
-              Header: 'Legal',
-              id: 'data-legal',
-              accessor: 'lastName',
-              disableSortBy: true,
-              type: 'text',
-            },
-          ],
-        },
-        {
-          Header: 'Account settings',
-          accessor: 'number',
-          type: 'text',
-          width: 250
-        },
-        {
-          Header: 'Data in Media Ecosystem',
-          accessor: 'number',
-          id:'account-settings',
-          type: 'numeric',
-          suffix: '%'
-        },
-        {
-          Header: 'Status',
-          type: 'status',
-        },
-        // {
-        //   Header: 'Random Number',
-        //   accessor: 'number',
-        //   type: 'numeric',
-        // },
-        {
-          Header: 'Started',
-          accessor: 'department',
-        },
-      ]);
-       console.log(mockData);
-      return (
-        <>
-          <AdvanceTable
-            title="In draft"
-            description="Select the row you wish to publish or take other actions"
-            columns={mockColumns}
-            data={mockData}
-          />
-        </>
-      )
-    }}
+    <Story name="- Default" height="700px">
+    
+    <AdvanceTable title="Nutritions" columns={columns} data={data} selectableRows pagination />
+  </Story>
+</Preview>
+
+<Preview withToolbar>
+    <Story name="Custom Style" height="400px">
+    <AdvanceTable title="Transaction History" columns={TransColumns} data={TransData} fixedHeader striped/>
   </Story>
 </Preview>
 
