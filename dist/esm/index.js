@@ -183,6 +183,18 @@ Object.defineProperty(exports, "Accordian", {
     return _Accordian.Accordian;
   }
 });
+Object.defineProperty(exports, "Snackbar", {
+  enumerable: true,
+  get: function get() {
+    return _SnackBar.Snackbar;
+  }
+});
+Object.defineProperty(exports, "Switch", {
+  enumerable: true,
+  get: function get() {
+    return _Switch.Switch;
+  }
+});
 
 var _Avatar = require("./components/Avatar");
 
@@ -237,3 +249,7 @@ var _Radio = require("./components/Radio");
 var _CheckboxGroup = require("./components/CheckboxGroup");
 
 var _Accordian = require("./components/Accordian");
+
+var _SnackBar = require("./components/SnackBar");
+
+var _Switch = require("./components/Switch");
