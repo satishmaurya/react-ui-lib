@@ -22,7 +22,7 @@ const theme = create({
     background-clip: text;
     color: transparent;
     letter-spacing: -1px;
-    background-image: linear-gradient( to right, #3c4edd 0%, #b35ecd 50%, #f47a61 100% );">&#60; Stack UI &#47;&#62;</b>
+    background-image: linear-gradient( to right, #3c4edd 0%, #b35ecd 50%, #f47a61 100% );">&#60; StackUI &#47;&#62;</b>
     <br /><small><span style="font-weight: 300">Component Library from</span> Successive Tech</small><br /><small>v.0.1.0</small>`,
     // brandImage:
     //   'logoShap.png',
