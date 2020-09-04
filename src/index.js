@@ -26,4 +26,6 @@ export { SearchBox } from './components/SearchBox';
 export { Radio } from './components/Radio';
 export { Checkbox } from './components/CheckboxGroup';
 export { Accordian } from './components/Accordian';
+export { Snackbar } from './components/SnackBar';
+export { Switch } from './components/Switch';
 

@@ -1,0 +1,33 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Switch = _interopRequireDefault(require("./Switch.styled"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Switch = function Switch(props) {
+  var onClick = props.onClick,
+      size = props.size,
+      id = props.id,
+      name = props.name;
+  return /*#__PURE__*/_react.default.createElement(_Switch.default, null, /*#__PURE__*/_react.default.createElement("label", {
+    class: "switch"
+  }, /*#__PURE__*/_react.default.createElement("input", {
+    type: "checkbox",
+    id: id,
+    name: name,
+    onClick: onClick,
+    size: size
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    class: "slider round"
+  })));
+};
+
+var _default = Switch;
+exports.default = _default;

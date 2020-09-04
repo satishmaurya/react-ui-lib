@@ -20,7 +20,8 @@ var Typography = function Typography(props) {
       isBold = props.isBold,
       isItalic = props.isItalic,
       textAlign = props.textAlign,
-      color = props.color;
+      color = props.color,
+      size = props.size;
   return /*#__PURE__*/_react["default"].createElement(_Typography["default"], _extends({
     type: type,
     as: as,
