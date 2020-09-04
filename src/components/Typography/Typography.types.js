@@ -11,6 +11,7 @@ TypographyTypes.propTypes={
     textAlign: PropTypes.string,
     color:PropTypes.string,
     type: PropTypes.oneOf(['heading', 'subHeading', 'paragraph']),
+    size: PropTypes.string,
 };
 
 TypographyTypes.defaultProps = {
