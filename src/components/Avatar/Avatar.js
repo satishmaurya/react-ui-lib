@@ -7,8 +7,8 @@ const Avatar = (props) => {
     <StyledAvatarText>
       <StyledAvatar size={size} src={src} alt={alt} >
       </StyledAvatar>
-      <h4>{title} </h4>
-     <p>{subTitle}</p>
+  { title && <h4>{title} </h4> }
+  { subTitle &&  <p>{subTitle}</p> }
     </StyledAvatarText>
   );
 }
