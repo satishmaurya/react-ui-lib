@@ -8,6 +8,7 @@ SwitchTypes.propTypes = {
     onClick:PropTypes.func,
     id: PropTypes.string,
     name: PropTypes.string,
+    label: PropTypes.string,
 };
 
 SwitchTypes.defaultProps = {
