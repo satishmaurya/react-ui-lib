@@ -1,10 +1,11 @@
 import React from 'react';
-import StyledSwitch from './Switch.styled';
+import { StyledSwitch, SwitchLabel } from './Switch.styled';
 
 const Switch = (props) => {
-const { onClick, size, id, name } = props;
+const { onClick, size, id, name, label } = props;
         return (
-            <StyledSwitch>
+            <StyledSwitch label={label}>
+                { label && <SwitchLabel>{label}</SwitchLabel> }
                 <label class="switch">
                     <input type="checkbox" id={id} name={name}
                     onClick={onClick} size={size} />
