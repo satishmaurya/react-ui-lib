@@ -1,12 +1,24 @@
 import styled, {css} from "styled-components";
 
- const StyledSwitch = styled.div`
+export const SwitchLabel = styled.div`
+order: 2;
+    padding-left: 10px;
+    font-size: 14px;
+    margin: 0;
+
+`
+export const StyledSwitch = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+border: 1px solid;
 
 .switch {
     position: relative;
     display: inline-block;
     width: 37px;
     height: 20px;
+    margin: 0;
   }
   
   .switch input { 
@@ -76,4 +88,4 @@ import styled, {css} from "styled-components";
 
   `
 
-  export default StyledSwitch;
+  // export default StyledSwitch;
