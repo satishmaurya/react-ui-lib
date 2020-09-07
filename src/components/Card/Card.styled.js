@@ -4,6 +4,20 @@ import Card from 'react-bootstrap/Card';
 
 const StyledCard = Styled(Card)`
     overflow:hidden;
+    border: 0px solid #ccc;
+    ${props => props.boxShadow
+        ? css 
+        `
+        box-shadow: ${props.boxShadow};
+        `
+         : css `` }
+    ${props => props.border
+        ? css 
+        `
+            border: ${props.border};
+        `
+         : css `` }
+     
     ${props=>
         props.width
         ? css`
