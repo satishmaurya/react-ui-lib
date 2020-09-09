@@ -9,16 +9,23 @@ var _react = _interopRequireDefault(require("react"));
 
 var _Badge = _interopRequireDefault(require("react-bootstrap/Badge"));
 
+var _Badge2 = _interopRequireDefault(require("./Badge.styled"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Badge = function Badge(props) {
   var children = props.children,
       pill = props.pill,
-      variant = props.variant;
-  return /*#__PURE__*/_react.default.createElement(_Badge.default, {
+      variant = props.variant,
+      bgColor = props.bgColor,
+      color = props.color;
+  return /*#__PURE__*/_react.default.createElement(_Badge2.default, {
+    bgColor: bgColor,
+    color: color
+  }, /*#__PURE__*/_react.default.createElement(_Badge.default, {
     pill: pill,
     variant: variant
-  }, children);
+  }, children));
 };
 
 var _default = Badge;

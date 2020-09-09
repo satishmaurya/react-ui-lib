@@ -20,7 +20,7 @@ export { Typography } from './components/Typography';
 export { Image } from './components/Image';
 export { Icon } from './components/Icon';
 export { Box } from './components/Box';
-export { Breadcum, StyledBreadcum } from './components/Breadcum';
+export { Breadcrumb, StyledBreadcrumb } from './components/Breadcrumb';
 export { Container, Row, Col } from './components/Layout';
 export { SearchBox } from './components/SearchBox';
 export { Radio } from './components/Radio';
@@ -28,4 +28,5 @@ export { Checkbox } from './components/CheckboxGroup';
 export { Accordian } from './components/Accordian';
 export { Snackbar } from './components/SnackBar';
 export { Switch } from './components/Switch';
+export { AdvanceTable } from './components/AdvanceTable';
 

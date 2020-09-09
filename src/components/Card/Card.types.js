@@ -11,11 +11,12 @@ CardTypes.propTypes={
     rounded:PropTypes.oneOf(['rounded','default']),
     imgPos:PropTypes.oneOf(['top', 'middle', 'bottom']),
     alignText:PropTypes.oneOf(['left', 'center', 'right']),
-    border:PropTypes.oneOf(['light', 'dark']),
     imgUrl:PropTypes.string,
     color:PropTypes.string,
     children:PropTypes.node,
     width:PropTypes.string,
+    boxShadow: PropTypes.string,
+    border: PropTypes.string,
 
 
 };

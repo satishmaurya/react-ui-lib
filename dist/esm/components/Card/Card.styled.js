@@ -22,7 +22,11 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var StyledCard = (0, _styledComponents["default"])(_Card["default"]).withConfig({
   displayName: "Cardstyled__StyledCard",
   componentId: "sc-1b95mne-0"
-})(["overflow:hidden;", " ", " ", " ", " ", " ", " h5{font-size:", ";font-weight:500;}img{max-width:100%;}"], function (props) {
+})(["overflow:hidden;border:0px solid #ccc;", " ", " ", " ", " ", " ", " ", " ", " h5{font-size:", ";font-weight:500;}img{max-width:100%;}"], function (props) {
+  return props.boxShadow ? (0, _styledComponents.css)(["box-shadow:", ";"], props.boxShadow) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.border ? (0, _styledComponents.css)(["border:", ";"], props.border) : (0, _styledComponents.css)([""]);
+}, function (props) {
   return props.width ? (0, _styledComponents.css)(["width:", ";"], props.width) : (0, _styledComponents.css)(["width:100%;"]);
 }, function (props) {
   return props.alignText ? (0, _styledComponents.css)(["text-align:", ";justify-content:", ";"], props.alignText, props.alignText) : (0, _styledComponents.css)(["text-align:inherit;"]);

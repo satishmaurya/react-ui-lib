@@ -24,13 +24,15 @@ var Card = function Card(props) {
       imgUrl = props.imgUrl,
       subTitle = props.subTitle,
       imgPos = props.imgPos,
-      border = props.border;
+      border = props.border,
+      boxShadow = props.boxShadow;
 
   if (imgPos === "middle") {
     return /*#__PURE__*/_react.default.createElement(_Card.default, _extends({
       imgUrl: imgUrl,
       color: color,
-      bgColor: bgColor
+      bgColor: bgColor,
+      border: border
     }, props), /*#__PURE__*/_react.default.createElement(_Card.default.Body, null, /*#__PURE__*/_react.default.createElement(_Card.default.Title, {
       as: "h5"
     }, cardTitle), /*#__PURE__*/_react.default.createElement(_Card.default.Subtitle, {
@@ -76,7 +78,6 @@ var Card = function Card(props) {
       as: "h6"
     }, subTitle), /*#__PURE__*/_react.default.createElement(_Card.default.Text, null, children)));
   } else {
-    console.log(bgColor, '---bg');
     return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Card.default, _extends({
       imgUrl: imgUrl,
       color: color,

@@ -12,6 +12,8 @@ AvatarTypes.propTypes={
   titleFont: PropTypes.string,
   subTitleFont: PropTypes.string,
   isBold: PropTypes.string,
+  titleColor: PropTypes.string,
+  subTitleColor: PropTypes.string,
 };
 
 AvatarTypes.defaultProps = {};
