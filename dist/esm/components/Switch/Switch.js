@@ -16,10 +16,13 @@ var Switch = function Switch(props) {
       size = props.size,
       id = props.id,
       name = props.name,
-      label = props.label;
-  return /*#__PURE__*/_react["default"].createElement(_Switch.StyledSwitch, {
-    label: label
-  }, label && /*#__PURE__*/_react["default"].createElement(_Switch.SwitchLabel, null, label), /*#__PURE__*/_react["default"].createElement("label", {
+      label = props.label,
+      isBold = props.isBold,
+      color = props.color;
+  return /*#__PURE__*/_react["default"].createElement(_Switch.StyledSwitch, null, label && /*#__PURE__*/_react["default"].createElement(_Switch.SwitchLabel, {
+    isBold: isBold,
+    color: color
+  }, label), /*#__PURE__*/_react["default"].createElement("label", {
     "class": "switch"
   }, /*#__PURE__*/_react["default"].createElement("input", {
     type: "checkbox",

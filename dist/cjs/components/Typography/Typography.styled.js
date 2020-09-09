@@ -29,7 +29,7 @@ var Typography = _styledComponents.default.div.withConfig({
 }, function (props) {
   return props.isItalic ? (0, _styledComponents.css)(["font-style:italic;"]) : (0, _styledComponents.css)(["font-style:normal;"]);
 }, function (props) {
-  return props.as === "h1" ? (0, _styledComponents.css)(["font-size:2em;"]) : props.as === "h2" ? (0, _styledComponents.css)(["font-size:1.5em;"]) : props.as === "h3" ? (0, _styledComponents.css)(["font-size:1.17em;"]) : props.as === "h4" ? (0, _styledComponents.css)(["font-size:1em;"]) : props.as === "h5" ? (0, _styledComponents.css)(["font-size:.83em;"]) : props.as === "h6" ? (0, _styledComponents.css)(["font-size:.67em;"]) : (0, _styledComponents.css)(["font-size:1em;"]);
+  return props.as === "h1" ? (0, _styledComponents.css)(["font-size:2em;"]) : props.as === "h2" ? (0, _styledComponents.css)(["font-size:1.5em;"]) : props.as === "h3" ? (0, _styledComponents.css)(["font-size:1.17em;"]) : props.as === "h4" ? (0, _styledComponents.css)(["font-size:1em;"]) : props.as === "h5" ? (0, _styledComponents.css)(["font-size:.83em;"]) : props.as === "h6" ? (0, _styledComponents.css)(["font-size:.67em;"]) : props.as === "span" ? (0, _styledComponents.css)(["display:inline-block;"]) : (0, _styledComponents.css)(["font-size:1em;"]);
 }, function (props) {
   return props.size ? (0, _styledComponents.css)([" font-size:", ";"], props.size) : (0, _styledComponents.css)([""]);
 });
