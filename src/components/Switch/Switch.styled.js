@@ -1,17 +1,18 @@
 import styled, {css} from "styled-components";
 
 export const SwitchLabel = styled.div`
-order: 2;
+    order: 2;
     padding-left: 10px;
     font-size: 14px;
     margin: 0;
+    ${props=> props.isBold ? css ` font-weight: ${props.isBold};` : css ``}
+    ${props=> props.color ? css ` color: ${props.color};` : css ``}
 
 `
 export const StyledSwitch = styled.div`
 display: flex;
 flex-direction: row;
 align-items: center;
-border: 1px solid;
 
 .switch {
     position: relative;

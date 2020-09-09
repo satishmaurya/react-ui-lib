@@ -1,16 +1,19 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import StyledCard from "./Card.styled";
 
 const Card = (props) => {
-    const{ color, bgColor, children, cardTitle, width, alignText, alignCard, imgUrl, subTitle, imgPos, border} =props;
+    const{ color, bgColor, children, cardTitle, width, alignText, alignCard, imgUrl, subTitle, imgPos, border,
+    boxShadow} =props;
     if(imgPos==="middle"){
     return(
-        <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} {...props}>
+        <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor}
+         border={border} {...props}>
             <StyledCard.Body>
             <StyledCard.Title as="h5">{cardTitle}</StyledCard.Title>
             <StyledCard.Subtitle as="h6" className="text-muted">{subTitle}</StyledCard.Subtitle>
             </StyledCard.Body>
-            <img src={imgUrl} />
+            <img src={imgUrl}  />
             <StyledCard.Body>
             <StyledCard.Text>{children}</StyledCard.Text>
             </StyledCard.Body>
@@ -55,7 +58,6 @@ const Card = (props) => {
         )
     }
     else {
-        console.log(bgColor,'---bg');
           return(
               <>
             <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} {...props}>

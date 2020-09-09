@@ -9,6 +9,8 @@ SwitchTypes.propTypes = {
     id: PropTypes.string,
     name: PropTypes.string,
     label: PropTypes.string,
+    isBold: PropTypes.string,
+    color: PropTypes.string,
 };
 
 SwitchTypes.defaultProps = {
