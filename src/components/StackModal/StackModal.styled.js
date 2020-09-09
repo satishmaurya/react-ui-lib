@@ -1,5 +1,4 @@
 import Styled,{css} from "styled-components";
-// import Modal from 'react-bootstrap/Modal'
 
 const StyledModal = Styled.div`
  

@@ -3,6 +3,7 @@ import Modal from 'react-bootstrap/Modal';
 import StyledModal from './StackModal.styled';
 import Button from '../Button';
 
+
 const StackModal = (props) => {
   const { sanckBarText, snackBarHeading, success, error, } = props;
   return (
