@@ -3,7 +3,7 @@ import * as variable from "../../variable";
 import FormControl from 'react-bootstrap/FormControl';
 import Form from 'react-bootstrap/Form'
 
-const StyledSearchBox = styled(FormControl)`
+const StyledSearchBox = styled.div`
 ${props=>
     props.bg
     ? css`
@@ -25,8 +25,6 @@ ${props=>
 }
     
 `
-const StyledForm = styled(Form)`
-    
-`
 
-export {StyledSearchBox,StyledForm};
+
+export default StyledSearchBox;
