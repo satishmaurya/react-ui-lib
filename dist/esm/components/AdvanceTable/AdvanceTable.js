@@ -9,17 +9,28 @@ var _react = _interopRequireDefault(require("react"));
 
 var _AdvanceTable = require("./AdvanceTable.styled");
 
+var _Pagination = _interopRequireDefault(require("../Pagination"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-// const rowData = true ? page : rows;
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 var AdvanceTable = function AdvanceTable(props) {
-  var children = props.children,
-      column = props.column,
-      data = props.data;
-  return /*#__PURE__*/_react["default"].createElement(_AdvanceTable.StyledAdvanceTable, {
-    column: column,
-    data: data
-  }, children);
+  var columns = props.columns,
+      data = props.data,
+      title = props.title,
+      selectableRows = props.selectableRows,
+      fixedHeader = props.fixedHeader,
+      striped = props.striped,
+      pagination = props.pagination;
+  return /*#__PURE__*/_react["default"].createElement(_AdvanceTable.StyledAdvanceTable, _extends({
+    title: title,
+    columns: columns,
+    data: data,
+    selectableRows: selectableRows,
+    pagination: pagination,
+    paginationComponent: _Pagination["default"]
+  }, props));
 };
 
 var _default = AdvanceTable;

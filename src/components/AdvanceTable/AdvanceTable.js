@@ -1,15 +1,19 @@
 import React from "react";
 import { StyledAdvanceTable } from "./AdvanceTable.styled";
+import Pagination from '../Pagination';
 
-    // const rowData = true ? page : rows;
 const AdvanceTable = (props) => {
-  const { children, column, data} = props;
+  const { columns, data, title, selectableRows, fixedHeader, striped, pagination } = props;
   return (
-    <StyledAdvanceTable column={column} data={data}>
-    
-        {children}
-
-    </StyledAdvanceTable>
+   <StyledAdvanceTable
+        title={title}
+        columns={columns}
+        data={data}
+        selectableRows={selectableRows}
+        pagination={pagination}
+        paginationComponent={Pagination}
+        {...props}
+      />
   );
 }
 

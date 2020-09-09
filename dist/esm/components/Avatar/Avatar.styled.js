@@ -5,11 +5,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.StyledAvatar = exports.StyledAvatarText = void 0;
+exports.StyledAvatar = exports.AvatarSubTitle = exports.AvatarTitle = exports.StyledAvatarText = void 0;
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
-
-var variable = _interopRequireWildcard(require("../../variable"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -18,14 +16,38 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var StyledAvatarText = _styledComponents["default"].div.withConfig({
   displayName: "Avatarstyled__StyledAvatarText",
   componentId: "sc-1bzs7vc-0"
-})(["h4{font-size:1.2rem;padding:12px 0px 0;},p{font-size:1rem;}"]);
+})([""]);
 
 exports.StyledAvatarText = StyledAvatarText;
 
+var AvatarTitle = _styledComponents["default"].div.withConfig({
+  displayName: "Avatarstyled__AvatarTitle",
+  componentId: "sc-1bzs7vc-1"
+})(["", " ", " ", ""], function (props) {
+  return props.titleFont ? (0, _styledComponents.css)([" font-size:", ";"], props.titleFont) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.isBold ? (0, _styledComponents.css)([" font-weight:", ";"], props.isBold) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.titleColor ? (0, _styledComponents.css)([" color:", ";"], props.titleColor) : (0, _styledComponents.css)([""]);
+});
+
+exports.AvatarTitle = AvatarTitle;
+
+var AvatarSubTitle = _styledComponents["default"].div.withConfig({
+  displayName: "Avatarstyled__AvatarSubTitle",
+  componentId: "sc-1bzs7vc-2"
+})(["", " ", ""], function (props) {
+  return props.subTitleFont ? (0, _styledComponents.css)([" font-size:", ";"], props.subTitleFont) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.subTitleColor ? (0, _styledComponents.css)([" color:", ";"], props.subTitleColor) : (0, _styledComponents.css)([""]);
+});
+
+exports.AvatarSubTitle = AvatarSubTitle;
+
 var StyledAvatar = _styledComponents["default"].img.withConfig({
   displayName: "Avatarstyled__StyledAvatar",
-  componentId: "sc-1bzs7vc-1"
-})(["vertical-align:middle;border-radius:9999px;", ""], function (props) {
+  componentId: "sc-1bzs7vc-3"
+})(["vertical-align:middle;border-radius:9999px;margin-bottom:10px;", ""], function (props) {
   return props.size === 'sm' ? (0, _styledComponents.css)(["height:35px;width:35px;"]) : props.size === 'lg' ? (0, _styledComponents.css)(["height:75px;width:75px;"]) : (0, _styledComponents.css)(["height:50px;width:50px;"]);
 });
 

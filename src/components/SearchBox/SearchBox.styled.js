@@ -1,14 +1,30 @@
 import styled, {css} from "styled-components";
-import * as variable from "../../variable";
-import FormControl from 'react-bootstrap/FormControl';
-import Form from 'react-bootstrap/Form'
 
 const StyledSearchBox = styled.div`
+input {
+    padding: 6px ;
+}
+
+
+${props => props.border ? css `
+& input {
+border: ${props.border};
+}
+`: css `` } 
+${props => props.onFocus ? css `
+& input {
+    & focus{
+        box-shadow: ${props.onFocus};
+    }
+}
+`: css `` } 
+
 ${props=>
     props.bg
     ? css`
+    & input {
         background-color: ${props.bg};
-        border:0;
+        }
     `
     :css `
        
@@ -17,8 +33,10 @@ ${props=>
 ${props=>
     props.borderRadius
     ? css`
+    & input {
         border-radius: ${props.borderRadius};
-    `
+    }
+        `
     :css `
        
     `

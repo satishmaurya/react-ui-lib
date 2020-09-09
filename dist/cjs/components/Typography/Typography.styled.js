@@ -16,7 +16,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var Typography = _styledComponents.default.div.withConfig({
   displayName: "Typographystyled__Typography",
   componentId: "sc-1fat070-0"
-})(["{display:block;margin-left:0;margin-right:0;margin-bottom:0;", " ", " ", " ", " ", " ", " ", "}"], function (props) {
+})(["{display:block;margin-left:0;margin-right:0;margin-bottom:0;", " ", " ", " ", " ", " ", " ", " ", "}"], function (props) {
   return props.color ? (0, _styledComponents.css)([" color:", ";"], props.color) : (0, _styledComponents.css)([""]);
 }, function (props) {
   return props.textShadow ? (0, _styledComponents.css)([" text-shadow:", ";"], props.textShadow) : (0, _styledComponents.css)([""]);
@@ -29,7 +29,9 @@ var Typography = _styledComponents.default.div.withConfig({
 }, function (props) {
   return props.isItalic ? (0, _styledComponents.css)(["font-style:italic;"]) : (0, _styledComponents.css)(["font-style:normal;"]);
 }, function (props) {
-  return props.as === "h1" ? (0, _styledComponents.css)(["font-size:2em;"]) : props.as === "h2" ? (0, _styledComponents.css)(["font-size:1.5em;"]) : props.as === "h3" ? (0, _styledComponents.css)(["font-size:1.17em;"]) : props.as === "h4" ? (0, _styledComponents.css)(["font-size:1em;"]) : props.as === "h5" ? (0, _styledComponents.css)(["font-size:.83em;"]) : props.as === "h6" ? (0, _styledComponents.css)(["font-size:.67em;"]) : (0, _styledComponents.css)(["font-size:1em;"]);
+  return props.as === "h1" ? (0, _styledComponents.css)(["font-size:2em;"]) : props.as === "h2" ? (0, _styledComponents.css)(["font-size:1.5em;"]) : props.as === "h3" ? (0, _styledComponents.css)(["font-size:1.17em;"]) : props.as === "h4" ? (0, _styledComponents.css)(["font-size:1em;"]) : props.as === "h5" ? (0, _styledComponents.css)(["font-size:.83em;"]) : props.as === "h6" ? (0, _styledComponents.css)(["font-size:.67em;"]) : props.as === "span" ? (0, _styledComponents.css)(["display:inline-block;"]) : (0, _styledComponents.css)(["font-size:1em;"]);
+}, function (props) {
+  return props.size ? (0, _styledComponents.css)([" font-size:", ";"], props.size) : (0, _styledComponents.css)([""]);
 });
 
 var _default = Typography;

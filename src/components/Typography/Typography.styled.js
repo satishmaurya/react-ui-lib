@@ -87,6 +87,11 @@ const Typography = styled.div`{
   ? css `
   font-size: .67em;
   `
+  :
+  props.as === "span"
+  ? css `
+  display: inline-block;
+  `
   :css `
   font-size: 1em;
   `
