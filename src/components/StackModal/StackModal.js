@@ -1,7 +1,7 @@
 import React from "react";
 import Modal from 'react-bootstrap/Modal';
 import StyledModal from './StackModal.styled';
-import Button from '../Button';
+// import Button from '../Button';
 
 
 const StackModal = (props) => {
@@ -19,8 +19,8 @@ const StackModal = (props) => {
       </Modal.Body>
 
       <Modal.Footer>
-        <Button variant="secondary">Close</Button>
-        <Button variant="primary">Save changes</Button>
+        {/* <Button variant="secondary">Close</Button>
+        <Button variant="primary">Save changes</Button> */}
       </Modal.Footer>
     </Modal.Dialog>
     </StyledModal>
