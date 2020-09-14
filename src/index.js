@@ -3,7 +3,6 @@ export { Avatar } from './components/Avatar';
 export { Badge } from './components/Badge';
 export { Button } from './components/Button';
 export { Card } from './components/Card';
-export { DropDown } from './components/DropDown';
 export { Header } from './components/Header';
 export { Footer } from './components/Footer';
 export { StackInputGroup } from './components/StackInputGroup';
@@ -28,5 +27,5 @@ export { Accordian } from './components/Accordian';
 export { Snackbar } from './components/SnackBar';
 export { Switch } from './components/Switch';
 export { AdvanceTable } from './components/AdvanceTable';
+export { Menu } from './components/Menu';
 export { SearchBox } from './components/SearchBox';
-

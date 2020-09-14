@@ -2,12 +2,17 @@ import styled, {css} from "styled-components";
 import * as variable from "../../variable";
 import Dropdown from 'react-bootstrap/Dropdown';
 
-const StyledDropDown = styled(Dropdown)`
-padding: 6px 16px;
+const StyledMenu = styled(Dropdown)`
 border-radius: 4px;
 color: ${variable.white};
 ${props =>
-    props.btnType === "primary"
+    props.btnType === "menu"
+    ? css `
+    background: red !important;
+     border: 2px solid;
+     padding:0;
+    `
+    : props.btnType === "primary"
     ? css `
         background: ${variable.blue};
         border: 1px solid ${variable.blue};
@@ -147,10 +152,27 @@ svg{
 }
 .dropdown-menu.show{
     border:none;
-    box-shadow: 0 0 35px 0 rgba(154,161,171,0.3);
+    box-shadow: 0 0 35px 0 rgba(154,161,171,.3);
+    padding-top:0;
+    border-radius:0;
+    ${props => 
+        props.positionMenu === "right" 
+        ? css `
+        right:0 !important;
+        left: auto !important;
+        `
+        : css`
+        `
+        };
+}
+.btn-menu{
+    padding:0;
+    :focus{
+        box-shadow:none;
+    }
 }
 .dropdown-item{
- padding:.45rem 1.2rem;
+ padding:.25rem 1.2rem;
  font-weight: 400;
     color: #6c757d;
     text-align: inherit;
@@ -165,7 +187,14 @@ svg{
         font-weight:300;
     }
 }
-
+.menu-header{
+    background-color: #414d5f;
+        padding: 12px 20px;
+        margin-top: -.25rem;
+        font-size: 0.9rem !important;
+        margin-bottom: 0.25rem;
+        color:#ffffff !important;
+}
 .dropdown-toggle::after{
     display: none;
   }
@@ -175,8 +204,20 @@ color:#6c757d;
     box-shadow:none;
 }
   }
-
-
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #e9ecef;
+    margin: 0;
+    padding: 0;
+}
+.menu-dots{
+    display: inline-block;
+    width:16px;
+    height:16px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDI2LjY2NyA0MjYuNjY3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MjYuNjY3IDQyNi42Njc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Y2lyY2xlIGN4PSI0Mi42NjciIGN5PSIyMTMuMzMzIiByPSI0Mi42NjciLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPGNpcmNsZSBjeD0iMjEzLjMzMyIgY3k9IjIxMy4zMzMiIHI9IjQyLjY2NyIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8Y2lyY2xlIGN4PSIzODQiIGN5PSIyMTMuMzMzIiByPSI0Mi42NjciLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==);
+}
 `
 
-export default StyledDropDown;
+export default StyledMenu;
