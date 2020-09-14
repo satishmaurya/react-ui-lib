@@ -19,7 +19,7 @@ class Switch extends React.Component {
   render() {
   const { onClick, size, id, name, label, isBold, color, isChecked } = this.props;
          return (
-            <StyledSwitch>
+            <StyledSwitch {...this.props}>
                 { label && 
                 <SwitchLabel isBold={isBold} color={color}>
                     {label}
