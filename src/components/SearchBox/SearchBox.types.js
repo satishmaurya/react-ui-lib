@@ -15,9 +15,7 @@ SearchBoxTypes.propTypes={
 SearchBoxTypes.defaultProps = {
     size: 'md',
     placeholder: 'Search',
-    bg: '',
-    borderRadius:'',
-    onFocus: '',
+
 };
 
 export default SearchBoxTypes;
