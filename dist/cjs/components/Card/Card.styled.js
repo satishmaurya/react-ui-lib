@@ -5,7 +5,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.default = exports.StyledCardRight = void 0;
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
@@ -22,7 +22,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var StyledCard = (0, _styledComponents.default)(_Card.default).withConfig({
   displayName: "Cardstyled__StyledCard",
   componentId: "sc-1b95mne-0"
-})(["overflow:hidden;border:0px solid #ccc;", " ", " ", " ", " ", " ", " ", " ", " h5{font-size:", ";font-weight:500;}img{max-width:100%;}"], function (props) {
+})(["overflow:hidden;border:0px solid #ccc;", " ", " ", " ", " ", " ", " ", " ", " h5{font-size:", ";font-weight:500;}img{max-width:100%;}.card-body{position:relative;}"], function (props) {
   return props.boxShadow ? (0, _styledComponents.css)(["box-shadow:", ";"], props.boxShadow) : (0, _styledComponents.css)([""]);
 }, function (props) {
   return props.border ? (0, _styledComponents.css)(["border:", ";"], props.border) : (0, _styledComponents.css)([""]);
@@ -39,5 +39,12 @@ var StyledCard = (0, _styledComponents.default)(_Card.default).withConfig({
 }, function (props) {
   return props.bgColor === "primary" ? (0, _styledComponents.css)(["background-color:", ";h5,p{color:", "}"], variable.primary, variable.white) : props.bgColor === "secondary" ? (0, _styledComponents.css)(["background-color:", ";h5,p{color:", "}"], variable.secondary, variable.white) : props.bgColor === "success" ? (0, _styledComponents.css)(["background-color:", ";h5,p{color:", "}"], variable.success, variable.white) : props.bgColor === "info" ? (0, _styledComponents.css)(["background-color:", ";h5,p{color:", "}"], variable.info, variable.white) : props.bgColor === "warning" ? (0, _styledComponents.css)(["background-color:", ";h5,p{color:", "}"], variable.warning, variable.white) : props.bgColor === "danger" ? (0, _styledComponents.css)(["background-color:", ";h5,p{color:", "}"], variable.danger, variable.white) : (0, _styledComponents.css)(["background-color:", ";"], variable.white);
 }, variable.h5FontSize);
+
+var StyledCardRight = _styledComponents.default.span.withConfig({
+  displayName: "Cardstyled__StyledCardRight",
+  componentId: "sc-1b95mne-1"
+})(["position:absolute;right:8px;left:auto;top:1.25rem;"]);
+
+exports.StyledCardRight = StyledCardRight;
 var _default = StyledCard;
 exports.default = _default;
