@@ -9,8 +9,6 @@ var _react = _interopRequireDefault(require("react"));
 
 var _Avatar = require("./Avatar.styled");
 
-var _Typography = _interopRequireDefault(require("../Typography/Typography.styled"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Avatar = function Avatar(props) {
@@ -21,17 +19,20 @@ var Avatar = function Avatar(props) {
       subTitle = props.subTitle,
       titleFont = props.titleFont,
       subTitleFont = props.subTitleFont,
-      color = props.color,
-      isBold = props.isBold;
+      isBold = props.isBold,
+      titleColor = props.titleColor,
+      subTitleColor = props.subTitleColor;
   return /*#__PURE__*/_react.default.createElement(_Avatar.StyledAvatarText, props, /*#__PURE__*/_react.default.createElement(_Avatar.StyledAvatar, {
     size: size,
     src: src,
     alt: alt
   }), title && /*#__PURE__*/_react.default.createElement(_Avatar.AvatarTitle, {
     titleFont: titleFont,
-    isBold: isBold
+    isBold: isBold,
+    titleColor: titleColor
   }, title), subTitle && /*#__PURE__*/_react.default.createElement(_Avatar.AvatarSubTitle, {
-    subTitleFont: subTitleFont
+    subTitleFont: subTitleFont,
+    subTitleColor: subTitleColor
   }, subTitle));
 };
 

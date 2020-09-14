@@ -129,16 +129,16 @@ Object.defineProperty(exports, "Box", {
     return _Box.Box;
   }
 });
-Object.defineProperty(exports, "Breadcum", {
+Object.defineProperty(exports, "Breadcrumb", {
   enumerable: true,
   get: function get() {
-    return _Breadcum.Breadcum;
+    return _Breadcrumb.Breadcrumb;
   }
 });
-Object.defineProperty(exports, "StyledBreadcum", {
+Object.defineProperty(exports, "StyledBreadcrumb", {
   enumerable: true,
   get: function get() {
-    return _Breadcum.StyledBreadcum;
+    return _Breadcrumb.StyledBreadcrumb;
   }
 });
 Object.defineProperty(exports, "Container", {
@@ -195,6 +195,12 @@ Object.defineProperty(exports, "Switch", {
     return _Switch.Switch;
   }
 });
+Object.defineProperty(exports, "AdvanceTable", {
+  enumerable: true,
+  get: function get() {
+    return _AdvanceTable.AdvanceTable;
+  }
+});
 
 var _Avatar = require("./components/Avatar");
 
@@ -238,7 +244,7 @@ var _Icon = require("./components/Icon");
 
 var _Box = require("./components/Box");
 
-var _Breadcum = require("./components/Breadcum");
+var _Breadcrumb = require("./components/Breadcrumb");
 
 var _Layout = require("./components/Layout");
 
@@ -253,3 +259,5 @@ var _Accordian = require("./components/Accordian");
 var _SnackBar = require("./components/SnackBar");
 
 var _Switch = require("./components/Switch");
+
+var _AdvanceTable = require("./components/AdvanceTable");
