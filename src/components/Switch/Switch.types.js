@@ -11,10 +11,11 @@ SwitchTypes.propTypes = {
     label: PropTypes.string,
     isBold: PropTypes.string,
     color: PropTypes.string,
+    isChecked: PropTypes.bool,
 };
 
 SwitchTypes.defaultProps = {
-  
+    isChecked: false,
 };
 
 export default SwitchTypes ;
