@@ -9,8 +9,6 @@ exports.default = void 0;
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
-var variable = _interopRequireWildcard(require("../../variable"));
-
 var _Accordion = _interopRequireDefault(require("react-bootstrap/Accordion"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -22,6 +20,12 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var StyledAccordion = (0, _styledComponents.default)(_Accordion.default).withConfig({
   displayName: "Accordianstyled__StyledAccordion",
   componentId: "sc-126ovhn-0"
-})([""]);
+})(["", "  ", " .active.card-header span{-ms-transform:rotate(180deg);transform:rotate(180deg);transition:all 0.3s;}.btn-link:focus{box-shadow:none!important;}.btn-link{text-align:left;width:200px;}", ""], function (props) {
+  return props.background ? (0, _styledComponents.css)([" background-color:", ";"], props.background) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.position === 'right' ? (0, _styledComponents.css)(["position:absolute;left:auto;display:block;right:20px;"]) : (0, _styledComponents.css)(["  "]);
+}, function (props) {
+  return props.width ? (0, _styledComponents.css)([" width:", ";"], props.width) : (0, _styledComponents.css)(["background-color:\"#000000\""]);
+});
 var _default = StyledAccordion;
 exports.default = _default;

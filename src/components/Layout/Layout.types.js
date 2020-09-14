@@ -54,7 +54,10 @@ ContainerTypes.propTypes={
     sm: PropTypes.number,
     xl: PropTypes.number,
     noGutters: PropTypes.bool,
-    bsPrefix: PropTypes.oneOf(['Row'])
+    bsPrefix: PropTypes.oneOf(['Row']),
+    fluid:PropTypes.bool,
+    children:PropTypes.node,
+
 };
 
 ContainerTypes.defaultProps = {

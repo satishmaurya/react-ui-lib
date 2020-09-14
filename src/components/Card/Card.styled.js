@@ -4,6 +4,20 @@ import Card from 'react-bootstrap/Card';
 
 const StyledCard = Styled(Card)`
     overflow:hidden;
+    border: 0px solid #ccc;
+    ${props => props.boxShadow
+        ? css 
+        `
+        box-shadow: ${props.boxShadow};
+        `
+         : css `` }
+    ${props => props.border
+        ? css 
+        `
+            border: ${props.border};
+        `
+         : css `` }
+     
     ${props=>
         props.width
         ? css`
@@ -81,7 +95,7 @@ const StyledCard = Styled(Card)`
         h5,p {color:${variable.white}}
         `
         : css`
-            background-color: ${variable.ColorWhiteBase};
+            background-color: ${variable.white};
         `
     }
     h5 {

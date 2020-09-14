@@ -8,6 +8,8 @@ SearchBoxTypes.propTypes={
     placeholder: PropTypes.string,
     bg: PropTypes.string,
     borderRadius: PropTypes.string,
+    children:PropTypes.node,
+    onFocus:PropTypes.string,
 };
 
 SearchBoxTypes.defaultProps = {
@@ -15,6 +17,7 @@ SearchBoxTypes.defaultProps = {
     placeholder: 'Search',
     bg: '',
     borderRadius:'',
+    onFocus: '',
 };
 
 export default SearchBoxTypes;

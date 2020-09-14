@@ -6,6 +6,9 @@ const BadgeTypes= () => <>BadgeTypes</>;
 BadgeTypes.propTypes={
     variant: PropTypes.oneOf([ 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark']),
     pill: PropTypes.bool,
+    children: PropTypes.node,
+    bgColor: PropTypes.string,
+    color: PropTypes.string,
 };
 
 BadgeTypes.defaultProps = {

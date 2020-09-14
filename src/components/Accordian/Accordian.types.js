@@ -1,20 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const CardTypes= () => <>StackCard</>;
+const AccordianTypes= () => <>AccordianTypes</>;
 
-CardTypes.propTypes={
-    cardTitle: PropTypes.string,
-    bgColor: PropTypes.oneOf(['white', 'primary','secondary','success','info','warning','danger']),
-    isDisabled: PropTypes.bool,
-    rounded:PropTypes.oneOf(['rounded','default'])
+AccordianTypes.propTypes={
+    background: PropTypes.string,
+    label: PropTypes.string,
+    content: PropTypes.string,
+    icon:PropTypes.any,
+    children:PropTypes.any,
+    as: PropTypes.any,
+    variant:PropTypes.string,
+    onClick:PropTypes.func,
+    className:PropTypes.string,
+    width:PropTypes.string,
 };
 
-CardTypes.defaultProps = {
-    cardTitle: ' ',
-    bgColor: 'white',
-    isDisabled: false,
-    rounded:'default',
-};
+AccordianTypes.defaultProps = {
+    children: null,
+    label: "Accordion",
+    varient:'link',
+    className:'btn-link',
+    width:"200px"
+  };
 
-export default CardTypes;
+export default AccordianTypes;

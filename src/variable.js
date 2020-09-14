@@ -8,6 +8,7 @@ export const gray600= '#98a6ad';
 export const gray700= '#6c757d';
 export const gray800= '#414d5f';
 export const gray900= '#323a46';
+export const dark001= '#323a45';
 
 export const blue= '#5089de';
 export const hoverBlue= '#2462be';
@@ -35,6 +36,7 @@ export const dark=gray800;
 export const btnBorderRadius='2rem';
 export const btnBorderRadiusLg= '2rem';
 export const btnBorderRadiusSm= '2rem';
+export const borderRadiusPagination="50%";
 
 // Body
 //

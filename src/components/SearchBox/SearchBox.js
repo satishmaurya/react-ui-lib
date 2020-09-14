@@ -1,12 +1,11 @@
 import React from "react";
 import {StyledSearchBox,StyledForm} from "./SearchBox.styled";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const SearchBox = (props) =>{
-    const {btnType, isDisabled, placeholder,children, size, bg, borderRadius } = props;
+    const { placeholder,children, size, bg, borderRadius, value } = props;
     return(
             <StyledForm inline>
-                <StyledSearchBox borderRadius={borderRadius} bg={bg} size={size} type="text" placeholder={placeholder} />
+                <StyledSearchBox borderRadius={borderRadius} bg={bg} size={size} type="text" placeholder={placeholder} {...props} />
                 {children}
             </StyledForm>
     );

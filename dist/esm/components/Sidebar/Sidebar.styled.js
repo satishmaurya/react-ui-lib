@@ -5,7 +5,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.MainWrapper = exports.StyledSideBar = void 0;
+exports.StyledSideBar = void 0;
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
@@ -16,15 +16,12 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var StyledSideBar = _styledComponents["default"].div.withConfig({
   displayName: "Sidebarstyled__StyledSideBar",
   componentId: "sc-3ocxlf-0"
-})(["", ""], function (props) {
-  return props.isDrawer ? (0, _styledComponents.css)(["height:100%;width:0;color:#fff;position:fixed;z-index:1;top:0;left:0;background:#3d454e;overflow-x:hidden;transition:0.5s;padding-top:60px;.closeIcon{position:absolute;top:0;right:25px;font-size:36px;margin-left:50px;cursor:pointer;}"]) : (0, _styledComponents.css)(["width:250px;height:100%;background:#3d454e;color:#fff;position:fixed;z-index:1;top:0;left:0;background-color:#3d454e;overflow-x:hidden;transition:0.5s;padding-top:60px;"]);
+})(["position:fixed;top:0px;left:0px;z-index:101;height:100vh;width:250px;padding:10px;overflow:auto;", " ", " ", ""], function (props) {
+  return props.background ? (0, _styledComponents.css)([" background:", ";"], props.background) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.color ? (0, _styledComponents.css)([" color:", ";"], props.color) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.position === 'right' ? (0, _styledComponents.css)(["left:auto;right:0;"]) : (0, _styledComponents.css)(["  "]);
 });
 
 exports.StyledSideBar = StyledSideBar;
-
-var MainWrapper = _styledComponents["default"].div.withConfig({
-  displayName: "Sidebarstyled__MainWrapper",
-  componentId: "sc-3ocxlf-1"
-})(["transition:margin-left .5s;padding:16px;height:600px;"]);
-
-exports.MainWrapper = MainWrapper;
