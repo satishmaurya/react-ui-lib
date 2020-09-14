@@ -1,6 +1,8 @@
 import { Meta, Story, Preview, Props} from "@storybook/addon-docs/blocks";
 import Card from "./Card";
 import CardTypes from "./Card.types";
+import { Icon } from '../Icon';
+import { Menu } from '../Menu';
 import Button from "../Button/Button";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -58,7 +60,21 @@ import CardDeck from 'react-bootstrap/CardDeck'
     </Card>
     </Col>
      <Col xl="4">
-    <Card cardTitle="Heading of card" subTitle="Support card subtitle" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-4.jpg" imgPos="middle">
+    <Card cardMenu={<Menu btnType="menu" icon="drag-handle-horizontal" options={[
+            {
+          headerText: 'Header-Text',
+            },
+            {
+          item:'HTML',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+          isDivider: true,
+        }]}
+        />} cardTitle="Heading of card" subTitle="Support card subtitle" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-4.jpg" imgPos="middle">
         <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         </p>

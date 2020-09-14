@@ -1,13 +1,15 @@
 import React from "react";
 import StyledCard from "./Card.styled";
+import { StyledCardRight } from './Card.styled'
 
 const Card = (props) => {
-    const{ color, bgColor, children, cardTitle, width, alignText, alignCard, imgUrl, subTitle, imgPos, border} =props;
+    const{ color, bgColor, children, cardTitle, width, alignText, alignCard, imgUrl, subTitle, imgPos, border, cardMenu} =props;
     if(imgPos==="middle"){
     return(
         <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} {...props}>
             <StyledCard.Body>
             <StyledCard.Title as="h5">{cardTitle}</StyledCard.Title>
+            <StyledCardRight>{cardMenu}</StyledCardRight>
             <StyledCard.Subtitle as="h6" className="text-muted">{subTitle}</StyledCard.Subtitle>
             </StyledCard.Body>
             <img src={imgUrl} />
