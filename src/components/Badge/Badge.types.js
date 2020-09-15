@@ -9,11 +9,13 @@ BadgeTypes.propTypes={
     children: PropTypes.node,
     bgColor: PropTypes.string,
     color: PropTypes.string,
+    font: PropTypes.string,
 };
 
 BadgeTypes.defaultProps = {
     variant: 'primary',
     pill: false,
+    font: 'inherit'
 };
 
 export default BadgeTypes;

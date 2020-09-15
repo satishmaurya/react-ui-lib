@@ -16,7 +16,13 @@ ${props => props.color
       color: ${props.color};
      } `
       : css `` }  
- 
+${props => props.font
+      ? css 
+      `
+      & span {
+            font-size: ${props.font};
+      } `
+            : css `` } 
 
 
 `
