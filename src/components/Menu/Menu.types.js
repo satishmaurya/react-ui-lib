@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const DropDownTypes= () => <>DropDownTypes</>;
+const MenuTypes= () => <>MenuTypes</>;
 
-DropDownTypes.propTypes={
+MenuTypes.propTypes={
     
     id:PropTypes.string,
     className:PropTypes.string,
@@ -18,9 +18,11 @@ DropDownTypes.propTypes={
     Iconsize:PropTypes.oneOf(['sm', 'md', 'lg']),
     children:PropTypes.node,
     icon: PropTypes.string.isRequired,
+    isDivider: PropTypes.bool,
+    headerText: PropTypes.string,
 };
 
-DropDownTypes.defaultProps = {
+MenuTypes.defaultProps = {
     btnType: 'default',
     btnVariant: 'contained',
     isDisabled: false,
@@ -30,7 +32,9 @@ DropDownTypes.defaultProps = {
     Iconsize:'md',
     id:'string',
     className:'string',
+    isDivider: false,
+    headerText: 'default',
     options:'ArrayOf(object)'
 };
 
-export default DropDownTypes;
+export default MenuTypes;

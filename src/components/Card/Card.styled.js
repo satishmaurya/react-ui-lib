@@ -105,6 +105,14 @@ const StyledCard = Styled(Card)`
     img {
         max-width:100%;
     }
+    .card-body{
+        position:relative;
+    }
 `;
-
+export const StyledCardRight = Styled.span`
+position: absolute;
+right:8px;
+left:auto;
+top: 1.25rem;
+`;
 export default StyledCard;

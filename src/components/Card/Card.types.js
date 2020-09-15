@@ -17,6 +17,7 @@ CardTypes.propTypes={
     width:PropTypes.string,
     boxShadow: PropTypes.string,
     border: PropTypes.string,
+    cardMenu: PropTypes.element,
 
 
 };

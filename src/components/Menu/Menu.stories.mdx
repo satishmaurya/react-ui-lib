@@ -1,12 +1,12 @@
 import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
-import DropDown from "./DropDown";
-import DropDownTypes from "./DropDown.types";
+import Menu from "./Menu";
+import MenuTypes from "./Menu.types";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Icon } from '../Icon';
 
 
-<Meta title="Components/DropDown" component="DropDown" />
+<Meta title="Components/Menu" component="Menu" />
 
 <Story name="Import" />
 
@@ -15,7 +15,7 @@ import { Icon } from '../Icon';
 ## Import
 
 ```jsx
-import {DropDown} from "@stack-ui/components";
+import {Menu} from "@stack-ui/components";
 ```
 ## Variant
 
@@ -25,7 +25,7 @@ The best part is you can do this with any button variant, too:
     <Story name="Usage">
          <>
           <span style={{marginRight:20, display: 'inline-block' }} >
-        <DropDown value= "DropDown" btnType="primary" icon="chevron-down" Iconsize="sm" iconVariant="solid" options={[{
+        <Menu value= "Menu" btnType="primary" icon="chevron-down" Iconsize="sm" iconVariant="solid" options={[{
             item:'Add text',
             link :'/about',
             icon: 'add',
@@ -42,7 +42,7 @@ The best part is you can do this with any button variant, too:
         }]} />
         </span>
          <span style={{marginRight:20, display: 'inline-block'}}>
-        <DropDown value="Menu item" btnType="secondary" icon="chevron-up" Iconsize="sm" iconVariant="solid" style={{display: 'inline-block'}} options={[{
+        <Menu value="Menu item" btnType="secondary" icon="chevron-up" Iconsize="sm" iconVariant="solid" style={{display: 'inline-block'}} options={[{
           item:'HTML',
           link :'/about',
         },
@@ -55,7 +55,7 @@ The best part is you can do this with any button variant, too:
         }]} />
         </span>
         <span style={{marginRight:20, display: 'inline-block' }} >
-        <DropDown value="report" btnType="success"  Iconsize="sm"  icon="chevron-down" iconVariant="solid" btnVariant="contained" options={[{
+        <Menu value="report" btnType="success"  Iconsize="sm"  icon="chevron-down" iconVariant="solid" btnVariant="contained" options={[{
           item:'HTML',
            link :'/about',
         },
@@ -68,7 +68,7 @@ The best part is you can do this with any button variant, too:
         }]} />
         </span>
             <span style={{marginRight:20, display: 'inline-block' }} >
-        <DropDown value="dropbox" btnType="purple" icon="chevron-down" Iconsize="sm" iconVariant="solid" btnVariant="contained" options={[{
+        <Menu value="dropbox" btnType="purple" icon="chevron-down" Iconsize="sm" iconVariant="solid" btnVariant="contained" options={[{
           item:'HTML',
            link :'/about',
         },
@@ -81,7 +81,7 @@ The best part is you can do this with any button variant, too:
         }]} />
         </span>
            <span style={{marginRight:20, display: 'inline-block' }}>
-        <DropDown value= "DropDown" btnType="danger" icon="chevron-down" Iconsize="sm" iconVariant="solid" isDisabled="true" btnVariant="contained" options={[{
+        <Menu value= "Menu" btnType="danger" icon="chevron-down" Iconsize="sm" iconVariant="solid" isDisabled="true" btnVariant="contained" options={[{
           item:'HTML',
         },
         {
@@ -95,15 +95,15 @@ The best part is you can do this with any button variant, too:
     </Story>
 </Preview>
 
-## Dropdown with Icon
+## Menu with Icon
 
-Button dropdowns work with buttons of all sizes, including default and split dropdown buttons.
+Button Menus work with buttons of all sizes, including default and split Menu buttons.
 
 <Preview withToolbar>
-    <Story name="UsageDropdownIcons">
+    <Story name="UsageMenuIcons">
          <>
           <span style={{marginRight:20, display: 'inline-block' }} >
-        <DropDown btnType="primary"  value= "DropDown" icon="chevron-down"  iconVariant="solid"  size="sm" options={[{
+        <Menu btnType="primary"  value= "Menu" icon="chevron-down"  iconVariant="solid"  size="sm" options={[{
             item:'Add text',
             link :'/about',
             icon: 'add',
@@ -120,7 +120,7 @@ Button dropdowns work with buttons of all sizes, including default and split dro
         }]} />
         </span>
        <span style={{marginRight:20, display: 'inline-block' }} >
-        <DropDown btnType="default"  value= "default" icon="chevron-down" options={[{
+        <Menu btnType="default"  value= "default" icon="chevron-down" options={[{
             item:'Add text',
             link :'/about',
             icon: 'add',
@@ -147,7 +147,7 @@ Button dropdowns work with buttons of all sizes, including default and split dro
     <Story name="UsageIcon">
          <>
           <span style={{marginRight:20, display: 'inline-block' }} >
-        <DropDown btnType="primary" value= "DropDown" icon="chevron-down"  iconVariant="solid"  size="sm" options={[{
+        <Menu btnType="primary" value= "Menu" icon="chevron-down"  iconVariant="solid"  size="sm" options={[{
           item:'HTML',
         },
         {
@@ -158,7 +158,7 @@ Button dropdowns work with buttons of all sizes, including default and split dro
         }]} />
         </span>
          <span style={{marginRight:20, display: 'inline-block'}}>
-        <DropDown btnType="info" value= "DropDown" icon="chevron-down" iconVariant="solid" style={{display: 'inline-block'}} options={[{
+        <Menu btnType="info" value= "Menu" icon="chevron-down" iconVariant="solid" style={{display: 'inline-block'}} options={[{
           item:'HTML',
         },
         {
@@ -169,7 +169,7 @@ Button dropdowns work with buttons of all sizes, including default and split dro
         }]} />
         </span>
         <span style={{marginRight:20, display: 'inline-block' }} >
-        <DropDown  btnType="success" value= "DropDown" icon="chevron-down" iconVariant="solid"  size="lg" btnVariant="contained" options={[{
+        <Menu btnType="success" value= "Menu" icon="chevron-down" iconVariant="solid"  size="lg" btnVariant="contained" options={[{
           item:'HTML',
         },
         {
@@ -183,8 +183,35 @@ Button dropdowns work with buttons of all sizes, including default and split dro
     </Story>
 </Preview>
 
+## Menu with Icons
+#Menu
+
+<Preview withToolbar>
+    <Story name="IconMenu">
+         <>
+          <span style={{marginRight:20, display: 'inline-block', marginLeft: 100 }} >
+          <Menu iconOption btnVariant="contained" btnType="menu" options={[
+            {
+          headerText: 'Header-Text',
+            },
+            {
+          item:'HTML',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+          isDivider: true,
+        }]}
+        />
+        </span>
+        </>
+    </Story>
+</Preview>
+
 <Story name="Props" />
 
 ## Props
 
-<Props of={DropDownTypes} />
+<Props of={MenuTypes} />
