@@ -1,13 +1,13 @@
 import React from "react";
-import {StyledSearchBox,StyledForm} from "./SearchBox.styled";
+import StyledSearchBox from './SearchBox.styled';
 
 const SearchBox = (props) =>{
-    const { placeholder,children, size, bg, borderRadius, value } = props;
+    const { placeholder, size, bg, borderRadius, value,id, name, border, onFocus } = props;
     return(
-            <StyledForm inline>
-                <StyledSearchBox borderRadius={borderRadius} bg={bg} size={size} type="text" placeholder={placeholder} {...props} />
-                {children}
-            </StyledForm>
+        <StyledSearchBox borderRadius={borderRadius} bg={bg} border={border} size={size} onFocus={onFocus}>
+            <input type="text" placeholder={placeholder} id={id}
+                value={value} name={name} />
+        </StyledSearchBox>
     );
 }
 
