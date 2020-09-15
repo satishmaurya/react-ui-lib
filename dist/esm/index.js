@@ -27,12 +27,6 @@ Object.defineProperty(exports, "Card", {
     return _Card.Card;
   }
 });
-Object.defineProperty(exports, "DropDown", {
-  enumerable: true,
-  get: function get() {
-    return _DropDown.DropDown;
-  }
-});
 Object.defineProperty(exports, "Header", {
   enumerable: true,
   get: function get() {
@@ -159,12 +153,6 @@ Object.defineProperty(exports, "Col", {
     return _Layout.Col;
   }
 });
-Object.defineProperty(exports, "SearchBox", {
-  enumerable: true,
-  get: function get() {
-    return _SearchBox.SearchBox;
-  }
-});
 Object.defineProperty(exports, "Radio", {
   enumerable: true,
   get: function get() {
@@ -201,6 +189,18 @@ Object.defineProperty(exports, "AdvanceTable", {
     return _AdvanceTable.AdvanceTable;
   }
 });
+Object.defineProperty(exports, "Menu", {
+  enumerable: true,
+  get: function get() {
+    return _Menu.Menu;
+  }
+});
+Object.defineProperty(exports, "SearchBox", {
+  enumerable: true,
+  get: function get() {
+    return _SearchBox.SearchBox;
+  }
+});
 
 var _Avatar = require("./components/Avatar");
 
@@ -209,8 +209,6 @@ var _Badge = require("./components/Badge");
 var _Button = require("./components/Button");
 
 var _Card = require("./components/Card");
-
-var _DropDown = require("./components/DropDown");
 
 var _Header = require("./components/Header");
 
@@ -248,8 +246,6 @@ var _Breadcrumb = require("./components/Breadcrumb");
 
 var _Layout = require("./components/Layout");
 
-var _SearchBox = require("./components/SearchBox");
-
 var _Radio = require("./components/Radio");
 
 var _CheckboxGroup = require("./components/CheckboxGroup");
@@ -261,3 +257,7 @@ var _SnackBar = require("./components/SnackBar");
 var _Switch = require("./components/Switch");
 
 var _AdvanceTable = require("./components/AdvanceTable");
+
+var _Menu = require("./components/Menu");
+
+var _SearchBox = require("./components/SearchBox");
