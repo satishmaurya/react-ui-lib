@@ -4,6 +4,7 @@ import * as variable from "../../variable";
 const StyledButton = styled.button`
     padding: 6px 16px;
     border-radius: 4px;
+    transition: all 0.5s ease;
     color: ${variable.white};
     ${props =>
         props.btnType === "primary"
@@ -87,11 +88,9 @@ const StyledButton = styled.button`
         ? css`
             background: ${variable.white};
         `
-        : css`
-        `
+        : css` `
     }
     ${props =>
-        
         props.variant === "outlined" && props.btnType === "primary"
         ? css`
             color: ${variable.blue};
@@ -136,8 +135,7 @@ const StyledButton = styled.button`
         ? css`
             color: ${variable.gray800};
         `
-        : css`
-        `
+        : css` `
     }
     ${props =>
         props.rounded === "rounded"
@@ -159,8 +157,7 @@ const StyledButton = styled.button`
     display:block;
     width:100%;
     `
-    : css`
-    `
+    : css` `
 }
 ${props =>     
     props.size === "sm"
@@ -178,8 +175,18 @@ ${props =>
     line-height: 1.5;
     border-radius: .15rem;
     `
-    : css`
+    : css` `
+}
+${props =>
+    props.onHover
+    ? css `
+    &:hover {
+        opacity: 0.8;
+        transition: all 0.5s ease;
+        box-shadow: rgba(0,0,0,0.15) 2px 4px 5px 0px;
+    } 
     `
+    : css ``
 }
 `
 

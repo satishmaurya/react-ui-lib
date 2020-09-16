@@ -172,8 +172,8 @@ svg{
     }
 }
 .dropdown-item{
- padding:.25rem 1.2rem;
- font-weight: 400;
+    padding:0.35rem 1.2rem;
+    font-weight: 400;
     color: #6c757d;
     text-align: inherit;
     white-space: nowrap;
