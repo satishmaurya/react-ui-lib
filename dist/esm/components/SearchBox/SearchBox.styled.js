@@ -16,10 +16,10 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var StyledSearchBox = _styledComponents["default"].div.withConfig({
   displayName: "SearchBoxstyled__StyledSearchBox",
   componentId: "sc-1cgeyrw-0"
-})(["input{padding:6px;}", "  ", "  ", " ", ""], function (props) {
+})(["input{padding:6px;transition:all 0.5s ease;}", "  ", "  ", " ", ""], function (props) {
   return props.border ? (0, _styledComponents.css)(["& input{border:", ";}"], props.border) : (0, _styledComponents.css)([""]);
 }, function (props) {
-  return props.onFocus ? (0, _styledComponents.css)(["& input{& focus{box-shadow:", ";}}"], props.onFocus) : (0, _styledComponents.css)([""]);
+  return props.onFocus ? (0, _styledComponents.css)(["input{&:focus{box-shadow:0 0 3px rgb(212,222,225);border:1.8px solid rgb(210,208,208);outline:0;transition:all 0.5s ease;}}"]) : (0, _styledComponents.css)([""]);
 }, function (props) {
   return props.bg ? (0, _styledComponents.css)(["& input{background-color:", ";}"], props.bg) : (0, _styledComponents.css)([""]);
 }, function (props) {

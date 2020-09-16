@@ -57,7 +57,7 @@ var Card = function Card(props) {
       src: imgUrl
     }), /*#__PURE__*/_react["default"].createElement(_Card["default"].Body, null, /*#__PURE__*/_react["default"].createElement(_Card["default"].Title, {
       as: "h5"
-    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
+    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card.StyledCardRight, null, cardMenu), /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
       as: "h6"
     }, subTitle), /*#__PURE__*/_react["default"].createElement(_Card["default"].Text, null, children)));
   } else if (imgPos === "bottom") {
@@ -67,7 +67,7 @@ var Card = function Card(props) {
       bgColor: bgColor
     }, props), /*#__PURE__*/_react["default"].createElement(_Card["default"].Body, null, /*#__PURE__*/_react["default"].createElement(_Card["default"].Title, {
       as: "h5"
-    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
+    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card.StyledCardRight, null, cardMenu), /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
       as: "h6"
     }, subTitle), /*#__PURE__*/_react["default"].createElement(_Card["default"].Text, null, children)), /*#__PURE__*/_react["default"].createElement("img", {
       src: imgUrl
@@ -81,7 +81,7 @@ var Card = function Card(props) {
       src: imgUrl
     }), /*#__PURE__*/_react["default"].createElement(_Card["default"].ImgOverlay, null, /*#__PURE__*/_react["default"].createElement(_Card["default"].Title, {
       as: "h5"
-    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
+    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card.StyledCardRight, null, cardMenu), /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
       as: "h6"
     }, subTitle), /*#__PURE__*/_react["default"].createElement(_Card["default"].Text, null, children)));
   } else {
@@ -91,7 +91,7 @@ var Card = function Card(props) {
       bgColor: bgColor
     }, props), /*#__PURE__*/_react["default"].createElement(_Card["default"].Body, null, /*#__PURE__*/_react["default"].createElement(_Card["default"].Title, {
       as: "h5"
-    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
+    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card.StyledCardRight, null, cardMenu), /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
       as: "h6"
     }, subTitle), /*#__PURE__*/_react["default"].createElement(_Card["default"].Text, null, children)), /*#__PURE__*/_react["default"].createElement("img", {
       src: imgUrl
