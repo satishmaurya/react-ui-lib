@@ -95,6 +95,35 @@ import CardDeck from 'react-bootstrap/CardDeck'
 </Story>
 </Preview>
 
+### Card with Menu
+<Preview withToolbar>
+<Story name="Card with Menu">
+<>
+<Row>
+<Col xl="4">
+    <Card cardMenu={<Menu btnType="menu" iconOption options={[
+            {
+          headerText: 'Header-Text',
+            },
+            {
+          item:'HTML',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+          isDivider: true,
+        }]}
+        />} cardTitle="Heading of card" bgColor="#fff" alignText="left" alignCard="center" imgUrl="https://coderthemes.com/upvex/layouts/light/assets/images/small/img-4.jpg" imgPos="middle">
+    </Card>
+    </Col>
+  
+</Row>
+</>
+</Story>
+</Preview>
+
 ### WithPropsNew
 <Preview withToolbar>
 <Story name="-WithPropsNew">

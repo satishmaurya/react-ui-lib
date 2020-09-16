@@ -28,6 +28,7 @@ const Card = (props) => {
                 <img src={imgUrl} />
                 <StyledCard.Body>
                 <StyledCard.Title as="h5">{cardTitle}</StyledCard.Title>
+                <StyledCardRight>{cardMenu}</StyledCardRight>
                 <StyledCard.Subtitle as="h6">{subTitle}</StyledCard.Subtitle>
                 <StyledCard.Text>{children}</StyledCard.Text>
                 
@@ -40,6 +41,7 @@ const Card = (props) => {
             <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} {...props}>
                 <StyledCard.Body>
                 <StyledCard.Title as="h5">{cardTitle}</StyledCard.Title>
+                <StyledCardRight>{cardMenu}</StyledCardRight>
                 <StyledCard.Subtitle as="h6">{subTitle}</StyledCard.Subtitle>
                 <StyledCard.Text>{children}</StyledCard.Text>
                 </StyledCard.Body>
@@ -53,6 +55,7 @@ const Card = (props) => {
             <img src={imgUrl} />
             <StyledCard.ImgOverlay>
             <StyledCard.Title as="h5">{cardTitle}</StyledCard.Title>
+            <StyledCardRight>{cardMenu}</StyledCardRight>
             <StyledCard.Subtitle as="h6">{subTitle}</StyledCard.Subtitle>
             <StyledCard.Text>{children}</StyledCard.Text>
             </StyledCard.ImgOverlay>
@@ -65,6 +68,7 @@ const Card = (props) => {
             <StyledCard imgUrl={imgUrl} color={color} bgColor={bgColor} {...props}>
                 <StyledCard.Body>
                 <StyledCard.Title as="h5">{cardTitle}</StyledCard.Title>
+                <StyledCardRight>{cardMenu}</StyledCardRight>
                 <StyledCard.Subtitle as="h6">{subTitle}</StyledCard.Subtitle>
                 <StyledCard.Text>{children}</StyledCard.Text>
                 </StyledCard.Body>
