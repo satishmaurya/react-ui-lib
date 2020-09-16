@@ -3,7 +3,6 @@ import * as variable from "../../variable";
 import Card from 'react-bootstrap/Card';
 
 const StyledCard = Styled(Card)`
-    overflow:hidden;
     border: 0px solid #ccc;
     ${props => props.boxShadow
         ? css 
