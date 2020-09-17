@@ -5,6 +5,9 @@ input {
     padding: 6px ;
     transition: all 0.5s ease;
 }
+ position:relative;
+ display:inline-block;
+
 
 
 ${props => props.border ? css `
