@@ -1,6 +1,7 @@
 import styled, {css} from "styled-components";
 
 const StyledSearchBox = styled.div`
+
 input {
     padding: 6px ;
     transition: all 0.5s ease;
@@ -45,7 +46,20 @@ ${props=>
        
     `
 }
-    
+${props =>
+    props.icon
+        ? css`
+       & .abx {
+        color: #ada8a8;
+        position: relative;
+        left: -20px;
+        border: 1px solid orange;
+        }
+        `
+        : css`  `
+}
+
+   
 `
 
 

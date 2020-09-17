@@ -1,0 +1,31 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import SocialMediaGroup from './SocialMediaGroup';
+import SocialMediaTypes from './SocialMediaGroup.types';
+ 
+
+<Meta title="Components/SocialIcons" component="SocialIcons" />
+
+<Story name="Import" />
+
+# Social Icon
+
+## Import
+
+```jsx
+import {SocialMediaGroup} from "@stack-ui/components";
+```
+## Usage
+
+<Preview withToolbar>
+    <Story name="Usage">
+        <>
+            <SocialMediaGroup />
+        </>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={SocialMediaTypes} />

@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const SearchBoxTypes= () => <>SearchBox</>;
+const SocialMediaTypes= () => <>Social</>;
 
-SearchBoxTypes.propTypes={
+SocialMediaTypes.propTypes={
     size: PropTypes.oneOf(['sm','md','lg']),
     placeholder: PropTypes.string,
     bg: PropTypes.string,
@@ -13,10 +13,10 @@ SearchBoxTypes.propTypes={
     icon:PropTypes.bool
 };
 
-SearchBoxTypes.defaultProps = {
+SocialMediaTypes.defaultProps = {
     size: 'md',
     placeholder: 'Search',
     onFocus: false,
 };
 
-export default SearchBoxTypes;
+export default SocialMediaTypes;
