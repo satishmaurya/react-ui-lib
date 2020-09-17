@@ -6,7 +6,8 @@ input {
     padding: 6px ;
     transition: all 0.5s ease;
 }
-
+ position:relative;
+ display:inline-block;
 
 ${props => props.border ? css `
 & input {
@@ -31,9 +32,7 @@ ${props=>
         background-color: ${props.bg};
         }
     `
-    :css `
-       
-    `
+    :css ` `
 }
 ${props=>
     props.borderRadius
@@ -42,24 +41,8 @@ ${props=>
         border-radius: ${props.borderRadius};
     }
         `
-    :css `
-       
-    `
+    :css `  `
 }
-${props =>
-    props.icon
-        ? css`
-       & .abx {
-        color: #ada8a8;
-        position: relative;
-        left: -20px;
-        border: 1px solid orange;
-        }
-        `
-        : css`  `
-}
-
-   
 `
 
 

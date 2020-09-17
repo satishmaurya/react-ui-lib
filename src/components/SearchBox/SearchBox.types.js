@@ -10,7 +10,7 @@ SearchBoxTypes.propTypes={
     borderRadius: PropTypes.string,
     children:PropTypes.node,
     onFocus:PropTypes.bool,
-    icon:PropTypes.bool
+    icon:PropTypes.string,
 };
 
 SearchBoxTypes.defaultProps = {
