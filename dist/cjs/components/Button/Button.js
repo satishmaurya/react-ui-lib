@@ -29,7 +29,7 @@ var Button = function Button(props) {
       borderRadius = props.borderRadius,
       color = props.color,
       iconSize = props.iconSize,
-      hover = props.hover;
+      onHover = props.onHover;
   return /*#__PURE__*/_react.default.createElement(_Button.default, _extends({
     rounded: rounded,
     btnType: btnType,

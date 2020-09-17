@@ -155,15 +155,8 @@ svg{
     box-shadow: 0 0 35px 0 rgba(154,161,171,.3);
     padding-top:0;
     border-radius:0;
-    ${props => 
-        props.positionMenu === "right" 
-        ? css `
-        right:0 !important;
-        left: auto !important;
-        `
-        : css`
-        `
-        };
+    right:0 !important;
+    left: auto !important;
 }
 .btn-menu{
     padding:0;
@@ -172,14 +165,14 @@ svg{
     }
 }
 .dropdown-item{
- padding:.25rem 1.2rem;
- font-weight: 400;
+    padding:0.35rem 1.2rem;
+    font-weight: 400;
     color: #6c757d;
     text-align: inherit;
     white-space: nowrap;
     font-size: .8125rem;
     text-transform: capitalize;
-
+    
     svg{
         margin-left:0;
         width:13px;

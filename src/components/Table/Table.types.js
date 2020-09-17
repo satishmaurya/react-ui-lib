@@ -12,6 +12,7 @@ TableTypes.propTypes={
     hover: PropTypes.bool,
     children:PropTypes.node,
     bsPrefix:PropTypes.string,
+    heights: PropTypes.string,
 };
 
 TableTypes.defaultProps = {
