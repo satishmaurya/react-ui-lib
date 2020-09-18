@@ -155,15 +155,8 @@ svg{
     box-shadow: 0 0 35px 0 rgba(154,161,171,.3);
     padding-top:0;
     border-radius:0;
-    ${props => 
-        props.positionMenu === "right" 
-        ? css `
-        right:0 !important;
-        left: auto !important;
-        `
-        : css`
-        `
-        };
+    right:0 !important;
+    left: auto !important;
 }
 .btn-menu{
     padding:0;
@@ -179,7 +172,7 @@ svg{
     white-space: nowrap;
     font-size: .8125rem;
     text-transform: capitalize;
-
+    
     svg{
         margin-left:0;
         width:13px;
