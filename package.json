@@ -38,6 +38,7 @@
     "react-dom": "^16.13.0",
     "react-fontawesome": "^1.7.1",
     "react-scripts": "3.4.0",
+    "react-social-icons": "^4.1.0",
     "react-table": "^7.5.0",
     "styled-components": "^5.0.1"
   },

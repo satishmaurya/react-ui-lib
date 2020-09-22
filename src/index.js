@@ -29,4 +29,4 @@ export { Switch } from './components/Switch';
 export { AdvanceTable } from './components/AdvanceTable';
 export { Menu } from './components/Menu';
 export { SearchBox } from './components/SearchBox';
-export { SocialMediaGroup as SocialIcons } from './components/SocialMediaGroup';
+export { SocialMediaGroup } from './components/SocialMediaGroup';

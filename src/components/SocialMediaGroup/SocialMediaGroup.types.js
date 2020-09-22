@@ -5,7 +5,7 @@ const SocialMediaTypes= () => <>Social</>;
 
 SocialMediaTypes.propTypes={
     size: PropTypes.oneOf(['sm','md','lg']),
-    
+    url: PropTypes.string, 
 };
 
 SocialMediaTypes.defaultProps = {
