@@ -30,3 +30,4 @@ export { Switch } from './components/Switch';
 export { AdvanceTable } from './components/AdvanceTable';
 export { Menu } from './components/Menu';
 export { SearchBox } from './components/SearchBox';
+export { StackModal } from './components/StackModal';
