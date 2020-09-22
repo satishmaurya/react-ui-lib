@@ -43,6 +43,31 @@ ${props=>
         `
     :css `  `
 }
+${props => props.disabled 
+    ? css ` 
+    cursor: not-allowed;
+     & label {
+      cursor: not-allowed !important;
+      }
+      & input {
+        cursor: not-allowed !important;
+        }
+  `
+  : css `` }
+
+  ${props => props.isError 
+    ? css ` 
+     & input {
+        background: rgb(248,217,215);
+        border: 1px solid #d00f0f;
+     }
+     & p {
+        padding: 5px 8px;
+        color: #d00f0f;
+     }
+  `
+  : css `` }
+
 `
 
 
