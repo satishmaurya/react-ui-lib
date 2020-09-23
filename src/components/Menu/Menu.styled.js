@@ -68,14 +68,12 @@ ${props =>
         ? css`
             cursor: not-allowed;
             opacity:0.6;
-
         `
         : css`
         cursor: pointer;
         `
 }
 ${props =>
-    
     props.type === "outlined"
     ? css`
         background: ${variable.white};
@@ -84,7 +82,6 @@ ${props =>
     `
 }
 ${props =>
-    
     props.type === "outlined"
     ? css`
         background: ${variable.white};
@@ -157,6 +154,11 @@ svg{
     border-radius:0;
     right:0 !important;
     left: auto !important;
+    -webkit-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    transform: rotateX(90deg);
+    transform-origin: top;
 }
 .btn-menu{
     padding:0;
