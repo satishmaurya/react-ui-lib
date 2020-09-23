@@ -19,7 +19,8 @@ StackInputGroupTypes.propTypes={
     placeholder:PropTypes.string,
     id:PropTypes.string,
     rows:PropTypes.string,
-    error: PropTypes.bool,
+    isError: PropTypes.bool,
+    hint: PropTypes.string,
 };
 
 

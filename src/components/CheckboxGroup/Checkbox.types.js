@@ -9,14 +9,14 @@ CheckBoxTypes.propTypes = {
   onClick: PropTypes.func,
   label: PropTypes.string,
   id: PropTypes.string,
-  error: PropTypes.bool,
+  isError: PropTypes.bool,
   name: PropTypes.string,
 };
 
 
 CheckBoxTypes.defaultProps = {
   disabled: 'false',
-  error: 'false',
+  isError: 'false',
 };
 
 export default CheckBoxTypes ;
