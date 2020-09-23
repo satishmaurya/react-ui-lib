@@ -9,7 +9,15 @@ var _react = _interopRequireDefault(require("react"));
 
 var _SearchBox = _interopRequireDefault(require("./SearchBox.styled"));
 
+var _Icon = require("../Icon");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var SearchBox = function SearchBox(props) {
   var placeholder = props.placeholder,
@@ -20,20 +28,38 @@ var SearchBox = function SearchBox(props) {
       id = props.id,
       name = props.name,
       border = props.border,
-      onFocus = props.onFocus;
+      icon = props.icon,
+      onFocus = props.onFocus,
+      onClick = props.onClick,
+      isError = props.isError,
+      disabled = props.disabled,
+      hint = props.hint;
+  var iconStyle = {
+    position: "absolute",
+    right: "20px",
+    top: '6px'
+  };
   return /*#__PURE__*/_react["default"].createElement(_SearchBox["default"], {
+    className: "abx",
     borderRadius: borderRadius,
     bg: bg,
     border: border,
     size: size,
-    onFocus: onFocus
+    onFocus: onFocus,
+    onClick: onClick,
+    isError: isError,
+    disabled: disabled
   }, /*#__PURE__*/_react["default"].createElement("input", {
     type: "text",
     placeholder: placeholder,
     id: id,
     value: value,
     name: name
-  }));
+  }), /*#__PURE__*/_react["default"].createElement(_Icon.Icon, {
+    style: _objectSpread({}, iconStyle),
+    icon: icon,
+    size: size
+  }), isError && /*#__PURE__*/_react["default"].createElement("p", null, hint));
 };
 
 var _default = SearchBox;
