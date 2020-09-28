@@ -9,6 +9,9 @@ RadialProgressBarTypes.propTypes={
     sqsize: PropTypes.number,
     strokeWidth: PropTypes.number,
     strokeColor: PropTypes.string,
+    animate: PropTypes.bool,
+    animationDelay: PropTypes.string,
+    animationType: PropTypes.string,
 };
 
 RadialProgressBarTypes.defaultProps = {
@@ -16,6 +19,9 @@ RadialProgressBarTypes.defaultProps = {
     strokeColor: 'string',
     sqsize: 232,
     strokeWidth: 9,
+    animate: false,
+    animationDelay: '2s',
+    animationType: 'linear',
 };
 
 export default RadialProgressBarTypes;

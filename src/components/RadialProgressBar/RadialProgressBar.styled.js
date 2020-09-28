@@ -19,7 +19,7 @@ const RadialProgressBar = styled.div`{
             background-position-x: initial;
             stroke-linecap: round;
             stroke-linejoin: round;
-            animation: ${props => props.animate && css `progress 3s linear`}
+            animation: ${props => props.animate && css `progress ${props.animationDelay} ${props.animationType}`}
             
         }
         .stackui-radialProgress{
