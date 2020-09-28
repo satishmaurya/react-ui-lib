@@ -14,7 +14,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Radio = function Radio(props) {
   var label = props.label,
       disabled = props.disabled,
-      error = props.error,
+      isError = props.isError,
       onClick = props.onClick,
       value = props.value,
       name = props.name;
@@ -24,7 +24,7 @@ var Radio = function Radio(props) {
     type: "radio",
     name: name,
     disabled: disabled,
-    error: error
+    isError: isError
   }), /*#__PURE__*/_react.default.createElement("span", {
     class: "radio-check"
   })));

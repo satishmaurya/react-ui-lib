@@ -19,7 +19,8 @@ var Table = function Table(props) {
       hover = props.hover,
       responsive = props.responsive,
       variant = props.variant,
-      bsPrefix = props.bsPrefix;
+      bsPrefix = props.bsPrefix,
+      heights = props.heights;
   return /*#__PURE__*/_react["default"].createElement(_Table["default"], {
     size: size,
     striped: striped,
@@ -27,7 +28,8 @@ var Table = function Table(props) {
     hover: hover,
     responsive: responsive,
     variant: variant,
-    bsPrefix: bsPrefix
+    bsPrefix: bsPrefix,
+    heights: heights
   }, children);
 };
 

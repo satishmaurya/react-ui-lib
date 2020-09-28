@@ -16,6 +16,7 @@ ButtonTypes.propTypes={
     onClick:PropTypes.func,
     icon: PropTypes.string.isRequired,
     iconVariant:PropTypes.oneOf(['regular','solid']),
+    onHover: PropTypes.string,
 };
 ButtonTypes.defaultProps = {
     btnType: 'default',

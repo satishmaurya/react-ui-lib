@@ -16,10 +16,12 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var StyledBadge = _styledComponents["default"].div.withConfig({
   displayName: "Badgestyled__StyledBadge",
   componentId: "sc-18afjym-0"
-})(["", " ", "  "], function (props) {
+})(["", " ", "   ", " "], function (props) {
   return props.bgColor ? (0, _styledComponents.css)(["& span{background-color:", ";}"], props.bgColor) : (0, _styledComponents.css)([""]);
 }, function (props) {
   return props.color ? (0, _styledComponents.css)(["& span{color:", ";}"], props.color) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.font ? (0, _styledComponents.css)(["& span{font-size:", ";}"], props.font) : (0, _styledComponents.css)([""]);
 });
 
 var _default = StyledBadge;

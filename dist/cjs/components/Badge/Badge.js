@@ -18,10 +18,12 @@ var Badge = function Badge(props) {
       pill = props.pill,
       variant = props.variant,
       bgColor = props.bgColor,
-      color = props.color;
+      color = props.color,
+      font = props.font;
   return /*#__PURE__*/_react.default.createElement(_Badge2.default, {
     bgColor: bgColor,
-    color: color
+    color: color,
+    font: font
   }, /*#__PURE__*/_react.default.createElement(_Badge.default, {
     pill: pill,
     variant: variant

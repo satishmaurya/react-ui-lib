@@ -33,11 +33,11 @@ var StackInputGroup = function StackInputGroup(props) {
       id = props.id,
       labelText = props.labelText,
       labelInline = props.labelInline,
-      error = props.error,
+      isError = props.isError,
       hint = props.hint;
   return /*#__PURE__*/_react["default"].createElement(_StackInputGroup["default"], {
     disabled: disabled,
-    error: error,
+    isError: isError,
     hint: hint
   }, labelInline ? /*#__PURE__*/_react["default"].createElement(_InputGroup["default"], {
     size: size
@@ -54,7 +54,7 @@ var StackInputGroup = function StackInputGroup(props) {
     rows: rows,
     bsPrefix: bsPrefix,
     size: size
-  }, props))));
+  }, props)), isError && /*#__PURE__*/_react["default"].createElement("p", null, hint)));
 };
 
 var _default = StackInputGroup;

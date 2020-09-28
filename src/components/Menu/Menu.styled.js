@@ -68,14 +68,12 @@ ${props =>
         ? css`
             cursor: not-allowed;
             opacity:0.6;
-
         `
         : css`
         cursor: pointer;
         `
 }
 ${props =>
-    
     props.type === "outlined"
     ? css`
         background: ${variable.white};
@@ -84,7 +82,6 @@ ${props =>
     `
 }
 ${props =>
-    
     props.type === "outlined"
     ? css`
         background: ${variable.white};
@@ -157,6 +154,11 @@ svg{
     border-radius:0;
     right:0 !important;
     left: auto !important;
+    -webkit-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    transform: rotateX(90deg);
+    transform-origin: top;
 }
 .btn-menu{
     padding:0;
@@ -165,8 +167,8 @@ svg{
     }
 }
 .dropdown-item{
- padding:.25rem 1.2rem;
- font-weight: 400;
+    padding:0.35rem 1.2rem;
+    font-weight: 400;
     color: #6c757d;
     text-align: inherit;
     white-space: nowrap;
@@ -208,6 +210,7 @@ color:#6c757d;
 .menu-dots{
     display: inline-block;
     width:16px;
+    transition:.35s ease-in-out;
     height:16px;
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDI2LjY2NyA0MjYuNjY3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MjYuNjY3IDQyNi42Njc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Y2lyY2xlIGN4PSI0Mi42NjciIGN5PSIyMTMuMzMzIiByPSI0Mi42NjciLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPGNpcmNsZSBjeD0iMjEzLjMzMyIgY3k9IjIxMy4zMzMiIHI9IjQyLjY2NyIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8Y2lyY2xlIGN4PSIzODQiIGN5PSIyMTMuMzMzIiByPSI0Mi42NjciLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==);
 }

@@ -73,7 +73,7 @@ display: flex;
         }
   `
   : css `` }
-  ${props => props.error 
+  ${props => props.isError 
     ? css ` 
     & .radio-btn input:checked ~ .radio-check {
       background-color: #b67680d1;

@@ -20,8 +20,10 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var StyledTable = (0, _styledComponents["default"])(_Table["default"]).withConfig({
   displayName: "Tablestyled__StyledTable",
   componentId: "sc-402nwz-0"
-})(["", ""], function (props) {
-  return props.size === "xs" ? (0, _styledComponents.css)(["height:.15rem;"]) : props.size === "sm" ? (0, _styledComponents.css)(["height:.30rem;"]) : props.size === "md" ? (0, _styledComponents.css)(["height:.50rem;"]) : props.size === "lg" ? (0, _styledComponents.css)(["height:2rem;"]) : (0, _styledComponents.css)(["height:1rem;"]);
+})(["", " ", ""], function (props) {
+  return props.size === "xs" ? (0, _styledComponents.css)(["tr{height:.15rem;}th,td{padding:0.35rem;}"]) : props.size === "sm" ? (0, _styledComponents.css)(["height:.30rem;tr{height:.30rem;}th,td{padding:0.45rem;}"]) : props.size === "md" ? (0, _styledComponents.css)(["tr{height:.50rem;}"]) : props.size === "lg" ? (0, _styledComponents.css)(["height:2rem;tr{height:2rem;}th,td{padding:1rem;}"]) : (0, _styledComponents.css)(["height:1rem;"]);
+}, function (props) {
+  return props.heights ? (0, _styledComponents.css)(["height:", ";"], props.heights) : (0, _styledComponents.css)([""]);
 });
 var _default = StyledTable;
 exports["default"] = _default;
