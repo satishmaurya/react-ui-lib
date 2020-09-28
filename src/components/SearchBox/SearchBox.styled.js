@@ -1,11 +1,13 @@
 import styled, {css} from "styled-components";
 
 const StyledSearchBox = styled.div`
+
 input {
     padding: 6px ;
     transition: all 0.5s ease;
 }
-
+ position:relative;
+ display:inline-block;
 
 ${props => props.border ? css `
 & input {
@@ -30,9 +32,7 @@ ${props=>
         background-color: ${props.bg};
         }
     `
-    :css `
-       
-    `
+    :css ` `
 }
 ${props=>
     props.borderRadius
@@ -41,11 +41,33 @@ ${props=>
         border-radius: ${props.borderRadius};
     }
         `
-    :css `
-       
-    `
+    :css `  `
 }
-    
+${props => props.disabled 
+    ? css ` 
+    cursor: not-allowed;
+     & label {
+      cursor: not-allowed !important;
+      }
+      & input {
+        cursor: not-allowed !important;
+        }
+  `
+  : css `` }
+
+  ${props => props.isError 
+    ? css ` 
+     & input {
+        background: rgb(248,217,215);
+        border: 1px solid #d00f0f;
+     }
+     & p {
+        padding: 5px 8px;
+        color: #d00f0f;
+     }
+  `
+  : css `` }
+
 `
 
 

@@ -79,7 +79,7 @@ align-items: center;
         }
   `
   : css `` }
-  ${props => props.error 
+  ${props => props.isError 
     ? css ` 
     & .checkmark {
         background-color: #ef5b5b;
