@@ -39,7 +39,6 @@ const RadialProgressBar = styled.div`{
   }
   ${props =>
     { 
-      console.log(props, 'propsssss')
       const { children : { props: { children: sizeVal }}} = props;
       const a = props.children.props.width;
       const strokeSize = sizeVal.map((item) => ({sizeWidth: item.props.strokeWidth, percent: item._owner.memoizedProps.percentage}))
