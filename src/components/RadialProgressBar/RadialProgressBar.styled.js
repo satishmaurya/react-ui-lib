@@ -39,26 +39,25 @@ const RadialProgressBar = styled.div`{
   }
   ${props =>
     { 
+      console.log(props)
       const { children : { props: { children: sizeVal }}} = props;
-      const a = props.children.props.width;
-      const strokeSize = sizeVal.map((item) => ({sizeWidth: item.props.strokeWidth, percent: item._owner.memoizedProps.percentage}))
+      let animateOffset;
+      let dashArray;
+      const strokeSize = sizeVal.map((item) => (item))
       for( var i =0; i < strokeSize.length; i++) {
-        const sub = a-parseInt(strokeSize[i].sizeWidth);
-        const radius = sub/2
-        const dashArray = radius * Math.PI * 2;
-        const finalPercent = strokeSize[i].percent;
-        const animateOffset = dashArray - dashArray * finalPercent  / 100
-        console.log('animate offset', animateOffset)
+        dashArray= strokeSize[i+1].props.style.strokeDasharray;
+        animateOffset=strokeSize[i+1].props.style.strokeDashoffset
+
         return (
           `
           @keyframes progress {
             from {
-                stroke-dashoffset: ${dashArray};
+            stroke-dashoffset: ${dashArray};
             }
             to {
-                stroke-dashoffset: ${animateOffset};
+            stroke-dashoffset: ${animateOffset};
             }
-        }
+            }
           `
         )
       }
