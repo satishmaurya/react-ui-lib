@@ -16,13 +16,17 @@ var RadialProgress = function RadialProgress(props) {
       strokeWidth = props.strokeWidth,
       percentage = props.percentage,
       className = props.className,
-      strokeColor = props.strokeColor;
+      strokeColor = props.strokeColor,
+      animate = props.animate,
+      animationDelay = props.animationDelay;
   var radius = (sqsize - strokeWidth) / 2;
   var viewBox = "0 0 ".concat(sqsize, " ").concat(sqsize);
   var dashArray = radius * Math.PI * 2;
   var dashOffset = dashArray - dashArray * percentage / 100;
   return /*#__PURE__*/_react.default.createElement(_RadialProgressBar.default, {
-    strokeColor: strokeColor
+    strokeColor: strokeColor,
+    animate: animate,
+    animationDelay: animationDelay
   }, /*#__PURE__*/_react.default.createElement("svg", {
     width: sqsize,
     height: sqsize,
