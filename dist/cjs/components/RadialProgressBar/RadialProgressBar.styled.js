@@ -21,23 +21,18 @@ var RadialProgressBar = _styledComponents.default.div.withConfig({
     return props.animate && (0, _styledComponents.css)(["progress ", " ", ""], props.animationDelay, props.animationType);
   }) : (0, _styledComponents.css)([""]);
 }, function (props) {
+  console.log(props);
   var sizeVal = props.children.props.children;
-  var a = props.children.props.width;
+  var animateOffset;
+  var dashArray;
   var strokeSize = sizeVal.map(function (item) {
-    return {
-      sizeWidth: item.props.strokeWidth,
-      percent: item._owner.memoizedProps.percentage
-    };
+    return item;
   });
 
   for (var i = 0; i < strokeSize.length; i++) {
-    var sub = a - parseInt(strokeSize[i].sizeWidth);
-    var radius = sub / 2;
-    var dashArray = radius * Math.PI * 2;
-    var finalPercent = strokeSize[i].percent;
-    var animateOffset = dashArray - dashArray * finalPercent / 100;
-    console.log('animate offset', animateOffset);
-    return "\n          @keyframes progress {\n            from {\n                stroke-dashoffset: ".concat(dashArray, ";\n            }\n            to {\n                stroke-dashoffset: ").concat(animateOffset, ";\n            }\n        }\n          ");
+    dashArray = strokeSize[i + 1].props.style.strokeDasharray;
+    animateOffset = strokeSize[i + 1].props.style.strokeDashoffset;
+    return "\n          @keyframes progress {\n            from {\n            stroke-dashoffset: ".concat(dashArray, ";\n            }\n            to {\n            stroke-dashoffset: ").concat(animateOffset, ";\n            }\n            }\n          ");
   }
 });
 
