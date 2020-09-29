@@ -2,7 +2,7 @@ import React from 'react';
 import RadialProgressBar from './RadialProgressBar.styled';
 
 const RadialProgress = (props) => {
-  const { sqsize, strokeWidth, percentage, className, strokeColor, animate, animationDelay } = props;
+  const { sqsize, strokeWidth, percentage, className, strokeColor, animate, animationDelay, animationType } = props;
   const radius = (sqsize - strokeWidth) / 2;
   const viewBox = `0 0 ${sqsize} ${sqsize}`;
   const dashArray = radius * Math.PI * 2;
@@ -10,7 +10,7 @@ const RadialProgress = (props) => {
 
 
     return (
-      <RadialProgressBar strokeColor={strokeColor} animate={animate} animationDelay={animationDelay}>
+      <RadialProgressBar strokeColor={strokeColor} animate={animate} animationDelay={animationDelay} animationType={animationType}>
         <svg
           width={sqsize}
           height={sqsize}
