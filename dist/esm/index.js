@@ -27,10 +27,10 @@ Object.defineProperty(exports, "Card", {
     return _Card.Card;
   }
 });
-Object.defineProperty(exports, "Charts", {
+Object.defineProperty(exports, "Chart", {
   enumerable: true,
   get: function get() {
-    return _Charts.Charts;
+    return _Chart.Chart;
   }
 });
 Object.defineProperty(exports, "Header", {
@@ -228,7 +228,7 @@ var _Button = require("./components/Button");
 
 var _Card = require("./components/Card");
 
-var _Charts = require("./components/Charts");
+var _Chart = require("./components/Chart");
 
 var _Header = require("./components/Header");
 
