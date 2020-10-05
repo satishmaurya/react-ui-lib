@@ -1,12 +1,12 @@
 import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
-import { CustomBarChart, CustomSimpleLineChart, CustomAreaChart, CustomStackedAreaChart, CustomPieChartWithCustomizedLabel, CustomRadarChart } from "./Chart";
+import Chart from "./Chart";
 import ChartTypes from "./Chart.types";
 
 <Meta title="Components/Chart" component="Chart" />
 
 <Story name="Import" />
 
-# Charts
+# Chart
 ### Inherit from Re-charts
 
 ## Import
@@ -19,7 +19,8 @@ import {Chart} from "@stack-ui/components";
 <Preview withToolbar>
     <Story name="Stacked Bar Chart">
         <>
-        <CustomBarChart
+        <Chart
+        type="bar"
         width={600}
         height={300}
          margin={{top: 20, right: 30, left: 20, bottom: 5}}
@@ -42,7 +43,8 @@ import {Chart} from "@stack-ui/components";
 <Preview withToolbar>
     <Story name="Simple Line Chart">
         <>
-        <CustomSimpleLineChart
+        <Chart
+        type="simpleLine"
         width={600}
         height={300}
          margin={{top: 20, right: 30, left: 20, bottom: 5}}
@@ -64,7 +66,8 @@ import {Chart} from "@stack-ui/components";
 <Preview withToolbar>
     <Story name="Area Chart">
         <>
-        <CustomAreaChart
+        <Chart
+        type="area"
         width={500}
         height={400}
          data={[
@@ -86,7 +89,8 @@ import {Chart} from "@stack-ui/components";
 <Preview withToolbar>
     <Story name="Stacked Area Chart">
         <>
-        <CustomStackedAreaChart
+        <Chart
+        type="stackedArea"
         width={500}
         height={400}
          data={[
@@ -108,7 +112,8 @@ import {Chart} from "@stack-ui/components";
 <Preview withToolbar>
     <Story name="Pie Chart">
         <>
-        <CustomPieChartWithCustomizedLabel
+        <Chart
+        type="pie"
         width={400}
         height={400}
          data={[
@@ -127,7 +132,8 @@ import {Chart} from "@stack-ui/components";
 <Preview withToolbar>
     <Story name="Radar Chart">
         <>
-        <CustomRadarChart
+        <Chart
+        type="Radar"
         width={500}
         height={500}
          data={[
