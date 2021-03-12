@@ -4,11 +4,13 @@ import PropTypes from "prop-types";
 const HeaderTypes= () => <>ProgressBar</>;
 
 HeaderTypes.propTypes={
-    mode: PropTypes.string,
-};
+    background:PropTypes.string,
+    fixed:PropTypes.bool,
+}
 
 HeaderTypes.defaultProps = {
-    mode: 'light',
-};
+    background: 'grey',
+    fixed: 'true',
+}
 
 export default HeaderTypes;

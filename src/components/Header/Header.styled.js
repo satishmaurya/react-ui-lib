@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 import * as variable from "../../variable";
 
 const StyledHeader = styled.div`
@@ -13,27 +13,23 @@ const StyledHeader = styled.div`
     padding: 6px 16px;
     border-radius: 4px;
     color: ${variable.white};
+    
     ${props =>
-        props.mode === "light"
-        ? css `
-            background: ${variable.white};
+        props.background
+            ? css`
+            background: ${props.background};
         `
-        : props.mode === "dark"
-           ? css `
-            background: ${variable.dark};
-
-        `
-        : css`
-            display: none;
-        `
-        }
-    ${props => 
+            : css`
+            background:auto
+         `
+    }
+    ${props =>
         props.fixed === true
-        ? css `
+            ? css`
         position: fixed,
         top: 0px,
         `
-        : css `
+            : css`
         position: relative
         `}
 `
