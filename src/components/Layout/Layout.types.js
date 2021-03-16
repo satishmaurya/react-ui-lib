@@ -14,7 +14,8 @@ RowTypes.propTypes={
     sm: PropTypes.number,
     xl: PropTypes.number,
     noGutters: PropTypes.bool,
-    bsPrefix: PropTypes.oneOf(['Row'])
+    bsPrefix: PropTypes.oneOf(['Row']),
+    className: PropTypes.string,
 };
 
 RowTypes.defaultProps = {
@@ -24,7 +25,7 @@ RowTypes.defaultProps = {
     sm: '',
     xl: '',
     noGutters: false,
-    bsPrefix: 'Row'
+    bsPrefix: 'Row',
 };
 
 ColTypes.propTypes={
@@ -34,7 +35,8 @@ ColTypes.propTypes={
     sm: PropTypes.number,
     xl: PropTypes.number,
     noGutters: PropTypes.bool,
-    bsPrefix: PropTypes.oneOf(['Row'])
+    bsPrefix: PropTypes.oneOf(['Row']),
+    className: PropTypes.string,
 };
 
 ColTypes.defaultProps = {
@@ -57,7 +59,7 @@ ContainerTypes.propTypes={
     bsPrefix: PropTypes.oneOf(['Row']),
     fluid:PropTypes.bool,
     children:PropTypes.node,
-
+    className: PropTypes.string,
 };
 
 ContainerTypes.defaultProps = {
