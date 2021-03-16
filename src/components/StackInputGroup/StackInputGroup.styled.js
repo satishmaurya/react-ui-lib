@@ -1,9 +1,8 @@
 import styled, {css} from "styled-components";
 import * as variable from "../../variable";
-// import StackInputGroupTypes from './StackInputGroup.types'
-import Form from 'react-bootstrap/Form';
+import { Formik } from "formik";
 
-const StyledInputGroup = styled(Form)`
+const StyledInputGroup = styled(Formik)`
 
     ${props =>
         props.bg
