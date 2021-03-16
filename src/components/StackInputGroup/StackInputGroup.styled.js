@@ -1,8 +1,7 @@
 import styled, {css} from "styled-components";
 import * as variable from "../../variable";
-import { Formik } from "formik";
 
-const StyledInputGroup = styled(Formik)`
+const StyledInputGroup = styled.div`
 
     ${props =>
         props.bg
