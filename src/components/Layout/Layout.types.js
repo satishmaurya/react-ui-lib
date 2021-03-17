@@ -14,6 +14,7 @@ RowTypes.propTypes={
     sm: PropTypes.number,
     xl: PropTypes.number,
     noGutters: PropTypes.bool,
+    bgColor: PropTypes.string,
     bsPrefix: PropTypes.oneOf(['Row'])
 };
 

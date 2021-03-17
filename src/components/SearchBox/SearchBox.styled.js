@@ -68,6 +68,16 @@ ${props => props.disabled
   `
   : css `` }
 
+  ${props => props.width ? css `
+    width: ${props.width};
+        & input {
+        width: 100%;
+        }
+    `: css `` } 
+
+.icon-search input {
+    padding-left: 30px;
+}
 `
 
 
