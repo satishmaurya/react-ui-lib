@@ -21,7 +21,7 @@ export const Row = (props) =>{
 };
 
 export const Col = (props) =>{
-    const {as, lg, md, noGutters, sm, xl, xs, bsPrefix, children, className} = props;
+    const {as, lg, md, noGutters, sm, xl, xs, bsPrefix, children, p, m, bgColor, className} = props;
     return(
         <StyledCol as={as} {...props}>
             {children}
