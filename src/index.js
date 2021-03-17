@@ -1,4 +1,3 @@
-
 export { Avatar } from './components/Avatar';
 export { Badge } from './components/Badge';
 export { Button } from './components/Button';
@@ -23,7 +22,7 @@ export { Box } from './components/Box';
 export { Breadcrumb, StyledBreadcrumb } from './components/Breadcrumb';
 export { Container, Row, Col } from './components/Layout';
 export { Radio } from './components/Radio';
-export { Checkbox } from './components/CheckboxGroup';
+export { CheckBox } from './components/CheckboxGroup';
 export { Accordian } from './components/Accordian';
 export { Snackbar } from './components/SnackBar';
 export { Switch } from './components/Switch';
@@ -32,3 +31,4 @@ export { Menu } from './components/Menu';
 export { SearchBox } from './components/SearchBox';
 export { SocialMediaGroup } from './components/SocialMediaGroup';
 export { StackModal } from './components/StackModal';
+export { ToolTip } from './components/ToolTip';
