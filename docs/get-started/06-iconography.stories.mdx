@@ -21,15 +21,15 @@ export const IconGallery = () => {
     el.select()
     document.execCommand("copy")
   }
-  useEffect(() => {
+  React.useEffect(() => {
     const results = icons.filter(icon =>
-      icon.iconName.toLowerCase().includes(searchTerm)
+      icon.iconName.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setSearchResults(results);
   }, [searchTerm]);
   return (
     <>
-       <SearchBox placeholder="Search" value={searchTerm} onChange={handleChange} style={{width:'100%'}} />
+       <SearchBox type="text" placeholder="Search" defaultValue={searchTerm} onChange={handleChange} style={{width:'100%'}} />
       <IconContainer>
          {searchResults.map(item => (
           <IconItem key={item.iconName} data-name={item.iconName}><Icon size={16} icon={item.iconName} onClick={copyCodeToClipboard}/></IconItem>

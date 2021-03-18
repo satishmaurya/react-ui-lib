@@ -1,10 +1,13 @@
-import styled, {css} from "styled-components";
+import styled, {
+  css
+} from "styled-components";
 import * as variable from "../../variable";
 // import StackInputGroupTypes from './StackInputGroup.types'
 import Form from 'react-bootstrap/Form';
 
-const StyledInputGroup = styled(Form)`
-
+const StyledInputGroup = styled(Form)
+`
+    position:relative;
     ${props =>
         props.bg
         ? css `
@@ -53,7 +56,15 @@ ${props => props.disabled
       box-shadow: 0 0 0 0.2rem #ff2f0040;
    }
   `
-  : css `` }
+    : css`` }
+  
+    ${props =>
+    props.icon
+      ? css`
+      border: 1px solid green;
+    }
+  `: css ``
+}
 `
 
 export default StyledInputGroup;
