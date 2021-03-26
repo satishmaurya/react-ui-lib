@@ -12,6 +12,7 @@ export { Sidebar } from './components/Sidebar';
 export { Spinner } from './components/Spinner';
 export { StackChart } from './components/StackChart';
 export { Table } from './components/Table';
+
 export { StackTabs } from './components/StackTabs';
 export { Pagination } from './components/Pagination';
 export { RadialProgressBar } from './components/RadialProgressBar';
