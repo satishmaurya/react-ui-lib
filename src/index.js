@@ -13,6 +13,7 @@ export { Spinner } from './components/Spinner';
 export { StackChart } from './components/StackChart';
 export { Table } from './components/Table';
 export { Tabs } from './components/Tabs';
+export { default as StackTabs } from './components/Tabs/Tabs';
 export { Pagination } from './components/Pagination';
 export { RadialProgressBar } from './components/RadialProgressBar';
 export { Typography } from './components/Typography';
