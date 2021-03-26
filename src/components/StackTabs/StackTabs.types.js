@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const CardTypes= () => <>StackCard</>;
+const StackTabsTypes= () => <>StackCard</>;
 
-CardTypes.propTypes={
+StackTabsTypes.propTypes={
     isDisabled: PropTypes.bool,
     children:PropTypes.node,
     width: PropTypes.string,
@@ -15,12 +15,16 @@ CardTypes.propTypes={
     unmountOnExit:PropTypes.bool,
     transition:PropTypes.bool,
     variant:PropTypes.oneOf(['tabs','pills','leftPills']),
+  /**
+   * The custom class name of the StackTabs
+   * */
+    className: PropTypes.string,
 
 };
 
-CardTypes.defaultProps = {
+StackTabsTypes.defaultProps = {
     variant: 'tabs',
     isDisabled: false,
 };
 
-export default CardTypes;
+export default StackTabsTypes;

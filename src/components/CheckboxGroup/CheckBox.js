@@ -2,7 +2,7 @@ import React from "react";
 import { StyledCheckbox } from './Checkbox.styled';
 
 const CheckBox = (props) => {
-  const { label, disabled, isError, onClick, id, name, value  } = props;
+  const { label, disabled, isError, onClick, id, name, value, className  } = props;
   return (
     <StyledCheckbox {...props}>
     <label class="checklabel">{label} 
