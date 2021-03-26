@@ -7,7 +7,7 @@ import Tab from 'react-bootstrap/Tab';
 const StackTabs = (props) =>{
     const{ width, activeKey, defaultActiveKey, id, mountOnEnter, onSelect, transition, unmountOnExit,
         variant, children, className } =props;
-    if(variant==="leftPills") {
+    if(variant==="leftPills") { 
         return(
             <StyledTabs defaultActiveKey={defaultActiveKey} id={id} {...props}>
                 {children}
