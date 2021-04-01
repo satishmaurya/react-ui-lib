@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "Tabs", {
+Object.defineProperty(exports, "StackTabs", {
   enumerable: true,
   get: function get() {
     return _Tabs["default"];
