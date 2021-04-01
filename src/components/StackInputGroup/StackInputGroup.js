@@ -2,6 +2,7 @@ import React from "react";
 import StyledInputGroup from "./StackInputGroup.styled";
 import InputGroup from 'react-bootstrap/InputGroup';
 import Form from 'react-bootstrap/Form';
+import { Icon } from '../Icon';
 
 
 const StackInputGroup = (props) =>{
@@ -11,6 +12,8 @@ const StackInputGroup = (props) =>{
     return(
  
             <StyledInputGroup disabled={disabled} isError={isError} hint={hint} onChange={onChange}>
+              <span>hello</span>
+              <Icon icon="add" />
               { labelInline ?
               <InputGroup size={size}> 
                  <InputGroup.Prepend>

@@ -87,10 +87,10 @@ Object.defineProperty(exports, "Table", {
     return _Table.Table;
   }
 });
-Object.defineProperty(exports, "Tabs", {
+Object.defineProperty(exports, "StackTabs", {
   enumerable: true,
   get: function get() {
-    return _Tabs.Tabs;
+    return _Tabs.StackTabs;
   }
 });
 Object.defineProperty(exports, "Pagination", {
