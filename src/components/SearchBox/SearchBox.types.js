@@ -30,6 +30,14 @@ SearchBoxTypes.propTypes={
      * The search icon of the SearchBox
      * */
     searchIcon: PropTypes.bool,
+     /** 
+     * On changes function
+     * */
+      onChange: PropTypes.func,
+     /** 
+     * On Key Down event
+     * */
+    onKeyDown: PropTypes.func,
 };
 
 SearchBoxTypes.defaultProps = {

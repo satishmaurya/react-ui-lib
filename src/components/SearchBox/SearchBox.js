@@ -7,7 +7,7 @@ import {Box} from '../Box';
 const SearchBox = (props) =>{
   
     const { placeholder, size, bg, borderRadius, value,id, name, border, icon, onFocus,
-    onClick, isError, disabled, hint, width, className, searchIcon } = props;
+    onClick, isError, disabled, hint, width, className, searchIcon, onChange, onKeyDown } = props;
   const iconStyle = {
     position:"absolute",
     left:"8px",
@@ -15,7 +15,7 @@ const SearchBox = (props) =>{
   } 
     return(
         <StyledSearchBox className={className} borderRadius={borderRadius} bg={bg} border={border} size={size}
-         onFocus={onFocus} onClick={onClick} isError={isError} disabled={disabled} width={width}>
+         onFocus={onFocus} onClick={onClick} isError={isError} disabled={disabled} width={width} onChange={onChange} onKeyDown={onKeyDown}>
            {searchIcon ?
            (
              <Box className="icon-search">
